@@ -16,7 +16,13 @@ export default defineConfig(({ mode }) => {
   const emitSourcemaps = mode === "development";
 
   return {
-    base: process.env.FIGMA_PUBLIC_URL ? `${process.env.FIGMA_PUBLIC_URL}/` : "/",
+    base:
+      process.env.VITE_BASE ||
+      (process.env.GITHUB_PAGES === "true"
+        ? "/TerraTwin/"
+        : process.env.FIGMA_PUBLIC_URL
+          ? `${process.env.FIGMA_PUBLIC_URL}/`
+          : "/"),
     build: {
       sourcemap: emitSourcemaps ? "inline" : false,
       minify: !emitSourcemaps,

@@ -164,3 +164,14 @@ Suggested demonstration: Mission → Targets → choose destination → Explore 
   - Python tests: 27 passed, 0 failed.
   - Production build: `npm run build` passed in 1.58s.
   - Development server: active at `http://127.0.0.1:8443/` (HTTP 200).
+
+## Milestone 10 — Automated GitHub Pages deployment & public access configuration (complete, 2026-11-14)
+- **Continuous Deployment Workflow:** Added [.github/workflows/deploy.yml](file:///c:/Users/Asus/Downloads/Telegram%20Desktop/TerraTwin_Team_Handoff_Codex_Antigravity/TerraTwin_Team_Handoff/.github/workflows/deploy.yml) configuring GitHub Actions to build and deploy the React/Vite application to GitHub Pages on every push to the `main` branch.
+- **Dynamic Asset & Base Path Resolution:** Configured [starter_app/vite.config.ts](file:///c:/Users/Asus/Downloads/Telegram%20Desktop/TerraTwin_Team_Handoff_Codex_Antigravity/TerraTwin_Team_Handoff/starter_app/vite.config.ts) and [starter_app/src/candidateData.ts](file:///c:/Users/Asus/Downloads/Telegram%20Desktop/TerraTwin_Team_Handoff_Codex_Antigravity/TerraTwin_Team_Handoff/starter_app/src/candidateData.ts) to adaptively resolve assets and static data under both local root (`/`) and GitHub Pages repository subpath (`/TerraTwin/`).
+- **Hash-Routing Preservation:** Single Page App routing uses URL hash state (`#explorer`, `#rankings`, `#details`), guaranteeing that page refreshes and direct links on GitHub Pages will never produce 404 HTTP errors.
+- **Verification:**
+  - TypeScript: 0 errors (`tsc --noEmit`).
+  - Node.js tests: 12 passed, 0 failed.
+  - Python tests: 27 passed, 0 failed.
+  - Production build: `npm run build` passed with `/TerraTwin/` base path in 1.11s.
+  - Remote: pushed to `https://github.com/Amarahan/TerraTwin.git` on `main`.

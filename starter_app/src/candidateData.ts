@@ -41,6 +41,13 @@ export interface CandidateSiteData {
   };
 }
 
+
+const assetUrl = (p: string): string => {
+  const base = typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.BASE_URL ? import.meta.env.BASE_URL : '/';
+  const cleanBase = base.endsWith('/') ? base : `${base}/`;
+  return `${cleanBase}${p.replace(/^\//, '')}`;
+};
+
 export interface TargetModelData {
   id: string;
   name: string;
@@ -91,13 +98,13 @@ export const TARGET_MODELS: Record<string, TargetModelData> = {
     },
     images: {
       primary: {
-        url: '/images/moon/shackleton_lola_color_slope.png',
+        url: assetUrl('images/moon/shackleton_lola_color_slope.png'),
         title: 'LOLA Topographic Slope Map',
         caption: 'Color-coded slope map from the Lunar Orbiter Laser Altimeter at 20 m resolution.',
         source: 'NASA LRO / LOLA Science Team',
       },
       secondary: {
-        url: '/images/moon/shackleton_lola_color_hillshade.png',
+        url: assetUrl('images/moon/shackleton_lola_color_hillshade.png'),
         title: 'LOLA Lunar Polar Shaded Relief',
         caption: 'Digital elevation shaded relief centered on the 89.9°S rim.',
         source: 'NASA / GSFC / PDS Geosciences',
@@ -126,19 +133,19 @@ export const TARGET_MODELS: Record<string, TargetModelData> = {
     },
     images: {
       primary: {
-        url: '/images/moon/malapert_lola_color_slope.png',
+        url: assetUrl('images/moon/malapert_lola_color_slope.png'),
         title: 'LOLA Slope Gradient Model',
         caption: 'High-resolution slope classification of the massif summit and steep flanks.',
         source: 'NASA LRO LOLA Team / PDS',
       },
       secondary: {
-        url: '/images/moon/malapert_lroc_dem_slope.png',
+        url: assetUrl('images/moon/malapert_lroc_dem_slope.png'),
         title: 'LROC NAC Stereo DEM Analysis',
         caption: 'High-detail surface slope extracted from Narrow Angle Camera stereo imagery.',
         source: 'NASA / Arizona State University (ASU)',
       },
       tertiary: {
-        url: '/images/moon/malapert_lola_color_hillshade.png',
+        url: assetUrl('images/moon/malapert_lola_color_hillshade.png'),
         title: 'LOLA Color Shaded Relief',
         caption: 'Elevation-tinted relief illustrating communications visibility toward Earth.',
         source: 'NASA GSFC / LRO Team',
@@ -167,19 +174,19 @@ export const TARGET_MODELS: Record<string, TargetModelData> = {
     },
     images: {
       primary: {
-        url: '/images/mars/jezero_hirise_global_mosaic.png',
+        url: assetUrl('images/mars/jezero_hirise_global_mosaic.png'),
         title: 'HiRISE Delta System Mosaic',
         caption: '0.25 m/pixel color mosaic showing ancient river delta deposits and lakebed sediment.',
         source: 'NASA / JPL-Caltech / Univ. of Arizona',
       },
       secondary: {
-        url: '/images/mars/jezero_ctx_global_mosaic.png',
+        url: assetUrl('images/mars/jezero_ctx_global_mosaic.png'),
         title: 'Context Camera (CTX) Overview',
         caption: '6 m/pixel regional context mosaic of the Jezero impact basin and Western Delta.',
         source: 'NASA / JPL / MSSS',
       },
       tertiary: {
-        url: '/images/mars/jezero_tes_dust.png',
+        url: assetUrl('images/mars/jezero_tes_dust.png'),
         title: 'MGS TES Dust Index Map',
         caption: 'Thermal Emission Spectrometer atmospheric aerosol and dust opacity mapping.',
         source: 'NASA MGS TES Team / ASU',
@@ -208,13 +215,13 @@ export const TARGET_MODELS: Record<string, TargetModelData> = {
     },
     images: {
       primary: {
-        url: '/images/mars/mola_global_tile.jpg',
+        url: assetUrl('images/mars/mola_global_tile.jpg'),
         title: 'MOLA Topographic Relief Tile',
         caption: 'Global elevation tile depicting the smooth, low-gradient expanse of Meridiani Planum.',
         source: 'NASA MGS MOLA Science Team / USGS',
       },
       secondary: {
-        url: '/images/mars/jezero_mola_roughness.png',
+        url: assetUrl('images/mars/jezero_mola_roughness.png'),
         title: 'MOLA Regional Roughness Distribution',
         caption: 'Topographic variance profile illustrating low surface obstacle density.',
         source: 'NASA PDS Geosciences Node',
@@ -246,19 +253,19 @@ export const CANDIDATE_SITES: Record<string, CandidateSiteData> = {
     },
     images: {
       photo: {
-        url: '/images/earth/atacama_true_color.jpg',
+        url: assetUrl('images/earth/atacama_true_color.jpg'),
         title: 'Copernicus / USGS True-Color Satellite Browse',
         caption: 'Optical satellite imagery showing hyperarid salt flats and alluvial plains.',
         source: 'Copernicus Sentinel / USGS Landsat',
       },
       dem: {
-        url: '/images/earth/S24W070.SRTMGL1.2.jpg',
+        url: assetUrl('images/earth/S24W070.SRTMGL1.2.jpg'),
         title: 'NASA SRTM 30m Global Elevation Model',
         caption: 'Shuttle Radar Topography Mission tile S24W070 at 1-arcsecond resolution.',
         source: 'NASA JPL / USGS LP DAAC',
       },
       aster: {
-        url: '/images/earth/ASTGTMV003_S24W070.1.jpg',
+        url: assetUrl('images/earth/ASTGTMV003_S24W070.1.jpg'),
         title: 'ASTER Global DEM v003 Tile',
         caption: 'Terra ASTER optical stereo digital elevation model of the Atacama basin.',
         source: 'NASA / METI / LP DAAC',
@@ -287,19 +294,19 @@ export const CANDIDATE_SITES: Record<string, CandidateSiteData> = {
     },
     images: {
       photo: {
-        url: '/images/earth/death_valley_true_color.jpg',
+        url: assetUrl('images/earth/death_valley_true_color.jpg'),
         title: 'Landsat / Sentinel True-Color Browse',
         caption: 'True-color optical satellite imagery of Badwater Basin and alluvial fans.',
         source: 'USGS / NASA Earthdata',
       },
       dem: {
-        url: '/images/earth/death_valley_aster_dem.jpg',
+        url: assetUrl('images/earth/death_valley_aster_dem.jpg'),
         title: 'ASTER Digital Elevation Model',
         caption: 'Digital elevation relief depicting below-sea-level basin floor (-86 m) and Panamint Range.',
         source: 'NASA / METI / LP DAAC',
       },
       aster: {
-        url: '/images/earth/N36W117.SRTMGL1.2.jpg',
+        url: assetUrl('images/earth/N36W117.SRTMGL1.2.jpg'),
         title: 'NASA SRTM 1-Arcsecond Global DEM',
         caption: 'Radar interferometer elevation tile N36W117 covering Death Valley.',
         source: 'NASA JPL / USGS',
@@ -328,19 +335,19 @@ export const CANDIDATE_SITES: Record<string, CandidateSiteData> = {
     },
     images: {
       photo: {
-        url: '/images/earth/haughton_true_color.jpg',
+        url: assetUrl('images/earth/haughton_true_color.jpg'),
         title: 'NASA Haughton-Mars Project Satellite Browse',
         caption: 'High-latitude optical satellite view of the 23-km Haughton impact structure on Devon Island.',
         source: 'NASA HMP / Copernicus Sentinel',
       },
       dem: {
-        url: '/images/earth/haughton_aster_dem.jpg',
+        url: assetUrl('images/earth/haughton_aster_dem.jpg'),
         title: 'ASTER Digital Elevation Model',
         caption: 'Elevation relief highlighting the eroded rim and central uplift features.',
         source: 'NASA / METI / LP DAAC',
       },
       aster: {
-        url: '/images/earth/ASTGTMV003_N75W090.1.jpg',
+        url: assetUrl('images/earth/ASTGTMV003_N75W090.1.jpg'),
         title: 'ASTER GDEM v3 High-Latitude Tile',
         caption: 'Granule ASTGTMV003_N75W090 covering eastern Devon Island.',
         source: 'NASA / METI',
@@ -369,7 +376,7 @@ export const CANDIDATE_SITES: Record<string, CandidateSiteData> = {
     },
     images: {
       photo: {
-        url: '/images/moon/shackleton_lola_color_hillshade.png',
+        url: assetUrl('images/moon/shackleton_lola_color_hillshade.png'),
         title: 'Polar Analog Terrain Profile',
         caption: 'High-latitude polar desert terrain comparable to extreme cold lunar shadowed craters.',
         source: 'NASA Earth / Polar Science Division',
