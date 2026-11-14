@@ -149,7 +149,7 @@
 
 - **Scientific status:** All 48 comparisons are exploratory/indicative. No independent scientific validation has been performed.  
 - **Coordinates:** All 12 Earth site coordinates are PENDING_HUMAN_REVIEW. Markers are explicitly provisional.  
-- **Challenge title:** Not yet confirmed. Marked "NEEDS TEAM CONFIRMATION" throughout.  
+- **Challenge title:** Confirmed: "Identify Earth Locations that Analog the Permanent Moon Base Locations and Mars".  
 - **McMurdo NDVI:** Null (missing data). Score uses 7/8 features; 97%/95% weighted coverage passes the ≥75% gate for Moon/Mars targets.  
 - **No video:** Actual MP4 requires human screen recording. Storyboard and SRT provided.  
 - **Figma fidelity:** Figma URL was inaccessible during development. Implementation is based on the existing starter app design direction.

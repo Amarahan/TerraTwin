@@ -19,7 +19,7 @@ TerraTwin compares 12 Earth analog candidate sites against four planetary target
 
 ## NASA Space Apps Challenge 2026
 
-> **Challenge:** ⚠️ NEEDS TEAM CONFIRMATION  
+> **Challenge:** Identify Earth Locations that Analog the Permanent Moon Base Locations and Mars  
 > **Team:** _(team name to be confirmed)_
 
 This project was built for the NASA Space Apps Challenge 2026.

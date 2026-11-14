@@ -23,11 +23,10 @@ An open, evidence-based web application that identifies Earth environments
 mirroring the Moon and Mars for planetary analog research.
 ```
 
-### Challenge ⚠️ NEEDS TEAM CONFIRMATION
+### Challenge ✅
 ```
-[CONFIRM: Insert exact NASA Space Apps 2026 challenge title and URL here]
+Identify Earth Locations that Analog the Permanent Moon Base Locations and Mars
 ```
-> The human team must look up the exact challenge name on the NASA Space Apps portal and confirm it before submitting. Do not guess or paraphrase the challenge title.
 
 ### Project Description (long form) ✅
 > Copy from `02_PROJECT_SUMMARY.md`. Recommended text:

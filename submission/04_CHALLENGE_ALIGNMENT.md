@@ -1,13 +1,16 @@
 # 04 — Challenge Alignment
 
 **Project:** TerraTwin — Planetary Analog Atlas  
-**Challenge:** ⚠️ **NEEDS TEAM CONFIRMATION** — Challenge title and URL must be confirmed by the human team before submission.  
+**Challenge:** **Identify Earth Locations that Analog the Permanent Moon Base Locations and Mars**  
 **Competition:** NASA Space Apps Challenge 2026
 
 ---
 
-> ⚠️ **STOP — Human Action Required**  
-> The challenge title is not confirmed. The team must verify the exact challenge name and URL on the NASA Space Apps 2026 submission portal before completing this section. Do not submit with a placeholder challenge title.
+## Challenge Direct Alignment
+
+TerraTwin directly answers the challenge prompt: **"Identify Earth Locations that Analog the Permanent Moon Base Locations and Mars"**.
+
+Permanent Moon base initiatives (such as NASA Artemis base camp candidates at the Lunar South Pole) and Mars exploration outposts require terrestrial proving grounds that replicate the physical, thermal, and morphological hazards of those extraterrestrial environments. TerraTwin was designed specifically to compare candidate Earth sites against candidate permanent Moon base sites (Shackleton Crater Rim, Malapert Massif) and key Mars target regions (Jezero Crater, Meridiani Planum) using open NASA datasets across eight physical features.
 
 ---
 
@@ -63,4 +66,4 @@ TerraTwin demonstrates how open NASA satellite data can be systematically applie
 
 ---
 
-> ⚠️ **Team action required:** Insert exact challenge title and submission URL before finalizing this document.
+> **Status:** Confirmed aligned with Challenge: *"Identify Earth Locations that Analog the Permanent Moon Base Locations and Mars"*.

@@ -163,10 +163,10 @@ def build_slide_1_title(prs):
                 Inches(0.5), Inches(5.5), Inches(12.33), Inches(0.5),
                 font_size=13, bold=True, color=AMBER, align=PP_ALIGN.CENTER)
 
-    # Challenge placeholder
-    add_textbox(slide, "Challenge: ⚠️ NEEDS TEAM CONFIRMATION",
+    # Challenge
+    add_textbox(slide, "Challenge: Identify Earth Locations that Analog the Permanent Moon Base Locations and Mars",
                 Inches(0.5), Inches(6.0), Inches(12.33), Inches(0.5),
-                font_size=12, color=AMBER, align=PP_ALIGN.CENTER)
+                font_size=12, color=CYAN, align=PP_ALIGN.CENTER)
 
 
 def build_slide_2_problem(prs):
@@ -317,7 +317,7 @@ def build_slide_5_data(prs):
         "McMurdo NDVI: preserved as null (7/8 features)",
         "No validated scientific measurements in this submission",
         "Browse images labeled 'contextual only — not quantitative'",
-        "Challenge title: NEEDS TEAM CONFIRMATION",
+        "Challenge: Permanent Moon Base Locations & Mars",
         "Partner data: ESA DEM GLO-30, CSA RADARSAT, JAXA GSMaP",
         "  (approved under NASA Space Apps partner provisions)",
     ]
@@ -386,9 +386,9 @@ def build_slide_7_demo(prs):
     add_textbox(slide, "NASA Space Apps Challenge 2026",
                 Inches(0.6), Inches(4.1), Inches(12.0), Inches(0.5),
                 font_size=18, color=WHITE)
-    add_textbox(slide, "Challenge: ⚠️ NEEDS TEAM CONFIRMATION",
+    add_textbox(slide, "Challenge: Identify Earth Locations that Analog the Permanent Moon Base Locations and Mars",
                 Inches(0.6), Inches(4.55), Inches(12.0), Inches(0.5),
-                font_size=15, color=AMBER)
+                font_size=14, color=CYAN)
 
     # Key stats
     stats = [

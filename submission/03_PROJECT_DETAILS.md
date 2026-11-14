@@ -114,7 +114,7 @@ Identical algorithm to the Python engine. Shared fixtures in `data/tests/fixture
 | Site coordinates | All 12 = PENDING_HUMAN_REVIEW |
 | Scientific validation | Exploratory only; no peer review |
 | McMurdo NDVI | Null (missing); 7/8 features; passes ≥75% coverage gate |
-| Challenge title | NEEDS TEAM CONFIRMATION |
+| Challenge title | Confirmed: Identify Earth Locations that Analog the Permanent Moon Base Locations and Mars |
 | Video | Requires human screen recording (storyboard provided) |
 | Figma fidelity | Figma URL was inaccessible during development |
 
