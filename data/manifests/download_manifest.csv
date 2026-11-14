@@ -1,0 +1,6 @@
+target,dataset,local_file,official_source_url,coverage_note
+Atacama Desert,NASA SRTM GL1 browse tile,earth/srtm/S24W070.SRTMGL1.2.jpg,https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/SRTMGL1.003/S24W070.SRTMGL1.hgt/S24W070.SRTMGL1.2.jpg,30 m-class browse image for tile S24W070
+Death Valley,NASA SRTM GL1 browse tile,earth/srtm/N36W117.SRTMGL1.2.jpg,https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/SRTMGL1.003/N36W117.SRTMGL1.hgt/N36W117.SRTMGL1.2.jpg,30 m-class browse image for tile N36W117
+Atacama Desert,NASA ASTER GDEM V003 browse tile,earth/aster_gdem/ASTGTMV003_S24W070.1.jpg,https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/ASTGTM.003/ASTGTMV003_S24W070.1.jpg,1 degree browse tile
+Death Valley,NASA ASTER GDEM V003 browse tile,earth/aster_gdem/ASTGTMV003_N36W117.1.jpg,https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/ASTGTM.003/ASTGTMV003_N36W117.1.jpg,1 degree browse tile
+Haughton Crater,NASA ASTER GDEM V003 browse tile,earth/aster_gdem/ASTGTMV003_N75W090.1.jpg,https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/ASTGTM.003/ASTGTMV003_N75W090.1.jpg,1 degree browse tile; Haughton is outside SRTM coverage

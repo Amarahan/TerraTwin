@@ -1,0 +1,736 @@
+{
+  "schema_version": "0.1",
+  "generated_by": "data/scripts/audit_inputs.py",
+  "items": [
+    {
+      "path": "data/earth/ASTGTMV003_N36W117.1.jpg",
+      "bytes": 40831,
+      "sha256": "115d4df2f4776b67fe5d0603f87aa3bde9ab748fac34521310951a39c0d74432",
+      "asset_type": "rendered_image_or_browse_preview",
+      "permitted_audit_use": "Visual context only; do not sample image colors as measurements.",
+      "source_references": [
+        {
+          "manifest": "data/manifests/download_manifest.csv",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/ASTGTM.003/ASTGTMV003_N36W117.1.jpg",
+          "label": "NASA ASTER GDEM V003 browse tile",
+          "notes": "1 degree browse tile",
+          "path_match_status": "UNIQUE_BASENAME_MATCH_PATH_DIFFERS"
+        }
+      ],
+      "source_reference_status": "RECORDED_IN_MANIFEST"
+    },
+    {
+      "path": "data/earth/ASTGTMV003_N75W090.1.jpg",
+      "bytes": 70090,
+      "sha256": "90e58325b56541e4390d865aead066fc9953fdef3b939632001a85ad1517f2df",
+      "asset_type": "rendered_image_or_browse_preview",
+      "permitted_audit_use": "Visual context only; do not sample image colors as measurements.",
+      "source_references": [
+        {
+          "manifest": "data/manifests/core_target_data_manifest.csv",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/ASTGTM.003/ASTGTMV003_N75W090.1.jpg",
+          "label": "NASA ASTER GDEM V003 browse tile",
+          "notes": "one-degree browse image",
+          "path_match_status": "UNIQUE_BASENAME_MATCH_PATH_DIFFERS"
+        },
+        {
+          "manifest": "data/manifests/download_manifest.csv",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/ASTGTM.003/ASTGTMV003_N75W090.1.jpg",
+          "label": "NASA ASTER GDEM V003 browse tile",
+          "notes": "1 degree browse tile; Haughton is outside SRTM coverage",
+          "path_match_status": "UNIQUE_BASENAME_MATCH_PATH_DIFFERS"
+        }
+      ],
+      "source_reference_status": "RECORDED_IN_MANIFEST"
+    },
+    {
+      "path": "data/earth/ASTGTMV003_S24W070.1.jpg",
+      "bytes": 27065,
+      "sha256": "16fd450bfee7a8ed0986e272d1bb70a64130aea0b5a2de119029775581b19ef1",
+      "asset_type": "rendered_image_or_browse_preview",
+      "permitted_audit_use": "Visual context only; do not sample image colors as measurements.",
+      "source_references": [
+        {
+          "manifest": "data/manifests/download_manifest.csv",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/ASTGTM.003/ASTGTMV003_S24W070.1.jpg",
+          "label": "NASA ASTER GDEM V003 browse tile",
+          "notes": "1 degree browse tile",
+          "path_match_status": "UNIQUE_BASENAME_MATCH_PATH_DIFFERS"
+        }
+      ],
+      "source_reference_status": "RECORDED_IN_MANIFEST"
+    },
+    {
+      "path": "data/earth/atacama_true_color.jpg",
+      "bytes": 71671,
+      "sha256": "b47c24938bb702069457d909b7e6ad19869cc9181a6c658085bbe8e0880738c0",
+      "asset_type": "rendered_image_or_browse_preview",
+      "permitted_audit_use": "Visual context only; do not sample image colors as measurements.",
+      "source_references": [],
+      "source_reference_status": "NOT_RECORDED_IN_SUPPLIED_MANIFESTS"
+    },
+    {
+      "path": "data/earth/death_valley_aster_dem.jpg",
+      "bytes": 125931,
+      "sha256": "571aea717973ebacbd16d14824ce42447fba4312e702fcd8dc22c92f97d1711f",
+      "asset_type": "rendered_image_or_browse_preview",
+      "permitted_audit_use": "Visual context only; do not sample image colors as measurements.",
+      "source_references": [],
+      "source_reference_status": "NOT_RECORDED_IN_SUPPLIED_MANIFESTS"
+    },
+    {
+      "path": "data/earth/death_valley_true_color.jpg",
+      "bytes": 46470,
+      "sha256": "7be72d924442d60d02c3244eb04ad9c0964c976bf1e15995272a2cbdb3d9443f",
+      "asset_type": "rendered_image_or_browse_preview",
+      "permitted_audit_use": "Visual context only; do not sample image colors as measurements.",
+      "source_references": [],
+      "source_reference_status": "NOT_RECORDED_IN_SUPPLIED_MANIFESTS"
+    },
+    {
+      "path": "data/earth/haughton_aster_dem.jpg",
+      "bytes": 51221,
+      "sha256": "4626373f1370745469ba6f892fe8c73ca63b9d839697503df83def0d52a05fc6",
+      "asset_type": "rendered_image_or_browse_preview",
+      "permitted_audit_use": "Visual context only; do not sample image colors as measurements.",
+      "source_references": [],
+      "source_reference_status": "NOT_RECORDED_IN_SUPPLIED_MANIFESTS"
+    },
+    {
+      "path": "data/earth/haughton_true_color.jpg",
+      "bytes": 34694,
+      "sha256": "ca84a97baa7de1c6fcd414e91239ada9d50680370fec9f1105528838e4688de1",
+      "asset_type": "rendered_image_or_browse_preview",
+      "permitted_audit_use": "Visual context only; do not sample image colors as measurements.",
+      "source_references": [],
+      "source_reference_status": "NOT_RECORDED_IN_SUPPLIED_MANIFESTS"
+    },
+    {
+      "path": "data/earth/N36W117.hgt",
+      "bytes": 25934402,
+      "sha256": "39e78219fff01f273e143c25511a2f1cfbfdf9632aec581fa00d571fba48028f",
+      "asset_type": "quantitative_raster_candidate",
+      "permitted_audit_use": "Potential numeric SRTM terrain source; requires approved spatial extent, metadata/provenance, and QA before sampling.",
+      "source_references": [],
+      "source_reference_status": "NOT_RECORDED_IN_SUPPLIED_MANIFESTS",
+      "format_size_check": {
+        "expected_bytes_for_srtm1_layout": 25934402,
+        "matches_srtm1_layout_size": true,
+        "product_format_reference": {
+          "citation": "NASA SRTM Collection User Guide, revised October 2015",
+          "url": "https://lpdaac.usgs.gov/documents/179/SRTM_User_Guide_V3.pdf",
+          "supports": "SRTM1 tiles have 3,601 rows by 3,601 samples; HGT uses 2-byte signed integer samples."
+        },
+        "limitation": "A matching byte count is only a format-size consistency check; it does not verify this file's dataset version, units, void-fill lineage, or download provenance."
+      }
+    },
+    {
+      "path": "data/earth/N36W117.SRTMGL1.2.jpg",
+      "bytes": 283717,
+      "sha256": "6ac07ba43807db53bb0875e8d15eaf57205bfba2173802eb0d7a70a745b91a36",
+      "asset_type": "rendered_image_or_browse_preview",
+      "permitted_audit_use": "Visual context only; do not sample image colors as measurements.",
+      "source_references": [
+        {
+          "manifest": "data/manifests/core_target_data_manifest.csv",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/SRTMGL1.003/N36W117.SRTMGL1.hgt/N36W117.SRTMGL1.2.jpg",
+          "label": "NASA SRTM GL1 browse tile",
+          "notes": "one-degree browse image",
+          "path_match_status": "UNIQUE_BASENAME_MATCH_PATH_DIFFERS"
+        },
+        {
+          "manifest": "data/manifests/download_manifest.csv",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/SRTMGL1.003/N36W117.SRTMGL1.hgt/N36W117.SRTMGL1.2.jpg",
+          "label": "NASA SRTM GL1 browse tile",
+          "notes": "30 m-class browse image for tile N36W117",
+          "path_match_status": "UNIQUE_BASENAME_MATCH_PATH_DIFFERS"
+        }
+      ],
+      "source_reference_status": "RECORDED_IN_MANIFEST"
+    },
+    {
+      "path": "data/earth/S24W070.hgt",
+      "bytes": 25934402,
+      "sha256": "4b87e2416670a507f7fe92eff71824a86b3e9310ba94191b6914071cda602e0a",
+      "asset_type": "quantitative_raster_candidate",
+      "permitted_audit_use": "Potential numeric SRTM terrain source; requires approved spatial extent, metadata/provenance, and QA before sampling.",
+      "source_references": [],
+      "source_reference_status": "NOT_RECORDED_IN_SUPPLIED_MANIFESTS",
+      "format_size_check": {
+        "expected_bytes_for_srtm1_layout": 25934402,
+        "matches_srtm1_layout_size": true,
+        "product_format_reference": {
+          "citation": "NASA SRTM Collection User Guide, revised October 2015",
+          "url": "https://lpdaac.usgs.gov/documents/179/SRTM_User_Guide_V3.pdf",
+          "supports": "SRTM1 tiles have 3,601 rows by 3,601 samples; HGT uses 2-byte signed integer samples."
+        },
+        "limitation": "A matching byte count is only a format-size consistency check; it does not verify this file's dataset version, units, void-fill lineage, or download provenance."
+      }
+    },
+    {
+      "path": "data/earth/S24W070.SRTMGL1.2.jpg",
+      "bytes": 216770,
+      "sha256": "a1c0d46475b727fc2c4f55d2103173356ae23ea8d2fa91842a475f8cdfea4589",
+      "asset_type": "rendered_image_or_browse_preview",
+      "permitted_audit_use": "Visual context only; do not sample image colors as measurements.",
+      "source_references": [
+        {
+          "manifest": "data/manifests/core_target_data_manifest.csv",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/SRTMGL1.003/S24W070.SRTMGL1.hgt/S24W070.SRTMGL1.2.jpg",
+          "label": "NASA SRTM GL1 browse tile",
+          "notes": "one-degree browse image",
+          "path_match_status": "UNIQUE_BASENAME_MATCH_PATH_DIFFERS"
+        },
+        {
+          "manifest": "data/manifests/download_manifest.csv",
+          "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/SRTMGL1.003/S24W070.SRTMGL1.hgt/S24W070.SRTMGL1.2.jpg",
+          "label": "NASA SRTM GL1 browse tile",
+          "notes": "30 m-class browse image for tile S24W070",
+          "path_match_status": "UNIQUE_BASENAME_MATCH_PATH_DIFFERS"
+        }
+      ],
+      "source_reference_status": "RECORDED_IN_MANIFEST"
+    },
+    {
+      "path": "data/moon/lola_kaguya_hillshade_metadata.html",
+      "bytes": 6820,
+      "sha256": "18b26db679657b4a10970968fac5a6a3dbf4a2b799e169d4b195a1be166cfc26",
+      "asset_type": "catalog_or_documentation",
+      "permitted_audit_use": "Metadata/reference; not a quantitative measurement raster.",
+      "source_references": [],
+      "source_reference_status": "NOT_RECORDED_IN_SUPPLIED_MANIFESTS"
+    },
+    {
+      "path": "data/moon/lro_instruments.html",
+      "bytes": 314315,
+      "sha256": "3a2d196fd0e7f32abcfdaf5686c41b71c8e7ab39df855a3d880aeea1293e8729",
+      "asset_type": "catalog_or_documentation",
+      "permitted_audit_use": "Metadata/reference; not a quantitative measurement raster.",
+      "source_references": [],
+      "source_reference_status": "NOT_RECORDED_IN_SUPPLIED_MANIFESTS"
+    },
+    {
+      "path": "data/moon/lro_nac_south_pole_metadata.html",
+      "bytes": 88950,
+      "sha256": "0e731920bbc881072fb23c1fbdffa3e2ab441a8191f28c21abddcde1fc14aecc",
+      "asset_type": "catalog_or_documentation",
+      "permitted_audit_use": "Metadata/reference; not a quantitative measurement raster.",
+      "source_references": [],
+      "source_reference_status": "NOT_RECORDED_IN_SUPPLIED_MANIFESTS"
+    },
+    {
+      "path": "data/moon/malapert_lola_color_hillshade.png",
+      "bytes": 27612,
+      "sha256": "59f7b2ea7676926569e19717d512317d903c0e156dcb1ec13d6c652cbf7686b6",
+      "asset_type": "rendered_image_or_browse_preview",
+      "permitted_audit_use": "Visual context only; do not sample image colors as measurements.",
+      "source_references": [
+        {
+          "manifest": "data/manifests/core_target_data_manifest.csv",
+          "url": "https://trek.nasa.gov/tiles/Moon/SP/Site23_final_adj_5mpp_ColorHillshade/thumbnail/Site23_final_adj_5mpp_ColorHillshade-120.png",
+          "label": "LRO LOLA Color Hillshade 5mpp",
+          "notes": "regional preview map",
+          "path_match_status": "UNIQUE_BASENAME_MATCH_PATH_DIFFERS"
+        }
+      ],
+      "source_reference_status": "RECORDED_IN_MANIFEST"
+    },
+    {
+      "path": "data/moon/malapert_lola_color_slope.png",
+      "bytes": 42555,
+      "sha256": "53cd0b29d76363745ac133eda3341e7986797dd5272b7b822cedae7b7bcf06e9",
+      "asset_type": "rendered_image_or_browse_preview",
+      "permitted_audit_use": "Visual context only; do not sample image colors as measurements.",
+      "source_references": [
+        {
+          "manifest": "data/manifests/core_target_data_manifest.csv",
+          "url": "https://trek.nasa.gov/tiles/Moon/SP/Site23_final_adj_5mpp_ColorSlope/thumbnail/Site23_final_adj_5mpp_ColorSlope-120.png",
+          "label": "LRO LOLA Color Slope 5mpp",
+          "notes": "regional preview map",
+          "path_match_status": "UNIQUE_BASENAME_MATCH_PATH_DIFFERS"
+        }
+      ],
+      "source_reference_status": "RECORDED_IN_MANIFEST"
+    },
+    {
+      "path": "data/moon/malapert_lroc_dem_slope.png",
+      "bytes": 40928,
+      "sha256": "23332609a9a1256d465a06464a1375ad2ff30f3248566e61ff14ab6667c14d01",
+      "asset_type": "rendered_image_or_browse_preview",
+      "permitted_audit_use": "Visual context only; do not sample image colors as measurements.",
+      "source_references": [
+        {
+          "manifest": "data/manifests/core_target_data_manifest.csv",
+          "url": "https://trek.nasa.gov/tiles/Moon/SP/LRO_NAC_Slope_86S356E_3mp/thumbnail/LRO_NAC_Slope_86S356E_3mp-120.png",
+          "label": "LROC DEM Colorized Slope 3mpp",
+          "notes": "regional preview map",
+          "path_match_status": "UNIQUE_BASENAME_MATCH_PATH_DIFFERS"
+        }
+      ],
+      "source_reference_status": "RECORDED_IN_MANIFEST"
+    },
+    {
+      "path": "data/moon/moon_trek.html",
+      "bytes": 8027,
+      "sha256": "1707844db86e37d997b1ff4797db02a6bbb12082bb7af582d4de919759d6a0cf",
+      "asset_type": "catalog_or_documentation",
+      "permitted_audit_use": "Metadata/reference; not a quantitative measurement raster.",
+      "source_references": [],
+      "source_reference_status": "NOT_RECORDED_IN_SUPPLIED_MANIFESTS"
+    },
+    {
+      "path": "data/moon/moon_trek_api.html",
+      "bytes": 4312,
+      "sha256": "7ff5aea6018ea8e4184e12c84ad456c05033dc01d3794b8c07eac1026aa1d190",
+      "asset_type": "catalog_or_documentation",
+      "permitted_audit_use": "Metadata/reference; not a quantitative measurement raster.",
+      "source_references": [],
+      "source_reference_status": "NOT_RECORDED_IN_SUPPLIED_MANIFESTS"
+    },
+    {
+      "path": "data/moon/moon_trek_polar_layers.json",
+      "bytes": 1492574,
+      "sha256": "f41c30df38e60342f48d507c61867902483b2da4aa21fae7013805197d8d29ca",
+      "asset_type": "catalog_or_documentation",
+      "permitted_audit_use": "Metadata/reference; not a quantitative measurement raster.",
+      "source_references": [],
+      "source_reference_status": "NOT_RECORDED_IN_SUPPLIED_MANIFESTS"
+    },
+    {
+      "path": "data/moon/shackleton_lola_color_hillshade.png",
+      "bytes": 24770,
+      "sha256": "7256e9ef74462c699b946e68bbb830a6216210c0df12a96a33b72299e4bf19fc",
+      "asset_type": "rendered_image_or_browse_preview",
+      "permitted_audit_use": "Visual context only; do not sample image colors as measurements.",
+      "source_references": [
+        {
+          "manifest": "data/manifests/core_target_data_manifest.csv",
+          "url": "https://trek.nasa.gov/tiles/Moon/SP/Site04_final_adj_5mpp_ColorHillshade/thumbnail/Site04_final_adj_5mpp_ColorHillshade-120.png",
+          "label": "LRO LOLA Color Hillshade 5mpp",
+          "notes": "regional preview map",
+          "path_match_status": "UNIQUE_BASENAME_MATCH_PATH_DIFFERS"
+        }
+      ],
+      "source_reference_status": "RECORDED_IN_MANIFEST"
+    },
+    {
+      "path": "data/moon/shackleton_lola_color_slope.png",
+      "bytes": 38730,
+      "sha256": "7a59cdc0b9153954c4095df8052451bc9c06ca93c3934ad3cb247c6dccac1bc0",
+      "asset_type": "rendered_image_or_browse_preview",
+      "permitted_audit_use": "Visual context only; do not sample image colors as measurements.",
+      "source_references": [
+        {
+          "manifest": "data/manifests/core_target_data_manifest.csv",
+          "url": "https://trek.nasa.gov/tiles/Moon/SP/Site04_final_adj_5mpp_ColorSlope/thumbnail/Site04_final_adj_5mpp_ColorSlope-120.png",
+          "label": "LRO LOLA Color Slope 5mpp",
+          "notes": "regional preview map",
+          "path_match_status": "UNIQUE_BASENAME_MATCH_PATH_DIFFERS"
+        }
+      ],
+      "source_reference_status": "RECORDED_IN_MANIFEST"
+    },
+    {
+      "path": "data/moon/shackleton_lola_slope_service.json",
+      "bytes": 668,
+      "sha256": "e82c6f56959e6dc18e1fa6bea220ba30f792219bdb49ead63c5ba1d39d668a70",
+      "asset_type": "catalog_or_documentation",
+      "permitted_audit_use": "Metadata/reference; not a quantitative measurement raster.",
+      "source_references": [],
+      "source_reference_status": "NOT_RECORDED_IN_SUPPLIED_MANIFESTS"
+    },
+    {
+      "path": "data/moon/shackleton_lola_slope_wmts_capabilities.xml",
+      "bytes": 7864,
+      "sha256": "9e5f7812839c7f1746d5766ab48572c44cb0fe38940cd7bcc79535f58957d211",
+      "asset_type": "catalog_or_documentation",
+      "permitted_audit_use": "Metadata/reference; not a quantitative measurement raster.",
+      "source_references": [],
+      "source_reference_status": "NOT_RECORDED_IN_SUPPLIED_MANIFESTS"
+    },
+    {
+      "path": "data/moon/trekApi_moon.js",
+      "bytes": 5952,
+      "sha256": "038b6ab9e3fc3ffded6c18e69a3fdba2b792708b5efc7a1b4b4f5500cf4a173a",
+      "asset_type": "catalog_or_documentation",
+      "permitted_audit_use": "Metadata/reference; not a quantitative measurement raster.",
+      "source_references": [],
+      "source_reference_status": "NOT_RECORDED_IN_SUPPLIED_MANIFESTS"
+    },
+    {
+      "path": "data/mars/ctx_global_wmts_capabilities.xml",
+      "bytes": 8057,
+      "sha256": "16919bec258e3292e07f4a1b42d9d847accc929a0d93fa6cb0989b2ba50aafcf",
+      "asset_type": "catalog_or_documentation",
+      "permitted_audit_use": "Metadata/reference; not a quantitative measurement raster.",
+      "source_references": [],
+      "source_reference_status": "NOT_RECORDED_IN_SUPPLIED_MANIFESTS"
+    },
+    {
+      "path": "data/mars/hirise_global_wmts_capabilities.xml",
+      "bytes": 9633,
+      "sha256": "f58d4e64a9fed5d91bba6dd8867c75ff0117fdacf87aad6101d0bffcaa0c4804",
+      "asset_type": "catalog_or_documentation",
+      "permitted_audit_use": "Metadata/reference; not a quantitative measurement raster.",
+      "source_references": [],
+      "source_reference_status": "NOT_RECORDED_IN_SUPPLIED_MANIFESTS"
+    },
+    {
+      "path": "data/mars/jezero_ctx_global_mosaic.png",
+      "bytes": 15869,
+      "sha256": "722bfd625444a2f538b10dafb685267466087d650e099cb713015bbf2a1a51ac",
+      "asset_type": "rendered_image_or_browse_preview",
+      "permitted_audit_use": "Visual context only; do not sample image colors as measurements.",
+      "source_references": [
+        {
+          "manifest": "data/manifests/core_target_data_manifest.csv",
+          "url": "https://trek.nasa.gov/tiles/Mars/EQ/CTX_beta01_uncontrolled_5m_Caltech/thumbnail/CTX_beta01_uncontrolled_5m_Caltech-120.png",
+          "label": "MRO CTX Global Mosaic",
+          "notes": "global preview map",
+          "path_match_status": "UNIQUE_BASENAME_MATCH_PATH_DIFFERS"
+        }
+      ],
+      "source_reference_status": "RECORDED_IN_MANIFEST"
+    },
+    {
+      "path": "data/mars/jezero_hirise_global_mosaic.png",
+      "bytes": 16374,
+      "sha256": "75eac1f759009999c4364a195aef6b2dcfcc3e6cc10b7d1a3e1d3a54b599cda0",
+      "asset_type": "rendered_image_or_browse_preview",
+      "permitted_audit_use": "Visual context only; do not sample image colors as measurements.",
+      "source_references": [
+        {
+          "manifest": "data/manifests/core_target_data_manifest.csv",
+          "url": "https://trek.nasa.gov/tiles/Mars/EQ/HiRISE_Global/thumbnail/HiRISE_Global-120.png",
+          "label": "MRO HiRISE Global Mosaic",
+          "notes": "global preview map",
+          "path_match_status": "UNIQUE_BASENAME_MATCH_PATH_DIFFERS"
+        }
+      ],
+      "source_reference_status": "RECORDED_IN_MANIFEST"
+    },
+    {
+      "path": "data/mars/jezero_mola_hillshade.png",
+      "bytes": 38224,
+      "sha256": "caf321f75efaa6a5d429b875719820de09125aad3e8f45f03c0cdb2c397a9566",
+      "asset_type": "rendered_image_or_browse_preview",
+      "permitted_audit_use": "Visual context only; do not sample image colors as measurements.",
+      "source_references": [
+        {
+          "manifest": "data/manifests/core_target_data_manifest.csv",
+          "url": "https://trek.nasa.gov/tiles/Mars/EQ/Mars_MGS_MOLA_ClrShade_merge_global_463m/thumbnail/Mars_MGS_MOLA_ClrShade_merge_global_463m-120.png",
+          "label": "MGS MOLA Global Color Hillshade",
+          "notes": "global preview map",
+          "path_match_status": "UNIQUE_BASENAME_MATCH_PATH_DIFFERS"
+        }
+      ],
+      "source_reference_status": "RECORDED_IN_MANIFEST"
+    },
+    {
+      "path": "data/mars/jezero_mola_hillshade_z6_r25_c91.jpg",
+      "bytes": 77622,
+      "sha256": "01c9150142af2d2c4366fbfd1d27054f2c365f222439126c5467a36d911c6212",
+      "asset_type": "rendered_image_or_browse_preview",
+      "permitted_audit_use": "Visual context only; do not sample image colors as measurements.",
+      "source_references": [
+        {
+          "manifest": "data/manifests/core_target_data_manifest.csv",
+          "url": "https://trek.nasa.gov/tiles/Mars/EQ/Mars_MGS_MOLA_ClrShade_merge_global_463m/1.0.0/default/default028mm/6/25/91.jpg",
+          "label": "MGS MOLA regional tile",
+          "notes": "regional map tile centered on Jezero",
+          "path_match_status": "UNIQUE_BASENAME_MATCH_PATH_DIFFERS"
+        }
+      ],
+      "source_reference_status": "RECORDED_IN_MANIFEST"
+    },
+    {
+      "path": "data/mars/jezero_mola_roughness.png",
+      "bytes": 38099,
+      "sha256": "6e9bee58677509cad233995482814a92f4d7b537c26c4f866f4cf07ec06cf246",
+      "asset_type": "rendered_image_or_browse_preview",
+      "permitted_audit_use": "Visual context only; do not sample image colors as measurements.",
+      "source_references": [
+        {
+          "manifest": "data/manifests/core_target_data_manifest.csv",
+          "url": "https://trek.nasa.gov/tiles/Mars/EQ/mola_roughness/thumbnail/mola_roughness-120.png",
+          "label": "MGS MOLA Global Surface Roughness",
+          "notes": "global preview map",
+          "path_match_status": "UNIQUE_BASENAME_MATCH_PATH_DIFFERS"
+        }
+      ],
+      "source_reference_status": "RECORDED_IN_MANIFEST"
+    },
+    {
+      "path": "data/mars/jezero_mola_roughness_z1_r0_c2.png",
+      "bytes": 168921,
+      "sha256": "ef4e829f6874177d32ebbcaf435f7eeaa8ddcb9f5a5e553db827a77398631ee8",
+      "asset_type": "rendered_image_or_browse_preview",
+      "permitted_audit_use": "Visual context only; do not sample image colors as measurements.",
+      "source_references": [
+        {
+          "manifest": "data/manifests/core_target_data_manifest.csv",
+          "url": "https://trek.nasa.gov/tiles/Mars/EQ/mola_roughness/1.0.0/default/default028mm/1/0/2.png",
+          "label": "MGS MOLA roughness regional tile",
+          "notes": "available-resolution tile centered on Jezero",
+          "path_match_status": "UNIQUE_BASENAME_MATCH_PATH_DIFFERS"
+        }
+      ],
+      "source_reference_status": "RECORDED_IN_MANIFEST"
+    },
+    {
+      "path": "data/mars/jezero_tes_dust.png",
+      "bytes": 38761,
+      "sha256": "41da428d5d4cc4a4502a43d6167dd09436f5d31592980e1a50e79d858b7ef0c5",
+      "asset_type": "rendered_image_or_browse_preview",
+      "permitted_audit_use": "Visual context only; do not sample image colors as measurements.",
+      "source_references": [
+        {
+          "manifest": "data/manifests/core_target_data_manifest.csv",
+          "url": "https://trek.nasa.gov/tiles/Mars/EQ/TES_Dust/thumbnail/TES_Dust-120.png",
+          "label": "MGS TES Global Dust",
+          "notes": "global preview map",
+          "path_match_status": "UNIQUE_BASENAME_MATCH_PATH_DIFFERS"
+        }
+      ],
+      "source_reference_status": "RECORDED_IN_MANIFEST"
+    },
+    {
+      "path": "data/mars/jezero_tes_dust_index.png",
+      "bytes": 43218,
+      "sha256": "6132df7bfd6abf4d198dc214c4a7d745ce64b1326a48022e9cc6fac5dce1d15e",
+      "asset_type": "rendered_image_or_browse_preview",
+      "permitted_audit_use": "Visual context only; do not sample image colors as measurements.",
+      "source_references": [
+        {
+          "manifest": "data/manifests/core_target_data_manifest.csv",
+          "url": "https://trek.nasa.gov/tiles/Mars/EQ/tes_ruffdust/thumbnail/tes_ruffdust-120.png",
+          "label": "MGS TES Global Dust Index",
+          "notes": "global preview map",
+          "path_match_status": "UNIQUE_BASENAME_MATCH_PATH_DIFFERS"
+        }
+      ],
+      "source_reference_status": "RECORDED_IN_MANIFEST"
+    },
+    {
+      "path": "data/mars/jezero_tes_dust_index_z2_r1_c5.png",
+      "bytes": 200844,
+      "sha256": "6616cfd435c66442c036049da4d61364b15a9f18a1de83c8f672ea927ed93681",
+      "asset_type": "rendered_image_or_browse_preview",
+      "permitted_audit_use": "Visual context only; do not sample image colors as measurements.",
+      "source_references": [
+        {
+          "manifest": "data/manifests/core_target_data_manifest.csv",
+          "url": "https://trek.nasa.gov/tiles/Mars/EQ/tes_ruffdust/1.0.0/default/default028mm/2/1/5.png",
+          "label": "MGS TES dust index regional tile",
+          "notes": "available-resolution tile centered on Jezero",
+          "path_match_status": "UNIQUE_BASENAME_MATCH_PATH_DIFFERS"
+        }
+      ],
+      "source_reference_status": "RECORDED_IN_MANIFEST"
+    },
+    {
+      "path": "data/mars/jezero_tes_dust_z1_r0_c2.png",
+      "bytes": 162149,
+      "sha256": "734269663f594bec81ce8629ab08334a4e8c87d8c577ec575155266fdd14a9bb",
+      "asset_type": "rendered_image_or_browse_preview",
+      "permitted_audit_use": "Visual context only; do not sample image colors as measurements.",
+      "source_references": [
+        {
+          "manifest": "data/manifests/core_target_data_manifest.csv",
+          "url": "https://trek.nasa.gov/tiles/Mars/EQ/TES_Dust/1.0.0/default/default028mm/1/0/2.png",
+          "label": "MGS TES dust regional tile",
+          "notes": "available-resolution tile centered on Jezero",
+          "path_match_status": "UNIQUE_BASENAME_MATCH_PATH_DIFFERS"
+        }
+      ],
+      "source_reference_status": "RECORDED_IN_MANIFEST"
+    },
+    {
+      "path": "data/mars/mars_trek.html",
+      "bytes": 2488,
+      "sha256": "13635e1d576bcae4d833fe6f7cb9c338ab05743b1ccafcea2e15e4ffb6d56947",
+      "asset_type": "catalog_or_documentation",
+      "permitted_audit_use": "Metadata/reference; not a quantitative measurement raster.",
+      "source_references": [],
+      "source_reference_status": "NOT_RECORDED_IN_SUPPLIED_MANIFESTS"
+    },
+    {
+      "path": "data/mars/mars_trek_api.html",
+      "bytes": 4312,
+      "sha256": "7ff5aea6018ea8e4184e12c84ad456c05033dc01d3794b8c07eac1026aa1d190",
+      "asset_type": "catalog_or_documentation",
+      "permitted_audit_use": "Metadata/reference; not a quantitative measurement raster.",
+      "source_references": [],
+      "source_reference_status": "NOT_RECORDED_IN_SUPPLIED_MANIFESTS"
+    },
+    {
+      "path": "data/mars/mars_trek_eq_layers.json",
+      "bytes": 336642,
+      "sha256": "b98d3d3db56d29bed481c7e3594deca4e81d43d4bfdda6faf66a47a6f716d324",
+      "asset_type": "catalog_or_documentation",
+      "permitted_audit_use": "Metadata/reference; not a quantitative measurement raster.",
+      "source_references": [],
+      "source_reference_status": "NOT_RECORDED_IN_SUPPLIED_MANIFESTS"
+    },
+    {
+      "path": "data/mars/mola_global_tile.jpg",
+      "bytes": 62976,
+      "sha256": "e6107f23837680f0bacbf7e9d0fc3fb364e897039203eff9c6f2e8af73191856",
+      "asset_type": "rendered_image_or_browse_preview",
+      "permitted_audit_use": "Visual context only; do not sample image colors as measurements.",
+      "source_references": [],
+      "source_reference_status": "NOT_RECORDED_IN_SUPPLIED_MANIFESTS"
+    },
+    {
+      "path": "data/mars/mola_roughness_wmts_capabilities.xml",
+      "bytes": 5158,
+      "sha256": "cc8e386198acf84fd25f8cf242cf7be6a03dc191204f834bef4c6950f4db5f54",
+      "asset_type": "catalog_or_documentation",
+      "permitted_audit_use": "Metadata/reference; not a quantitative measurement raster.",
+      "source_references": [],
+      "source_reference_status": "NOT_RECORDED_IN_SUPPLIED_MANIFESTS"
+    },
+    {
+      "path": "data/mars/mola_wmts_capabilities.xml",
+      "bytes": 7040,
+      "sha256": "2fb4722b5af0417980052354eab806cb9bdea003617548433cec8d8813d8d125",
+      "asset_type": "catalog_or_documentation",
+      "permitted_audit_use": "Metadata/reference; not a quantitative measurement raster.",
+      "source_references": [],
+      "source_reference_status": "NOT_RECORDED_IN_SUPPLIED_MANIFESTS"
+    },
+    {
+      "path": "data/mars/tes_dust_index_wmts_capabilities.xml",
+      "bytes": 5457,
+      "sha256": "b69c9c360eec9fec656e23fb13fad7e4b87d40a3eb1506f2880674febf18855b",
+      "asset_type": "catalog_or_documentation",
+      "permitted_audit_use": "Metadata/reference; not a quantitative measurement raster.",
+      "source_references": [],
+      "source_reference_status": "NOT_RECORDED_IN_SUPPLIED_MANIFESTS"
+    },
+    {
+      "path": "data/mars/tes_dust_wmts_capabilities.xml",
+      "bytes": 5116,
+      "sha256": "12222bdb83a13622ee8d517afbc96798395850bfcdacb8b96845e94522287f1d",
+      "asset_type": "catalog_or_documentation",
+      "permitted_audit_use": "Metadata/reference; not a quantitative measurement raster.",
+      "source_references": [],
+      "source_reference_status": "NOT_RECORDED_IN_SUPPLIED_MANIFESTS"
+    },
+    {
+      "path": "data/mars/trek_api_config.json",
+      "bytes": 10233,
+      "sha256": "0bcadd7ccfd21216d21486c0a630efaff444c8fe02bb51db58b88e44c9fd4079",
+      "asset_type": "catalog_or_documentation",
+      "permitted_audit_use": "Metadata/reference; not a quantitative measurement raster.",
+      "source_references": [],
+      "source_reference_status": "NOT_RECORDED_IN_SUPPLIED_MANIFESTS"
+    },
+    {
+      "path": "data/mars/trekApi_mars.js",
+      "bytes": 5952,
+      "sha256": "038b6ab9e3fc3ffded6c18e69a3fdba2b792708b5efc7a1b4b4f5500cf4a173a",
+      "asset_type": "catalog_or_documentation",
+      "permitted_audit_use": "Metadata/reference; not a quantitative measurement raster.",
+      "source_references": [],
+      "source_reference_status": "NOT_RECORDED_IN_SUPPLIED_MANIFESTS"
+    },
+    {
+      "path": "data/manifests/core_target_data_manifest.csv",
+      "bytes": 4409,
+      "sha256": "8bda0ef696376d6ce03ce897fa2a4a653e3ebfb1bf3f2beceb00ce50f88efe09",
+      "asset_type": "manifest_or_register_candidate",
+      "permitted_audit_use": "Input/reference metadata; register coordinates remain pending approval.",
+      "source_references": [],
+      "source_reference_status": "NOT_RECORDED_IN_SUPPLIED_MANIFESTS"
+    },
+    {
+      "path": "data/manifests/dataset_inventory.csv",
+      "bytes": 3230,
+      "sha256": "2e3a0e8eabb11a4871ccdc8f8987546bc3b4df3fc080925691b6d9db59ea1ad4",
+      "asset_type": "manifest_or_register_candidate",
+      "permitted_audit_use": "Input/reference metadata; register coordinates remain pending approval.",
+      "source_references": [],
+      "source_reference_status": "NOT_RECORDED_IN_SUPPLIED_MANIFESTS"
+    },
+    {
+      "path": "data/manifests/download_manifest.csv",
+      "bytes": 1166,
+      "sha256": "2d2c405e68076cd154c44c55a744414db3abec40f25e23c61c5ff94bcce9f7e9",
+      "asset_type": "manifest_or_register_candidate",
+      "permitted_audit_use": "Input/reference metadata; register coordinates remain pending approval.",
+      "source_references": [],
+      "source_reference_status": "NOT_RECORDED_IN_SUPPLIED_MANIFESTS"
+    },
+    {
+      "path": "data/manifests/README.txt",
+      "bytes": 3248,
+      "sha256": "36ef5da31029b22b90754386a7e059371e71aa76271e4ed7a9c0f795e61f7a0f",
+      "asset_type": "catalog_or_documentation",
+      "permitted_audit_use": "Metadata/reference; not a quantitative measurement raster.",
+      "source_references": [],
+      "source_reference_status": "NOT_RECORDED_IN_SUPPLIED_MANIFESTS"
+    },
+    {
+      "path": "data/manifests/site_targets.csv",
+      "bytes": 608,
+      "sha256": "26edbd501676f416ab4f98ef722c97acb17f83222b1c0cc6be6f72c163543141",
+      "asset_type": "manifest_or_register_candidate",
+      "permitted_audit_use": "Input/reference metadata; register coordinates remain pending approval.",
+      "source_references": [],
+      "source_reference_status": "NOT_RECORDED_IN_SUPPLIED_MANIFESTS"
+    },
+    {
+      "path": "data/raw/challenge_page.html",
+      "bytes": 86016,
+      "sha256": "41cb69477e424108cb7f3ccb77d7f32f19f71a4f49cad393250ec963c8f436ec",
+      "asset_type": "catalog_or_documentation",
+      "permitted_audit_use": "Metadata/reference; not a quantitative measurement raster.",
+      "source_references": [],
+      "source_reference_status": "NOT_RECORDED_IN_SUPPLIED_MANIFESTS"
+    },
+    {
+      "path": "data/raw/mee_lay_complete_analog_data_expanded.xlsx",
+      "bytes": 10805,
+      "sha256": "b0df39afa5495a87f54e1430f031d73c83c9271d35ba6b923084225841ddeed9",
+      "asset_type": "research_workbook_candidate",
+      "permitted_audit_use": "Research candidate; values require provenance review and human approval.",
+      "source_references": [],
+      "source_reference_status": "NOT_RECORDED_IN_SUPPLIED_MANIFESTS"
+    },
+    {
+      "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+      "bytes": 70198,
+      "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+      "asset_type": "research_workbook_candidate",
+      "permitted_audit_use": "Research candidate; values require provenance review and human approval.",
+      "source_references": [],
+      "source_reference_status": "NOT_RECORDED_IN_SUPPLIED_MANIFESTS"
+    },
+    {
+      "path": "data/raw/resources_page.html",
+      "bytes": 66995,
+      "sha256": "104f6c63ca7d2925b342543fd73c453f33036230aa70777da93b6d1b94ff392d",
+      "asset_type": "catalog_or_documentation",
+      "permitted_audit_use": "Metadata/reference; not a quantitative measurement raster.",
+      "source_references": [],
+      "source_reference_status": "NOT_RECORDED_IN_SUPPLIED_MANIFESTS"
+    }
+  ],
+  "duplicate_content_groups": [
+    {
+      "sha256": "7ff5aea6018ea8e4184e12c84ad456c05033dc01d3794b8c07eac1026aa1d190",
+      "paths": [
+        "data/moon/moon_trek_api.html",
+        "data/mars/mars_trek_api.html"
+      ]
+    },
+    {
+      "sha256": "038b6ab9e3fc3ffded6c18e69a3fdba2b792708b5efc7a1b4b4f5500cf4a173a",
+      "paths": [
+        "data/moon/trekApi_moon.js",
+        "data/mars/trekApi_mars.js"
+      ]
+    }
+  ]
+}

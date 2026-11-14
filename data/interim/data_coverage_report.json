@@ -1,0 +1,30 @@
+{
+  "schema_version": "0.1",
+  "report_status": "INPUT_AVAILABILITY_ONLY_SCIENTIFIC_COVERAGE_NOT_COMPUTED",
+  "register": {
+    "planned_earth_sites": 12,
+    "planned_planetary_targets": 4,
+    "approved_coordinates": 0,
+    "pending_human_coordinate_reviews": 16
+  },
+  "pipeline_outputs": {
+    "validated_site_measurements": "NOT_COMPUTED",
+    "validated_target_measurements": "NOT_COMPUTED",
+    "reference_samples": "NOT_COMPUTED",
+    "browser_ready_data_files": 0,
+    "reason": "Coordinates, source/value provenance, and feature definitions require review; this audit did not run spatial processing."
+  },
+  "supplied_asset_counts_by_audit_type": {
+    "rendered_image_or_browse_preview": 26,
+    "quantitative_raster_candidate": 2,
+    "catalog_or_documentation": 23,
+    "manifest_or_register_candidate": 4,
+    "research_workbook_candidate": 2
+  },
+  "provenance_gaps": {
+    "assets_without_manifest_source_reference": 37,
+    "assets_matched_by_unique_basename_but_not_manifest_path": 20
+  },
+  "scientific_feature_coverage": "NOT_ASSESSED",
+  "scoring": "DEFERRED_PENDING_HUMAN_METHOD_APPROVAL"
+}

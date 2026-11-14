@@ -1,0 +1,7 @@
+body,target_name,latitude,longitude,role,primary_official_data_to_download
+Moon,Shackleton Crater Rim,-89.9,0.0,permanent lunar base analog,"LOLA; Diviner; LEND; LAMP; LROC"
+Moon,Malapert Massif,-86.0,0.0,permanent lunar base analog,"LOLA; Diviner; LEND; LAMP; LROC"
+Mars,Jezero Crater,18.4,77.5,Mars target,"MOLA; TES Dust; CRISM; CTX; HiRISE"
+Earth,Atacama Desert,-23.86,-69.13,hyperarid Earth analog,"SRTM; Worldview; EMIT"
+Earth,Death Valley,36.53,-116.93,hot arid Earth analog,"SRTM; Worldview; EMIT"
+Earth,Haughton Crater,75.37,-89.68,Arctic impact-crater analog,"SRTM/DEM; Worldview; surface imagery"

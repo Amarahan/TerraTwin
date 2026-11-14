@@ -1,0 +1,21 @@
+{
+  "responseHeader":{
+    "status":0,
+    "QTime":1,
+    "params":{
+      "q":"item_UUID:1f059911-cece-4136-bacc-1dd8baa3ebbb",
+      "indent":"on",
+      "version":"2.2",
+      "wt":"json"}},
+  "response":{"numFound":1,"start":0,"docs":[
+      {
+        "serviceType":"Mosaic",
+        "endPoint":"https://trek.nasa.gov/tiles/Moon/SP/Site04_final_adj_5mpp_ColorSlope",
+        "protocol":"WMTS",
+        "item_UUID":"1f059911-cece-4136-bacc-1dd8baa3ebbb",
+        "wmts_mode":"rest",
+        "layerId":"Site04_final_adj_5mpp_ColorSlope",
+        "item_DBID":291619,
+        "id":"7e5f1547-1747-49ef-80c2-745be7bf74b5",
+        "_version_":1733822869858680832}]
+  }}

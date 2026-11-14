@@ -1,0 +1,695 @@
+{
+  "schema_version": "0.1",
+  "register_status": "PROVISIONAL_CANDIDATE_NOT_APPROVED",
+  "policy": "Candidate coordinates are preserved verbatim with workbook/CSV provenance. approved_coordinates remains null until human approval. No site or target is removed due to missing coordinates.",
+  "sources": [
+    "data/manifests/site_targets.csv",
+    "data/raw/mee_lay_master_project_data(1).xlsx",
+    "data/raw/mee_lay_complete_analog_data_expanded.xlsx",
+    "docs/TerraTwin_Final_Development_Plan.md (planned site and target scope)"
+  ],
+  "sites": [
+    {
+      "id": "twin-taung-maar-crater",
+      "id_status": "PROVISIONAL_SLUG",
+      "name": "Twin Taung Maar Crater",
+      "body": "Earth",
+      "group": "Featured",
+      "region_candidate": "Myanmar",
+      "register_status": "PROVISIONAL_CANDIDATE",
+      "approved_coordinates": null,
+      "coordinate_status": "PENDING_HUMAN_REVIEW",
+      "coordinate_issue_type": "CONFLICTING_COORDINATE_CANDIDATES",
+      "coordinate_candidates": [
+        {
+          "latitude_raw": "22",
+          "longitude_raw": "95",
+          "coordinate_text_raw": null,
+          "source_file": "data/raw/mee_lay_master_project_data(1).xlsx",
+          "sheet": "Site master",
+          "row": "5",
+          "record_name": "Twin Taung maar crater",
+          "coordinate_specific_source_reference": null,
+          "associated_source_reference": null,
+          "status": "PENDING_HUMAN_REVIEW"
+        },
+        {
+          "latitude_raw": "22.37056",
+          "longitude_raw": "95.01861",
+          "coordinate_text_raw": null,
+          "source_file": "data/raw/mee_lay_master_project_data(1).xlsx",
+          "sheet": "Coordinate check — source coordinate",
+          "row": "6",
+          "record_name": "Twin Taung maar crater",
+          "coordinate_specific_source_reference": "GVP Lower Chindwin field centre (shown on Wikipedia); the Twin Taung lake is east of the Chindwin river",
+          "associated_source_reference": null,
+          "status": "PENDING_HUMAN_REVIEW"
+        },
+        {
+          "latitude_raw": "20.18",
+          "longitude_raw": "94.89",
+          "coordinate_text_raw": null,
+          "source_file": "data/raw/mee_lay_complete_analog_data_expanded.xlsx",
+          "sheet": "Earth Gaps - Rock & Ice",
+          "row": "2",
+          "record_name": "Twin Taung",
+          "coordinate_specific_source_reference": null,
+          "associated_source_reference": "Regional geological mapping; Myanmar volcanic belt references",
+          "status": "PENDING_HUMAN_REVIEW"
+        }
+      ],
+      "nature_of_conflict": "No coordinate row in site_targets.csv. Coordinate candidates differ between workbook sheets; none is selected. Workbook Coordinate check records: GVP Lower Chindwin field centre (shown on Wikipedia); the Twin Taung lake is east of the Chindwin river A workbook coordinate source note is recorded; its linked citation and applicability still require verification and human approval.",
+      "human_decision_required": "Approve a canonical coordinate, authoritative citation, and representative geometry/buffer; preserve this site in the register while pending."
+    },
+    {
+      "id": "letpadaung-monywa-copper-area",
+      "id_status": "PROVISIONAL_SLUG",
+      "name": "Letpadaung / Monywa Copper Area",
+      "body": "Earth",
+      "group": "Featured",
+      "region_candidate": "Myanmar",
+      "register_status": "PROVISIONAL_CANDIDATE",
+      "approved_coordinates": null,
+      "coordinate_status": "PENDING_HUMAN_REVIEW",
+      "coordinate_issue_type": "CONFLICTING_COORDINATE_CANDIDATES",
+      "coordinate_candidates": [
+        {
+          "latitude_raw": "22.1",
+          "longitude_raw": "95",
+          "coordinate_text_raw": null,
+          "source_file": "data/raw/mee_lay_master_project_data(1).xlsx",
+          "sheet": "Site master",
+          "row": "6",
+          "record_name": "Letpadaung copper area",
+          "coordinate_specific_source_reference": null,
+          "associated_source_reference": null,
+          "status": "PENDING_HUMAN_REVIEW"
+        },
+        {
+          "latitude_raw": "21.29",
+          "longitude_raw": "95.16",
+          "coordinate_text_raw": null,
+          "source_file": "data/raw/mee_lay_complete_analog_data_expanded.xlsx",
+          "sheet": "Earth Gaps - Rock & Ice",
+          "row": "3",
+          "record_name": "Letpadaung",
+          "coordinate_specific_source_reference": null,
+          "associated_source_reference": "Myanmar copper-belt geological studies and regional mapping",
+          "status": "PENDING_HUMAN_REVIEW"
+        }
+      ],
+      "nature_of_conflict": "No coordinate row in site_targets.csv. Coordinate candidates differ between workbook sheets; none is selected. Workbook Coordinate check records: No coordinate found; Mitchell 2011 puts Letpadaung 7 km SE of Sabetaung No direct, coordinate-specific source citation is recorded for the candidate coordinate(s).",
+      "human_decision_required": "Approve a canonical coordinate, authoritative citation, and representative geometry/buffer; preserve this site in the register while pending."
+    },
+    {
+      "id": "mount-popa-central-dry-zone",
+      "id_status": "PROVISIONAL_SLUG",
+      "name": "Mount Popa / Central Dry Zone",
+      "body": "Earth",
+      "group": "Featured",
+      "region_candidate": "Myanmar",
+      "register_status": "PROVISIONAL_CANDIDATE",
+      "approved_coordinates": null,
+      "coordinate_status": "PENDING_HUMAN_REVIEW",
+      "coordinate_issue_type": "PROVENANCE_OR_APPROVAL_REQUIRED",
+      "coordinate_candidates": [
+        {
+          "latitude_raw": "20.92",
+          "longitude_raw": "95.25",
+          "coordinate_text_raw": null,
+          "source_file": "data/raw/mee_lay_master_project_data(1).xlsx",
+          "sheet": "Site master",
+          "row": "7",
+          "record_name": "Mount Popa",
+          "coordinate_specific_source_reference": null,
+          "associated_source_reference": null,
+          "status": "PENDING_HUMAN_REVIEW"
+        },
+        {
+          "latitude_raw": "20.92",
+          "longitude_raw": "95.25",
+          "coordinate_text_raw": null,
+          "source_file": "data/raw/mee_lay_master_project_data(1).xlsx",
+          "sheet": "Coordinate check — source coordinate",
+          "row": "7",
+          "record_name": "Mount Popa",
+          "coordinate_specific_source_reference": "GVP Popa (shown on VolcanoDiscovery)",
+          "associated_source_reference": null,
+          "status": "PENDING_HUMAN_REVIEW"
+        },
+        {
+          "latitude_raw": "20.92",
+          "longitude_raw": "95.25",
+          "coordinate_text_raw": null,
+          "source_file": "data/raw/mee_lay_complete_analog_data_expanded.xlsx",
+          "sheet": "Earth Gaps - Rock & Ice",
+          "row": "4",
+          "record_name": "Mount Popa",
+          "coordinate_specific_source_reference": null,
+          "associated_source_reference": "Regional volcanic geology and Mount Popa studies",
+          "status": "PENDING_HUMAN_REVIEW"
+        }
+      ],
+      "nature_of_conflict": "No coordinate row in site_targets.csv. Workbook Coordinate check records: GVP Popa (shown on VolcanoDiscovery) A workbook coordinate source note is recorded; its linked citation and applicability still require verification and human approval.",
+      "human_decision_required": "Approve a canonical coordinate, authoritative citation, and representative geometry/buffer; preserve this site in the register while pending."
+    },
+    {
+      "id": "kawah-ijen",
+      "id_status": "PROVISIONAL_SLUG",
+      "name": "Kawah Ijen",
+      "body": "Earth",
+      "group": "Featured",
+      "region_candidate": "Indonesia",
+      "register_status": "PROVISIONAL_CANDIDATE",
+      "approved_coordinates": null,
+      "coordinate_status": "PENDING_HUMAN_REVIEW",
+      "coordinate_issue_type": "CONFLICTING_COORDINATE_CANDIDATES",
+      "coordinate_candidates": [
+        {
+          "latitude_raw": "-8.058",
+          "longitude_raw": "114.242",
+          "coordinate_text_raw": null,
+          "source_file": "data/raw/mee_lay_master_project_data(1).xlsx",
+          "sheet": "Site master",
+          "row": "8",
+          "record_name": "Kawah Ijen",
+          "coordinate_specific_source_reference": null,
+          "associated_source_reference": null,
+          "status": "PENDING_HUMAN_REVIEW"
+        },
+        {
+          "latitude_raw": "-8.06",
+          "longitude_raw": "114.24",
+          "coordinate_text_raw": null,
+          "source_file": "data/raw/mee_lay_complete_analog_data_expanded.xlsx",
+          "sheet": "Earth Gaps - Rock & Ice",
+          "row": "5",
+          "record_name": "Kawah Ijen",
+          "coordinate_specific_source_reference": null,
+          "associated_source_reference": "Indonesian volcanic and geothermal studies",
+          "status": "PENDING_HUMAN_REVIEW"
+        }
+      ],
+      "nature_of_conflict": "No coordinate row in site_targets.csv. Coordinate candidates differ between workbook sheets; none is selected. Workbook Coordinate check records: No coordinate found; the CSV value was from memory No direct, coordinate-specific source citation is recorded for the candidate coordinate(s).",
+      "human_decision_required": "Approve a canonical coordinate, authoritative citation, and representative geometry/buffer; preserve this site in the register while pending."
+    },
+    {
+      "id": "atacama-desert",
+      "id_status": "PROVISIONAL_SLUG",
+      "name": "Atacama Desert",
+      "body": "Earth",
+      "group": "Benchmark",
+      "region_candidate": "Chile",
+      "register_status": "PROVISIONAL_CANDIDATE",
+      "approved_coordinates": null,
+      "coordinate_status": "PENDING_HUMAN_REVIEW",
+      "coordinate_issue_type": "CONFLICTING_COORDINATE_CANDIDATES",
+      "coordinate_candidates": [
+        {
+          "latitude_raw": "-23.86",
+          "longitude_raw": "-69.13",
+          "coordinate_text_raw": null,
+          "source_file": "data/manifests/site_targets.csv",
+          "sheet": null,
+          "row": "5",
+          "record_name": "Atacama Desert",
+          "coordinate_specific_source_reference": null,
+          "associated_source_reference": "SRTM; Worldview; EMIT",
+          "status": "PENDING_HUMAN_REVIEW"
+        },
+        {
+          "latitude_raw": "-24.1",
+          "longitude_raw": "-70",
+          "coordinate_text_raw": null,
+          "source_file": "data/raw/mee_lay_master_project_data(1).xlsx",
+          "sheet": "Site master",
+          "row": "9",
+          "record_name": "Atacama (Yungay)",
+          "coordinate_specific_source_reference": null,
+          "associated_source_reference": null,
+          "status": "PENDING_HUMAN_REVIEW"
+        },
+        {
+          "latitude_raw": "-23.86",
+          "longitude_raw": "-69.13",
+          "coordinate_text_raw": null,
+          "source_file": "data/raw/mee_lay_complete_analog_data_expanded.xlsx",
+          "sheet": "Earth Gaps - Rock & Ice",
+          "row": "6",
+          "record_name": "Atacama",
+          "coordinate_specific_source_reference": null,
+          "associated_source_reference": "NASA analog-site studies; Chilean geological and desert research",
+          "status": "PENDING_HUMAN_REVIEW"
+        }
+      ],
+      "nature_of_conflict": "CSV and workbook coordinate candidates differ; none is selected. No direct, coordinate-specific source citation is recorded for the candidate coordinate(s).",
+      "human_decision_required": "Approve a canonical coordinate, authoritative citation, and representative geometry/buffer; preserve this site in the register while pending."
+    },
+    {
+      "id": "haughton-crater",
+      "id_status": "PROVISIONAL_SLUG",
+      "name": "Haughton Crater",
+      "body": "Earth",
+      "group": "Benchmark",
+      "region_candidate": "Canada",
+      "register_status": "PROVISIONAL_CANDIDATE",
+      "approved_coordinates": null,
+      "coordinate_status": "PENDING_HUMAN_REVIEW",
+      "coordinate_issue_type": "CONFLICTING_COORDINATE_CANDIDATES",
+      "coordinate_candidates": [
+        {
+          "latitude_raw": "75.37",
+          "longitude_raw": "-89.68",
+          "coordinate_text_raw": null,
+          "source_file": "data/manifests/site_targets.csv",
+          "sheet": null,
+          "row": "7",
+          "record_name": "Haughton Crater",
+          "coordinate_specific_source_reference": null,
+          "associated_source_reference": "SRTM/DEM; Worldview; surface imagery",
+          "status": "PENDING_HUMAN_REVIEW"
+        },
+        {
+          "latitude_raw": "75.4",
+          "longitude_raw": "-89.7",
+          "coordinate_text_raw": null,
+          "source_file": "data/raw/mee_lay_master_project_data(1).xlsx",
+          "sheet": "Site master",
+          "row": "10",
+          "record_name": "Haughton crater",
+          "coordinate_specific_source_reference": null,
+          "associated_source_reference": null,
+          "status": "PENDING_HUMAN_REVIEW"
+        },
+        {
+          "latitude_raw": "75.37",
+          "longitude_raw": "-89.68000000000001",
+          "coordinate_text_raw": null,
+          "source_file": "data/raw/mee_lay_complete_analog_data_expanded.xlsx",
+          "sheet": "Earth Gaps - Rock & Ice",
+          "row": "7",
+          "record_name": "Haughton",
+          "coordinate_specific_source_reference": null,
+          "associated_source_reference": "NASA Haughton-Mars Project; Arctic impact-crater studies",
+          "status": "PENDING_HUMAN_REVIEW"
+        }
+      ],
+      "nature_of_conflict": "CSV and workbook coordinate candidates differ; none is selected. No direct, coordinate-specific source citation is recorded for the candidate coordinate(s).",
+      "human_decision_required": "Approve a canonical coordinate, authoritative citation, and representative geometry/buffer; preserve this site in the register while pending."
+    },
+    {
+      "id": "mcmurdo-dry-valleys",
+      "id_status": "PROVISIONAL_SLUG",
+      "name": "McMurdo Dry Valleys",
+      "body": "Earth",
+      "group": "Benchmark",
+      "region_candidate": "Antarctica",
+      "register_status": "PROVISIONAL_CANDIDATE",
+      "approved_coordinates": null,
+      "coordinate_status": "PENDING_HUMAN_REVIEW",
+      "coordinate_issue_type": "CONFLICTING_COORDINATE_CANDIDATES",
+      "coordinate_candidates": [
+        {
+          "latitude_raw": "-77.5",
+          "longitude_raw": "162",
+          "coordinate_text_raw": null,
+          "source_file": "data/raw/mee_lay_master_project_data(1).xlsx",
+          "sheet": "Site master",
+          "row": "11",
+          "record_name": "McMurdo Dry Valleys",
+          "coordinate_specific_source_reference": null,
+          "associated_source_reference": null,
+          "status": "PENDING_HUMAN_REVIEW"
+        },
+        {
+          "latitude_raw": "-77.84999999999999",
+          "longitude_raw": "166.67",
+          "coordinate_text_raw": null,
+          "source_file": "data/raw/mee_lay_complete_analog_data_expanded.xlsx",
+          "sheet": "Earth Gaps - Rock & Ice",
+          "row": "8",
+          "record_name": "McMurdo",
+          "coordinate_specific_source_reference": null,
+          "associated_source_reference": "US Antarctic Program; McMurdo Dry Valleys research",
+          "status": "PENDING_HUMAN_REVIEW"
+        }
+      ],
+      "nature_of_conflict": "No coordinate row in site_targets.csv. Coordinate candidates differ between workbook sheets; none is selected. No direct, coordinate-specific source citation is recorded for the candidate coordinate(s).",
+      "human_decision_required": "Approve a canonical coordinate, authoritative citation, and representative geometry/buffer; preserve this site in the register while pending."
+    },
+    {
+      "id": "death-valley",
+      "id_status": "PROVISIONAL_SLUG",
+      "name": "Death Valley",
+      "body": "Earth",
+      "group": "Benchmark",
+      "region_candidate": "United States",
+      "register_status": "PROVISIONAL_CANDIDATE",
+      "approved_coordinates": null,
+      "coordinate_status": "PENDING_HUMAN_REVIEW",
+      "coordinate_issue_type": "CONFLICTING_COORDINATE_CANDIDATES",
+      "coordinate_candidates": [
+        {
+          "latitude_raw": "36.53",
+          "longitude_raw": "-116.93",
+          "coordinate_text_raw": null,
+          "source_file": "data/manifests/site_targets.csv",
+          "sheet": null,
+          "row": "6",
+          "record_name": "Death Valley",
+          "coordinate_specific_source_reference": null,
+          "associated_source_reference": "SRTM; Worldview; EMIT",
+          "status": "PENDING_HUMAN_REVIEW"
+        },
+        {
+          "latitude_raw": "36.46",
+          "longitude_raw": "-116.87",
+          "coordinate_text_raw": null,
+          "source_file": "data/raw/mee_lay_master_project_data(1).xlsx",
+          "sheet": "Site master",
+          "row": "12",
+          "record_name": "Death Valley",
+          "coordinate_specific_source_reference": null,
+          "associated_source_reference": null,
+          "status": "PENDING_HUMAN_REVIEW"
+        },
+        {
+          "latitude_raw": "36.53",
+          "longitude_raw": "-116.93",
+          "coordinate_text_raw": null,
+          "source_file": "data/raw/mee_lay_complete_analog_data_expanded.xlsx",
+          "sheet": "Earth Gaps - Rock & Ice",
+          "row": "9",
+          "record_name": "Death Valley",
+          "coordinate_specific_source_reference": null,
+          "associated_source_reference": "USGS Death Valley geology; NASA planetary analog research",
+          "status": "PENDING_HUMAN_REVIEW"
+        }
+      ],
+      "nature_of_conflict": "CSV and workbook coordinate candidates differ; none is selected. No direct, coordinate-specific source citation is recorded for the candidate coordinate(s).",
+      "human_decision_required": "Approve a canonical coordinate, authoritative citation, and representative geometry/buffer; preserve this site in the register while pending."
+    },
+    {
+      "id": "lonar-crater",
+      "id_status": "PROVISIONAL_SLUG",
+      "name": "Lonar Crater",
+      "body": "Earth",
+      "group": "Benchmark",
+      "region_candidate": "India",
+      "register_status": "PROVISIONAL_CANDIDATE",
+      "approved_coordinates": null,
+      "coordinate_status": "PENDING_HUMAN_REVIEW",
+      "coordinate_issue_type": "PROVENANCE_OR_APPROVAL_REQUIRED",
+      "coordinate_candidates": [
+        {
+          "latitude_raw": "19.98",
+          "longitude_raw": "76.51",
+          "coordinate_text_raw": null,
+          "source_file": "data/raw/mee_lay_master_project_data(1).xlsx",
+          "sheet": "Site master",
+          "row": "13",
+          "record_name": "Lonar crater",
+          "coordinate_specific_source_reference": null,
+          "associated_source_reference": null,
+          "status": "PENDING_HUMAN_REVIEW"
+        },
+        {
+          "latitude_raw": "19.98",
+          "longitude_raw": "76.51000000000001",
+          "coordinate_text_raw": null,
+          "source_file": "data/raw/mee_lay_complete_analog_data_expanded.xlsx",
+          "sheet": "Earth Gaps - Rock & Ice",
+          "row": "10",
+          "record_name": "Lonar",
+          "coordinate_specific_source_reference": null,
+          "associated_source_reference": "Lonar impact-crater geological and geochemical studies",
+          "status": "PENDING_HUMAN_REVIEW"
+        }
+      ],
+      "nature_of_conflict": "No coordinate row in site_targets.csv. No direct, coordinate-specific source citation is recorded for the candidate coordinate(s).",
+      "human_decision_required": "Approve a canonical coordinate, authoritative citation, and representative geometry/buffer; preserve this site in the register while pending."
+    },
+    {
+      "id": "amazon-rainforest",
+      "id_status": "PROVISIONAL_SLUG",
+      "name": "Amazon Rainforest",
+      "body": "Earth",
+      "group": "Control",
+      "region_candidate": "Brazil",
+      "register_status": "PROVISIONAL_CANDIDATE",
+      "approved_coordinates": null,
+      "coordinate_status": "PENDING_HUMAN_REVIEW",
+      "coordinate_issue_type": "CONFLICTING_COORDINATE_CANDIDATES",
+      "coordinate_candidates": [
+        {
+          "latitude_raw": "-3",
+          "longitude_raw": "-60",
+          "coordinate_text_raw": null,
+          "source_file": "data/raw/mee_lay_master_project_data(1).xlsx",
+          "sheet": "Site master",
+          "row": "14",
+          "record_name": "Amazon rainforest",
+          "coordinate_specific_source_reference": null,
+          "associated_source_reference": null,
+          "status": "PENDING_HUMAN_REVIEW"
+        },
+        {
+          "latitude_raw": "-3.47",
+          "longitude_raw": "-62.22",
+          "coordinate_text_raw": null,
+          "source_file": "data/raw/mee_lay_complete_analog_data_expanded.xlsx",
+          "sheet": "Earth Gaps - Rock & Ice",
+          "row": "11",
+          "record_name": "Amazon",
+          "coordinate_specific_source_reference": null,
+          "associated_source_reference": "NASA Earthdata; Amazon basin soil and geology studies",
+          "status": "PENDING_HUMAN_REVIEW"
+        }
+      ],
+      "nature_of_conflict": "No coordinate row in site_targets.csv. Coordinate candidates differ between workbook sheets; none is selected. No direct, coordinate-specific source citation is recorded for the candidate coordinate(s).",
+      "human_decision_required": "Approve a canonical coordinate, authoritative citation, and representative geometry/buffer; preserve this site in the register while pending."
+    },
+    {
+      "id": "congo-basin",
+      "id_status": "PROVISIONAL_SLUG",
+      "name": "Congo Basin",
+      "body": "Earth",
+      "group": "Control",
+      "region_candidate": "Africa",
+      "register_status": "PROVISIONAL_CANDIDATE",
+      "approved_coordinates": null,
+      "coordinate_status": "PENDING_HUMAN_REVIEW",
+      "coordinate_issue_type": "CONFLICTING_COORDINATE_CANDIDATES",
+      "coordinate_candidates": [
+        {
+          "latitude_raw": "0",
+          "longitude_raw": "23",
+          "coordinate_text_raw": null,
+          "source_file": "data/raw/mee_lay_master_project_data(1).xlsx",
+          "sheet": "Site master",
+          "row": "15",
+          "record_name": "Congo basin",
+          "coordinate_specific_source_reference": null,
+          "associated_source_reference": null,
+          "status": "PENDING_HUMAN_REVIEW"
+        },
+        {
+          "latitude_raw": "-1.5",
+          "longitude_raw": "23.5",
+          "coordinate_text_raw": null,
+          "source_file": "data/raw/mee_lay_complete_analog_data_expanded.xlsx",
+          "sheet": "Earth Gaps - Rock & Ice",
+          "row": "12",
+          "record_name": "Congo",
+          "coordinate_specific_source_reference": null,
+          "associated_source_reference": "NASA Earthdata; Central African basin geology references",
+          "status": "PENDING_HUMAN_REVIEW"
+        }
+      ],
+      "nature_of_conflict": "No coordinate row in site_targets.csv. Coordinate candidates differ between workbook sheets; none is selected. No direct, coordinate-specific source citation is recorded for the candidate coordinate(s).",
+      "human_decision_required": "Approve a canonical coordinate, authoritative citation, and representative geometry/buffer; preserve this site in the register while pending."
+    },
+    {
+      "id": "irrawaddy-delta-rice-fields",
+      "id_status": "PROVISIONAL_SLUG",
+      "name": "Irrawaddy Delta rice fields",
+      "body": "Earth",
+      "group": "Control",
+      "region_candidate": "Myanmar",
+      "register_status": "PROVISIONAL_CANDIDATE",
+      "approved_coordinates": null,
+      "coordinate_status": "PENDING_HUMAN_REVIEW",
+      "coordinate_issue_type": "CONFLICTING_COORDINATE_CANDIDATES",
+      "coordinate_candidates": [
+        {
+          "latitude_raw": "16.8",
+          "longitude_raw": "95.3",
+          "coordinate_text_raw": null,
+          "source_file": "data/raw/mee_lay_master_project_data(1).xlsx",
+          "sheet": "Site master",
+          "row": "16",
+          "record_name": "Irrawaddy delta rice fields",
+          "coordinate_specific_source_reference": null,
+          "associated_source_reference": null,
+          "status": "PENDING_HUMAN_REVIEW"
+        },
+        {
+          "latitude_raw": "21.95",
+          "longitude_raw": "95.75",
+          "coordinate_text_raw": null,
+          "source_file": "data/raw/mee_lay_complete_analog_data_expanded.xlsx",
+          "sheet": "Earth Gaps - Rock & Ice",
+          "row": "13",
+          "record_name": "Irrawaddy",
+          "coordinate_specific_source_reference": null,
+          "associated_source_reference": "Irrawaddy basin geological mapping and sediment studies",
+          "status": "PENDING_HUMAN_REVIEW"
+        }
+      ],
+      "nature_of_conflict": "No coordinate row in site_targets.csv. Coordinate candidates differ between workbook sheets; none is selected. No direct, coordinate-specific source citation is recorded for the candidate coordinate(s).",
+      "human_decision_required": "Approve a canonical coordinate, authoritative citation, and representative geometry/buffer; preserve this site in the register while pending."
+    }
+  ],
+  "targets": [
+    {
+      "id": "shackleton-crater-rim",
+      "id_status": "PROVISIONAL_SLUG",
+      "name": "Shackleton Crater Rim",
+      "body": "Moon",
+      "register_status": "PROVISIONAL_CANDIDATE",
+      "approved_coordinates": null,
+      "coordinate_status": "PENDING_HUMAN_REVIEW",
+      "coordinate_issue_type": "COORDINATE_TEXT_REQUIRES_REVIEW",
+      "coordinate_candidates": [
+        {
+          "latitude_raw": "-89.9",
+          "longitude_raw": "0.0",
+          "coordinate_text_raw": null,
+          "source_file": "data/manifests/site_targets.csv",
+          "sheet": null,
+          "row": "2",
+          "record_name": "Shackleton Crater Rim",
+          "coordinate_specific_source_reference": null,
+          "associated_source_reference": "LOLA; Diviner; LEND; LAMP; LROC",
+          "status": "PENDING_HUMAN_REVIEW"
+        },
+        {
+          "latitude_raw": null,
+          "longitude_raw": null,
+          "coordinate_text_raw": "89.9°S, 0°E",
+          "source_file": "data/raw/mee_lay_complete_analog_data_expanded.xlsx",
+          "sheet": "Moon Targets",
+          "row": "2",
+          "record_name": "Shackleton Crater Rim",
+          "coordinate_specific_source_reference": null,
+          "associated_source_reference": "USGS, LCROSS/LEND/LAMP",
+          "status": "PENDING_HUMAN_REVIEW"
+        }
+      ],
+      "nature_of_conflict": "Workbook coordinate is retained as original text and has not been parsed or selected. No direct, coordinate-specific source citation is recorded for the candidate coordinate(s).",
+      "human_decision_required": "Approve a canonical coordinate, authoritative coordinate citation, and target geometry; keep this target in the register while pending."
+    },
+    {
+      "id": "malapert-massif",
+      "id_status": "PROVISIONAL_SLUG",
+      "name": "Malapert Massif",
+      "body": "Moon",
+      "register_status": "PROVISIONAL_CANDIDATE",
+      "approved_coordinates": null,
+      "coordinate_status": "PENDING_HUMAN_REVIEW",
+      "coordinate_issue_type": "COORDINATE_TEXT_REQUIRES_REVIEW",
+      "coordinate_candidates": [
+        {
+          "latitude_raw": "-86.0",
+          "longitude_raw": "0.0",
+          "coordinate_text_raw": null,
+          "source_file": "data/manifests/site_targets.csv",
+          "sheet": null,
+          "row": "3",
+          "record_name": "Malapert Massif",
+          "coordinate_specific_source_reference": null,
+          "associated_source_reference": "LOLA; Diviner; LEND; LAMP; LROC",
+          "status": "PENDING_HUMAN_REVIEW"
+        },
+        {
+          "latitude_raw": null,
+          "longitude_raw": null,
+          "coordinate_text_raw": "86°S, 0°E",
+          "source_file": "data/raw/mee_lay_complete_analog_data_expanded.xlsx",
+          "sheet": "Moon Targets",
+          "row": "3",
+          "record_name": "Malapert Massif",
+          "coordinate_specific_source_reference": null,
+          "associated_source_reference": "NASA LRO LOLA, Diviner",
+          "status": "PENDING_HUMAN_REVIEW"
+        }
+      ],
+      "nature_of_conflict": "Workbook coordinate is retained as original text and has not been parsed or selected. No direct, coordinate-specific source citation is recorded for the candidate coordinate(s).",
+      "human_decision_required": "Approve a canonical coordinate, authoritative coordinate citation, and target geometry; keep this target in the register while pending."
+    },
+    {
+      "id": "jezero-crater",
+      "id_status": "PROVISIONAL_SLUG",
+      "name": "Jezero Crater",
+      "body": "Mars",
+      "register_status": "PROVISIONAL_CANDIDATE",
+      "approved_coordinates": null,
+      "coordinate_status": "PENDING_HUMAN_REVIEW",
+      "coordinate_issue_type": "COORDINATE_TEXT_REQUIRES_REVIEW",
+      "coordinate_candidates": [
+        {
+          "latitude_raw": "18.4",
+          "longitude_raw": "77.5",
+          "coordinate_text_raw": null,
+          "source_file": "data/manifests/site_targets.csv",
+          "sheet": null,
+          "row": "4",
+          "record_name": "Jezero Crater",
+          "coordinate_specific_source_reference": null,
+          "associated_source_reference": "MOLA; TES Dust; CRISM; CTX; HiRISE",
+          "status": "PENDING_HUMAN_REVIEW"
+        },
+        {
+          "latitude_raw": null,
+          "longitude_raw": null,
+          "coordinate_text_raw": "18.4°N, 77.5°E",
+          "source_file": "data/raw/mee_lay_complete_analog_data_expanded.xlsx",
+          "sheet": "Mars Targets",
+          "row": "2",
+          "record_name": "Jezero Crater",
+          "coordinate_specific_source_reference": null,
+          "associated_source_reference": "CRISM, USGS SIM 3292",
+          "status": "PENDING_HUMAN_REVIEW"
+        }
+      ],
+      "nature_of_conflict": "Workbook coordinate is retained as original text and has not been parsed or selected. No direct, coordinate-specific source citation is recorded for the candidate coordinate(s).",
+      "human_decision_required": "Approve a canonical coordinate, authoritative coordinate citation, and target geometry; keep this target in the register while pending."
+    },
+    {
+      "id": "meridiani-planum",
+      "id_status": "PROVISIONAL_SLUG",
+      "name": "Meridiani Planum",
+      "body": "Mars",
+      "register_status": "PROVISIONAL_CANDIDATE",
+      "approved_coordinates": null,
+      "coordinate_status": "PENDING_HUMAN_REVIEW",
+      "coordinate_issue_type": "COORDINATE_TEXT_REQUIRES_REVIEW",
+      "coordinate_candidates": [
+        {
+          "latitude_raw": null,
+          "longitude_raw": null,
+          "coordinate_text_raw": "1.9°S, 354.5°E",
+          "source_file": "data/raw/mee_lay_complete_analog_data_expanded.xlsx",
+          "sheet": "Mars Targets",
+          "row": "3",
+          "record_name": "Meridiani Planum",
+          "coordinate_specific_source_reference": null,
+          "associated_source_reference": "Opportunity rover, USGS",
+          "status": "PENDING_HUMAN_REVIEW"
+        }
+      ],
+      "nature_of_conflict": "No coordinate row in site_targets.csv. Workbook coordinate is retained as original text and has not been parsed or selected. No direct, coordinate-specific source citation is recorded for the candidate coordinate(s).",
+      "human_decision_required": "Approve a canonical coordinate, authoritative coordinate citation, and target geometry; keep this target in the register while pending."
+    }
+  ]
+}

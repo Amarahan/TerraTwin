@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Production build outputs
+dist/
+*/dist/
+
+# Raw large unverified binary rasters
+*.hgt
+
+# Python bytecode and caches
+__pycache__/
+*/__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Environment files and credentials
+.env
+.env.*
+*.local
+credentials.json
+*.pem
+*.key
+
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor directories and caches
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs and temporary files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.tmp/
+tmp/

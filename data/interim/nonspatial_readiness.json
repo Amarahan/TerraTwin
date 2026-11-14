@@ -1,0 +1,624 @@
+{
+  "schema_version": "0.1",
+  "scope": "non-spatial P1 readiness; no coordinate-based coverage claims",
+  "local_srtm_guide": {
+    "path": "docs/references/SRTM_User_Guide_V3.pdf",
+    "present": false,
+    "status": "NOT_PRESENT; official LP DAAC web copy consulted for format specification",
+    "official_web_reference": "https://lpdaac.usgs.gov/documents/179/SRTM_User_Guide_V3.pdf"
+  },
+  "hgt_files": [
+    {
+      "path": "data/earth/N36W117.hgt",
+      "file_size_bytes": 25934402,
+      "sha256": "39e78219fff01f273e143c25511a2f1cfbfdf9632aec581fa00d571fba48028f",
+      "expected_srtmgl1_bytes": 25934402,
+      "expected_srtmgl3_bytes": 2884802,
+      "matches_srtmgl1_size": true,
+      "matches_srtmgl3_size": false,
+      "size_consistent_layout": "SRTMGL1_3601x3601",
+      "interpreted_as_signed_16_bit_big_endian": true,
+      "interpreted_sample_count": 12967201,
+      "big_endian_interpreted_min_meters": -130,
+      "big_endian_interpreted_max_meters": 2170,
+      "count_of_minus_32768_samples": 0,
+      "exact_product_version": "UNVERIFIED",
+      "download_origin": "UNVERIFIED",
+      "source_provenance": "UNVERIFIED: HGT file is not listed in the supplied local-file manifests; nearby browse-image records do not establish this file's lineage.",
+      "format_claims_from_guide": {
+        "sample_type": "two-byte (16-bit) signed integer",
+        "byte_order": "Motorola big-endian",
+        "row_order": "row-major; northernmost row first",
+        "header_or_trailer": "none embedded per guide format specification",
+        "elevation_unit_and_reference": "meters referenced to the WGS84/EGM96 geoid (guide wording)",
+        "void_value_by_version": {
+          "versions_1_0_and_2_1": -32768,
+          "version_3_0": "guide states no voids",
+          "applied_to_this_file": "UNVERIFIED until exact version is established"
+        }
+      },
+      "format_check_limitations": "A matching byte count is consistent with a documented SRTM layout, but does not identify dataset version, product lineage, datum realization, download origin, actual endian semantics, or prove that no bytes were replaced in the grid payload. Samples are reported as read-only big-endian interpretations; no values were transformed or used spatially."
+    },
+    {
+      "path": "data/earth/S24W070.hgt",
+      "file_size_bytes": 25934402,
+      "sha256": "4b87e2416670a507f7fe92eff71824a86b3e9310ba94191b6914071cda602e0a",
+      "expected_srtmgl1_bytes": 25934402,
+      "expected_srtmgl3_bytes": 2884802,
+      "matches_srtmgl1_size": true,
+      "matches_srtmgl3_size": false,
+      "size_consistent_layout": "SRTMGL1_3601x3601",
+      "interpreted_as_signed_16_bit_big_endian": true,
+      "interpreted_sample_count": 12967201,
+      "big_endian_interpreted_min_meters": 618,
+      "big_endian_interpreted_max_meters": 3389,
+      "count_of_minus_32768_samples": 0,
+      "exact_product_version": "UNVERIFIED",
+      "download_origin": "UNVERIFIED",
+      "source_provenance": "UNVERIFIED: HGT file is not listed in the supplied local-file manifests; nearby browse-image records do not establish this file's lineage.",
+      "format_claims_from_guide": {
+        "sample_type": "two-byte (16-bit) signed integer",
+        "byte_order": "Motorola big-endian",
+        "row_order": "row-major; northernmost row first",
+        "header_or_trailer": "none embedded per guide format specification",
+        "elevation_unit_and_reference": "meters referenced to the WGS84/EGM96 geoid (guide wording)",
+        "void_value_by_version": {
+          "versions_1_0_and_2_1": -32768,
+          "version_3_0": "guide states no voids",
+          "applied_to_this_file": "UNVERIFIED until exact version is established"
+        }
+      },
+      "format_check_limitations": "A matching byte count is consistent with a documented SRTM layout, but does not identify dataset version, product lineage, datum realization, download origin, actual endian semantics, or prove that no bytes were replaced in the grid payload. Samples are reported as read-only big-endian interpretations; no values were transformed or used spatially."
+    }
+  ],
+  "asset_summary": {
+    "file_count": 57,
+    "sha256_recorded_for_each_file": true,
+    "duplicate_content_groups": [
+      {
+        "sha256": "7ff5aea6018ea8e4184e12c84ad456c05033dc01d3794b8c07eac1026aa1d190",
+        "paths": [
+          "data/moon/moon_trek_api.html",
+          "data/mars/mars_trek_api.html"
+        ]
+      },
+      {
+        "sha256": "038b6ab9e3fc3ffded6c18e69a3fdba2b792708b5efc7a1b4b4f5500cf4a173a",
+        "paths": [
+          "data/moon/trekApi_moon.js",
+          "data/mars/trekApi_mars.js"
+        ]
+      }
+    ],
+    "asset_type_counts": {
+      "catalog_or_documentation": 23,
+      "manifest_or_register_candidate": 4,
+      "quantitative_raster_candidate": 2,
+      "rendered_image_or_browse_preview": 26,
+      "research_workbook_candidate": 2
+    }
+  },
+  "manifest_reconciliation": {
+    "manifest_files_preserved": [
+      "data/manifests/core_target_data_manifest.csv",
+      "data/manifests/download_manifest.csv"
+    ],
+    "entry_count": 23,
+    "counts_by_status": {
+      "UNIQUE_BASENAME_PATH_MISMATCH": 23
+    },
+    "rows": [
+      {
+        "manifest": "data/manifests/core_target_data_manifest.csv",
+        "manifest_row": 2,
+        "expected_local_file": "data/moon/trek_target_layers/shackleton_lola_color_hillshade.png",
+        "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+        "actual_path_candidates": [
+          "data/moon/shackleton_lola_color_hillshade.png"
+        ],
+        "source_url": "https://trek.nasa.gov/tiles/Moon/SP/Site04_final_adj_5mpp_ColorHillshade/thumbnail/Site04_final_adj_5mpp_ColorHillshade-120.png",
+        "dataset_or_layer": "LRO LOLA Color Hillshade 5mpp",
+        "notes": "regional preview map"
+      },
+      {
+        "manifest": "data/manifests/core_target_data_manifest.csv",
+        "manifest_row": 3,
+        "expected_local_file": "data/moon/trek_target_layers/shackleton_lola_color_slope.png",
+        "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+        "actual_path_candidates": [
+          "data/moon/shackleton_lola_color_slope.png"
+        ],
+        "source_url": "https://trek.nasa.gov/tiles/Moon/SP/Site04_final_adj_5mpp_ColorSlope/thumbnail/Site04_final_adj_5mpp_ColorSlope-120.png",
+        "dataset_or_layer": "LRO LOLA Color Slope 5mpp",
+        "notes": "regional preview map"
+      },
+      {
+        "manifest": "data/manifests/core_target_data_manifest.csv",
+        "manifest_row": 4,
+        "expected_local_file": "data/moon/trek_target_layers/malapert_lola_color_hillshade.png",
+        "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+        "actual_path_candidates": [
+          "data/moon/malapert_lola_color_hillshade.png"
+        ],
+        "source_url": "https://trek.nasa.gov/tiles/Moon/SP/Site23_final_adj_5mpp_ColorHillshade/thumbnail/Site23_final_adj_5mpp_ColorHillshade-120.png",
+        "dataset_or_layer": "LRO LOLA Color Hillshade 5mpp",
+        "notes": "regional preview map"
+      },
+      {
+        "manifest": "data/manifests/core_target_data_manifest.csv",
+        "manifest_row": 5,
+        "expected_local_file": "data/moon/trek_target_layers/malapert_lola_color_slope.png",
+        "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+        "actual_path_candidates": [
+          "data/moon/malapert_lola_color_slope.png"
+        ],
+        "source_url": "https://trek.nasa.gov/tiles/Moon/SP/Site23_final_adj_5mpp_ColorSlope/thumbnail/Site23_final_adj_5mpp_ColorSlope-120.png",
+        "dataset_or_layer": "LRO LOLA Color Slope 5mpp",
+        "notes": "regional preview map"
+      },
+      {
+        "manifest": "data/manifests/core_target_data_manifest.csv",
+        "manifest_row": 6,
+        "expected_local_file": "data/moon/trek_target_layers/malapert_lroc_dem_slope.png",
+        "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+        "actual_path_candidates": [
+          "data/moon/malapert_lroc_dem_slope.png"
+        ],
+        "source_url": "https://trek.nasa.gov/tiles/Moon/SP/LRO_NAC_Slope_86S356E_3mp/thumbnail/LRO_NAC_Slope_86S356E_3mp-120.png",
+        "dataset_or_layer": "LROC DEM Colorized Slope 3mpp",
+        "notes": "regional preview map"
+      },
+      {
+        "manifest": "data/manifests/core_target_data_manifest.csv",
+        "manifest_row": 7,
+        "expected_local_file": "data/mars/trek_target_layers/jezero_mola_hillshade.png",
+        "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+        "actual_path_candidates": [
+          "data/mars/jezero_mola_hillshade.png"
+        ],
+        "source_url": "https://trek.nasa.gov/tiles/Mars/EQ/Mars_MGS_MOLA_ClrShade_merge_global_463m/thumbnail/Mars_MGS_MOLA_ClrShade_merge_global_463m-120.png",
+        "dataset_or_layer": "MGS MOLA Global Color Hillshade",
+        "notes": "global preview map"
+      },
+      {
+        "manifest": "data/manifests/core_target_data_manifest.csv",
+        "manifest_row": 8,
+        "expected_local_file": "data/mars/trek_target_layers/jezero_mola_roughness.png",
+        "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+        "actual_path_candidates": [
+          "data/mars/jezero_mola_roughness.png"
+        ],
+        "source_url": "https://trek.nasa.gov/tiles/Mars/EQ/mola_roughness/thumbnail/mola_roughness-120.png",
+        "dataset_or_layer": "MGS MOLA Global Surface Roughness",
+        "notes": "global preview map"
+      },
+      {
+        "manifest": "data/manifests/core_target_data_manifest.csv",
+        "manifest_row": 9,
+        "expected_local_file": "data/mars/trek_target_layers/jezero_tes_dust.png",
+        "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+        "actual_path_candidates": [
+          "data/mars/jezero_tes_dust.png"
+        ],
+        "source_url": "https://trek.nasa.gov/tiles/Mars/EQ/TES_Dust/thumbnail/TES_Dust-120.png",
+        "dataset_or_layer": "MGS TES Global Dust",
+        "notes": "global preview map"
+      },
+      {
+        "manifest": "data/manifests/core_target_data_manifest.csv",
+        "manifest_row": 10,
+        "expected_local_file": "data/mars/trek_target_layers/jezero_tes_dust_index.png",
+        "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+        "actual_path_candidates": [
+          "data/mars/jezero_tes_dust_index.png"
+        ],
+        "source_url": "https://trek.nasa.gov/tiles/Mars/EQ/tes_ruffdust/thumbnail/tes_ruffdust-120.png",
+        "dataset_or_layer": "MGS TES Global Dust Index",
+        "notes": "global preview map"
+      },
+      {
+        "manifest": "data/manifests/core_target_data_manifest.csv",
+        "manifest_row": 11,
+        "expected_local_file": "data/mars/trek_target_layers/jezero_ctx_global_mosaic.png",
+        "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+        "actual_path_candidates": [
+          "data/mars/jezero_ctx_global_mosaic.png"
+        ],
+        "source_url": "https://trek.nasa.gov/tiles/Mars/EQ/CTX_beta01_uncontrolled_5m_Caltech/thumbnail/CTX_beta01_uncontrolled_5m_Caltech-120.png",
+        "dataset_or_layer": "MRO CTX Global Mosaic",
+        "notes": "global preview map"
+      },
+      {
+        "manifest": "data/manifests/core_target_data_manifest.csv",
+        "manifest_row": 12,
+        "expected_local_file": "data/mars/trek_target_layers/jezero_hirise_global_mosaic.png",
+        "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+        "actual_path_candidates": [
+          "data/mars/jezero_hirise_global_mosaic.png"
+        ],
+        "source_url": "https://trek.nasa.gov/tiles/Mars/EQ/HiRISE_Global/thumbnail/HiRISE_Global-120.png",
+        "dataset_or_layer": "MRO HiRISE Global Mosaic",
+        "notes": "global preview map"
+      },
+      {
+        "manifest": "data/manifests/core_target_data_manifest.csv",
+        "manifest_row": 13,
+        "expected_local_file": "data/mars/trek_target_layers/jezero_mola_hillshade_z6_r25_c91.jpg",
+        "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+        "actual_path_candidates": [
+          "data/mars/jezero_mola_hillshade_z6_r25_c91.jpg"
+        ],
+        "source_url": "https://trek.nasa.gov/tiles/Mars/EQ/Mars_MGS_MOLA_ClrShade_merge_global_463m/1.0.0/default/default028mm/6/25/91.jpg",
+        "dataset_or_layer": "MGS MOLA regional tile",
+        "notes": "regional map tile centered on Jezero"
+      },
+      {
+        "manifest": "data/manifests/core_target_data_manifest.csv",
+        "manifest_row": 14,
+        "expected_local_file": "data/mars/trek_target_layers/jezero_mola_roughness_z1_r0_c2.png",
+        "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+        "actual_path_candidates": [
+          "data/mars/jezero_mola_roughness_z1_r0_c2.png"
+        ],
+        "source_url": "https://trek.nasa.gov/tiles/Mars/EQ/mola_roughness/1.0.0/default/default028mm/1/0/2.png",
+        "dataset_or_layer": "MGS MOLA roughness regional tile",
+        "notes": "available-resolution tile centered on Jezero"
+      },
+      {
+        "manifest": "data/manifests/core_target_data_manifest.csv",
+        "manifest_row": 15,
+        "expected_local_file": "data/mars/trek_target_layers/jezero_tes_dust_z1_r0_c2.png",
+        "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+        "actual_path_candidates": [
+          "data/mars/jezero_tes_dust_z1_r0_c2.png"
+        ],
+        "source_url": "https://trek.nasa.gov/tiles/Mars/EQ/TES_Dust/1.0.0/default/default028mm/1/0/2.png",
+        "dataset_or_layer": "MGS TES dust regional tile",
+        "notes": "available-resolution tile centered on Jezero"
+      },
+      {
+        "manifest": "data/manifests/core_target_data_manifest.csv",
+        "manifest_row": 16,
+        "expected_local_file": "data/mars/trek_target_layers/jezero_tes_dust_index_z2_r1_c5.png",
+        "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+        "actual_path_candidates": [
+          "data/mars/jezero_tes_dust_index_z2_r1_c5.png"
+        ],
+        "source_url": "https://trek.nasa.gov/tiles/Mars/EQ/tes_ruffdust/1.0.0/default/default028mm/2/1/5.png",
+        "dataset_or_layer": "MGS TES dust index regional tile",
+        "notes": "available-resolution tile centered on Jezero"
+      },
+      {
+        "manifest": "data/manifests/core_target_data_manifest.csv",
+        "manifest_row": 17,
+        "expected_local_file": "data/earth/srtm/S24W070.SRTMGL1.2.jpg",
+        "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+        "actual_path_candidates": [
+          "data/earth/S24W070.SRTMGL1.2.jpg"
+        ],
+        "source_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/SRTMGL1.003/S24W070.SRTMGL1.hgt/S24W070.SRTMGL1.2.jpg",
+        "dataset_or_layer": "NASA SRTM GL1 browse tile",
+        "notes": "one-degree browse image"
+      },
+      {
+        "manifest": "data/manifests/core_target_data_manifest.csv",
+        "manifest_row": 18,
+        "expected_local_file": "data/earth/srtm/N36W117.SRTMGL1.2.jpg",
+        "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+        "actual_path_candidates": [
+          "data/earth/N36W117.SRTMGL1.2.jpg"
+        ],
+        "source_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/SRTMGL1.003/N36W117.SRTMGL1.hgt/N36W117.SRTMGL1.2.jpg",
+        "dataset_or_layer": "NASA SRTM GL1 browse tile",
+        "notes": "one-degree browse image"
+      },
+      {
+        "manifest": "data/manifests/core_target_data_manifest.csv",
+        "manifest_row": 19,
+        "expected_local_file": "data/earth/aster_gdem/ASTGTMV003_N75W090.1.jpg",
+        "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+        "actual_path_candidates": [
+          "data/earth/ASTGTMV003_N75W090.1.jpg"
+        ],
+        "source_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/ASTGTM.003/ASTGTMV003_N75W090.1.jpg",
+        "dataset_or_layer": "NASA ASTER GDEM V003 browse tile",
+        "notes": "one-degree browse image"
+      },
+      {
+        "manifest": "data/manifests/download_manifest.csv",
+        "manifest_row": 2,
+        "expected_local_file": "data/earth/srtm/S24W070.SRTMGL1.2.jpg",
+        "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+        "actual_path_candidates": [
+          "data/earth/S24W070.SRTMGL1.2.jpg"
+        ],
+        "source_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/SRTMGL1.003/S24W070.SRTMGL1.hgt/S24W070.SRTMGL1.2.jpg",
+        "dataset_or_layer": "NASA SRTM GL1 browse tile",
+        "notes": "30 m-class browse image for tile S24W070"
+      },
+      {
+        "manifest": "data/manifests/download_manifest.csv",
+        "manifest_row": 3,
+        "expected_local_file": "data/earth/srtm/N36W117.SRTMGL1.2.jpg",
+        "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+        "actual_path_candidates": [
+          "data/earth/N36W117.SRTMGL1.2.jpg"
+        ],
+        "source_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/SRTMGL1.003/N36W117.SRTMGL1.hgt/N36W117.SRTMGL1.2.jpg",
+        "dataset_or_layer": "NASA SRTM GL1 browse tile",
+        "notes": "30 m-class browse image for tile N36W117"
+      },
+      {
+        "manifest": "data/manifests/download_manifest.csv",
+        "manifest_row": 4,
+        "expected_local_file": "data/earth/aster_gdem/ASTGTMV003_S24W070.1.jpg",
+        "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+        "actual_path_candidates": [
+          "data/earth/ASTGTMV003_S24W070.1.jpg"
+        ],
+        "source_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/ASTGTM.003/ASTGTMV003_S24W070.1.jpg",
+        "dataset_or_layer": "NASA ASTER GDEM V003 browse tile",
+        "notes": "1 degree browse tile"
+      },
+      {
+        "manifest": "data/manifests/download_manifest.csv",
+        "manifest_row": 5,
+        "expected_local_file": "data/earth/aster_gdem/ASTGTMV003_N36W117.1.jpg",
+        "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+        "actual_path_candidates": [
+          "data/earth/ASTGTMV003_N36W117.1.jpg"
+        ],
+        "source_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/ASTGTM.003/ASTGTMV003_N36W117.1.jpg",
+        "dataset_or_layer": "NASA ASTER GDEM V003 browse tile",
+        "notes": "1 degree browse tile"
+      },
+      {
+        "manifest": "data/manifests/download_manifest.csv",
+        "manifest_row": 6,
+        "expected_local_file": "data/earth/aster_gdem/ASTGTMV003_N75W090.1.jpg",
+        "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+        "actual_path_candidates": [
+          "data/earth/ASTGTMV003_N75W090.1.jpg"
+        ],
+        "source_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/ASTGTM.003/ASTGTMV003_N75W090.1.jpg",
+        "dataset_or_layer": "NASA ASTER GDEM V003 browse tile",
+        "notes": "1 degree browse tile; Haughton is outside SRTM coverage"
+      }
+    ],
+    "bundled_hgt_not_declared_by_local_file_manifest": [
+      "data/earth/N36W117.hgt",
+      "data/earth/S24W070.hgt"
+    ]
+  },
+  "scientific_feature_source_inventory": [
+    {
+      "feature": "Slope",
+      "world": "Earth",
+      "candidate_source": "Copernicus DEM GLO-30",
+      "workbook_status": "Verified - changed",
+      "resolution_or_coverage": "30 m; global",
+      "workbook_derivation_note": "Resample to 200 m; ee.Terrain.slope",
+      "workbook_caution": "Reproject the tile collection before slope. AW3D30 (#27) is a JAXA cross-check."
+    },
+    {
+      "feature": "Roughness",
+      "world": "Earth",
+      "candidate_source": "Copernicus DEM GLO-30",
+      "workbook_status": "Verified - changed",
+      "resolution_or_coverage": "30 m; global",
+      "workbook_derivation_note": "Elevation std dev in 1 km window",
+      "workbook_caution": ""
+    },
+    {
+      "feature": "Temperature range",
+      "world": "Earth",
+      "candidate_source": "MODIS Terra LST, 8-day (MOD11A2 V6.1)",
+      "workbook_status": "Verified",
+      "resolution_or_coverage": "1 km",
+      "workbook_derivation_note": "Mean day LST minus mean night LST, 2020-2024; x 0.02",
+      "workbook_caution": "1 km pixels, coarser than slope."
+    },
+    {
+      "feature": "Dryness",
+      "world": "Earth",
+      "candidate_source": "ERA5-Land Monthly Aggregated",
+      "workbook_status": "Partly verified",
+      "resolution_or_coverage": "About 0.1 degree (about 11 km)",
+      "workbook_derivation_note": "Annual sum of total_precipitation_sum x 1000 mm",
+      "workbook_caution": "About 11 km pixels; nearby Myanmar sites may tie. CHIRPS (#26, about 5.6 km) separates sites better; IMERG (#5) is the NASA alternative: use V07."
+    },
+    {
+      "feature": "Vegetation",
+      "world": "Earth",
+      "candidate_source": "MODIS Terra NDVI, 16-day (MOD13A2 V6.1)",
+      "workbook_status": "Verified",
+      "resolution_or_coverage": "1 km",
+      "workbook_derivation_note": "Mean NDVI 2020-2024 x 0.0001",
+      "workbook_caution": ""
+    },
+    {
+      "feature": "Rock and mineral",
+      "world": "Earth",
+      "candidate_source": "Published geology papers, Macrostrat maps",
+      "workbook_status": "Not yet verified",
+      "resolution_or_coverage": "n/a",
+      "workbook_derivation_note": "One hand-entered category per site, cited",
+      "workbook_caution": "Try Macrostrat (#28) and GVP (#29) for volcanic sites; both partly verified. ASTER GED (#9) is an optional lower-confidence index."
+    },
+    {
+      "feature": "Water ice / permafrost",
+      "world": "Earth",
+      "candidate_source": "Published geology papers, Macrostrat maps",
+      "workbook_status": "Not yet verified",
+      "resolution_or_coverage": "n/a",
+      "workbook_derivation_note": "One hand-entered category per site, cited",
+      "workbook_caution": "Not yet verified."
+    },
+    {
+      "feature": "Dust and wind",
+      "world": "Earth",
+      "candidate_source": "MODIS MAIAC aerosol optical depth (MCD19A2 V6.1)",
+      "workbook_status": "Verified",
+      "resolution_or_coverage": "1 km, daily",
+      "workbook_derivation_note": "Mean Optical_Depth_055 x 0.001",
+      "workbook_caution": "Aerosol over land is not the same quantity as Mars dust optical depth; say so on the About page."
+    },
+    {
+      "feature": "Slope",
+      "world": "Moon",
+      "candidate_source": "LOLA south pole DTMs and derived slope / roughness maps",
+      "workbook_status": "Verified - changed",
+      "resolution_or_coverage": "5 m (87-90S), 10 m (85S-pole), 20 m (80S-pole)",
+      "workbook_derivation_note": "Clip about 20 km, resample to 200 m",
+      "workbook_caution": "Malapert needs 10 m or 20 m product."
+    },
+    {
+      "feature": "Roughness",
+      "world": "Moon",
+      "candidate_source": "LOLA south pole DTMs and derived slope / roughness maps",
+      "workbook_status": "Verified - changed",
+      "resolution_or_coverage": "5 m (87-90S), 10 m (85S-pole), 20 m (80S-pole)",
+      "workbook_derivation_note": "Same method as Earth (or use LDRM roughness maps)",
+      "workbook_caution": "Define roughness the same way on all three worlds."
+    },
+    {
+      "feature": "Temperature range",
+      "world": "Moon",
+      "candidate_source": "Diviner polar products (GDR L2 and Polar Resource Product)",
+      "workbook_status": "Verified",
+      "resolution_or_coverage": "South polar GDR 240 m/pixel; PRP covers 80S to pole",
+      "workbook_derivation_note": "Published day and night extremes",
+      "workbook_caution": "Use GDR_L2 day/night maps or PRP annual max."
+    },
+    {
+      "feature": "Dryness",
+      "world": "Moon",
+      "candidate_source": "No dataset",
+      "workbook_status": "n/a",
+      "resolution_or_coverage": "n/a",
+      "workbook_derivation_note": "Plan rule: Moon scores fully dry",
+      "workbook_caution": "Set by rule."
+    },
+    {
+      "feature": "Vegetation",
+      "world": "Moon",
+      "candidate_source": "No dataset",
+      "workbook_status": "n/a",
+      "resolution_or_coverage": "n/a",
+      "workbook_derivation_note": "Plan rule: bare ground",
+      "workbook_caution": "Set by rule."
+    },
+    {
+      "feature": "Rock and mineral",
+      "world": "Moon",
+      "candidate_source": "Unified Geologic Map of the Moon",
+      "workbook_status": "Not yet verified",
+      "resolution_or_coverage": "n/a",
+      "workbook_derivation_note": "Highland anorthosite for both targets",
+      "workbook_caution": "Not yet verified."
+    },
+    {
+      "feature": "Water ice / permafrost",
+      "world": "Moon",
+      "candidate_source": "Diviner polar products (GDR L2 and Polar Resource Product)",
+      "workbook_status": "Verified",
+      "resolution_or_coverage": "South polar GDR 240 m/pixel; PRP covers 80S to pole",
+      "workbook_derivation_note": "0-1 estimate per site, cited",
+      "workbook_caution": "Diviner PRP gives modelled depth to ice; also cite LCROSS/LEND/LAMP (#15, not yet verified)."
+    },
+    {
+      "feature": "Dust and wind",
+      "world": "Moon",
+      "candidate_source": "No dataset",
+      "workbook_status": "n/a",
+      "resolution_or_coverage": "n/a",
+      "workbook_derivation_note": "No Moon dust source in the plan",
+      "workbook_caution": "GAP IN PLAN: LADEE LDEX (#30) gives orbital context only. Show no data or cite a qualitative value."
+    },
+    {
+      "feature": "Slope",
+      "world": "Mars",
+      "candidate_source": "MOLA-HRSC blended DEM, 200 m (v2)",
+      "workbook_status": "Verified",
+      "resolution_or_coverage": "200 m; global",
+      "workbook_derivation_note": "Clip about 20 km, same method as Earth",
+      "workbook_caution": "Check blend artifacts near targets."
+    },
+    {
+      "feature": "Roughness",
+      "world": "Mars",
+      "candidate_source": "MOLA-HRSC blended DEM, 200 m (v2)",
+      "workbook_status": "Verified",
+      "resolution_or_coverage": "200 m; global",
+      "workbook_derivation_note": "Same method as Earth",
+      "workbook_caution": ""
+    },
+    {
+      "feature": "Temperature range",
+      "world": "Mars",
+      "candidate_source": "Mars Climate Database (v6.1)",
+      "workbook_status": "Verified",
+      "resolution_or_coverage": "Model grid",
+      "workbook_derivation_note": "Daily surface temperature range at each site",
+      "workbook_caution": "Modelled, not measured."
+    },
+    {
+      "feature": "Dryness",
+      "world": "Mars",
+      "candidate_source": "No dataset",
+      "workbook_status": "n/a",
+      "resolution_or_coverage": "n/a",
+      "workbook_derivation_note": "Plan rule: Mars scores fully dry",
+      "workbook_caution": "Set by rule."
+    },
+    {
+      "feature": "Vegetation",
+      "world": "Mars",
+      "candidate_source": "No dataset",
+      "workbook_status": "n/a",
+      "resolution_or_coverage": "n/a",
+      "workbook_derivation_note": "Plan rule: bare ground",
+      "workbook_caution": "Set by rule."
+    },
+    {
+      "feature": "Rock and mineral",
+      "world": "Mars",
+      "candidate_source": "CRISM mineral maps; Geologic Map of Mars SIM 3292",
+      "workbook_status": "Not yet verified",
+      "resolution_or_coverage": "Not checked",
+      "workbook_derivation_note": "Jezero clay + carbonate; Meridiani sulfate",
+      "workbook_caution": "Not yet verified."
+    },
+    {
+      "feature": "Water ice / permafrost",
+      "world": "Mars",
+      "candidate_source": "SWIM ice-consistency maps (also Odyssey neutron data)",
+      "workbook_status": "Partly verified",
+      "resolution_or_coverage": "About 3 km/pixel; 60S-60N",
+      "workbook_derivation_note": "0-1 estimate; low near equator",
+      "workbook_caution": "SWIM is a consistency score, 60S-60N."
+    },
+    {
+      "feature": "Dust and wind",
+      "world": "Mars",
+      "candidate_source": "Mars Climate Database (v6.1)",
+      "workbook_status": "Verified",
+      "resolution_or_coverage": "Model grid",
+      "workbook_derivation_note": "Dust optical depth at each site",
+      "workbook_caution": "Record which dust scenario you pick."
+    }
+  ],
+  "data_gaps": [
+    "The workbook's Site data sheet cites mee_lay_earth_features.csv, but that file is not present in the supplied bundle.",
+    "No approved eight-feature source/configuration file exists; workbook mappings and derivation notes remain candidates.",
+    "Only two quantitative-raster candidates are supplied (the HGT tiles); exact product version/source provenance is unverified and site extraction is coordinate-gated.",
+    "Moon/Mars raster-like images are rendered previews or WMTS tiles, not calibrated numeric source rasters.",
+    "No browser-ready validated scientific measurements or reference sample are present."
+  ],
+  "policy_flags": [
+    "The workbook's candidate plan includes non-NASA datasets/providers such as Copernicus/ESA, ERA5-Land/ECMWF, CHIRPS/UCSB, and Mars Climate Database consortium products. AGENTS.md requires human approval before adding non-NASA datasets.",
+    "Workbook-proposed rule encodings for lunar/Martian dryness or vegetation and candidate ice classes are not treated as values or scoring rules without explicit approval.",
+    "All 12 Earth sites and 4 targets remain in the provisional register; coordinate status is PENDING_HUMAN_REVIEW and approved coordinates are null."
+  ],
+  "processing_status": "NO_SPATIAL_EXTRACTION_OR_SCORING_PERFORMED"
+}

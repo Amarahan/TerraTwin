@@ -1,0 +1,292 @@
+{
+  "manifest_files_preserved": [
+    "data/manifests/core_target_data_manifest.csv",
+    "data/manifests/download_manifest.csv"
+  ],
+  "entry_count": 23,
+  "counts_by_status": {
+    "UNIQUE_BASENAME_PATH_MISMATCH": 23
+  },
+  "rows": [
+    {
+      "manifest": "data/manifests/core_target_data_manifest.csv",
+      "manifest_row": 2,
+      "expected_local_file": "data/moon/trek_target_layers/shackleton_lola_color_hillshade.png",
+      "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+      "actual_path_candidates": [
+        "data/moon/shackleton_lola_color_hillshade.png"
+      ],
+      "source_url": "https://trek.nasa.gov/tiles/Moon/SP/Site04_final_adj_5mpp_ColorHillshade/thumbnail/Site04_final_adj_5mpp_ColorHillshade-120.png",
+      "dataset_or_layer": "LRO LOLA Color Hillshade 5mpp",
+      "notes": "regional preview map"
+    },
+    {
+      "manifest": "data/manifests/core_target_data_manifest.csv",
+      "manifest_row": 3,
+      "expected_local_file": "data/moon/trek_target_layers/shackleton_lola_color_slope.png",
+      "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+      "actual_path_candidates": [
+        "data/moon/shackleton_lola_color_slope.png"
+      ],
+      "source_url": "https://trek.nasa.gov/tiles/Moon/SP/Site04_final_adj_5mpp_ColorSlope/thumbnail/Site04_final_adj_5mpp_ColorSlope-120.png",
+      "dataset_or_layer": "LRO LOLA Color Slope 5mpp",
+      "notes": "regional preview map"
+    },
+    {
+      "manifest": "data/manifests/core_target_data_manifest.csv",
+      "manifest_row": 4,
+      "expected_local_file": "data/moon/trek_target_layers/malapert_lola_color_hillshade.png",
+      "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+      "actual_path_candidates": [
+        "data/moon/malapert_lola_color_hillshade.png"
+      ],
+      "source_url": "https://trek.nasa.gov/tiles/Moon/SP/Site23_final_adj_5mpp_ColorHillshade/thumbnail/Site23_final_adj_5mpp_ColorHillshade-120.png",
+      "dataset_or_layer": "LRO LOLA Color Hillshade 5mpp",
+      "notes": "regional preview map"
+    },
+    {
+      "manifest": "data/manifests/core_target_data_manifest.csv",
+      "manifest_row": 5,
+      "expected_local_file": "data/moon/trek_target_layers/malapert_lola_color_slope.png",
+      "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+      "actual_path_candidates": [
+        "data/moon/malapert_lola_color_slope.png"
+      ],
+      "source_url": "https://trek.nasa.gov/tiles/Moon/SP/Site23_final_adj_5mpp_ColorSlope/thumbnail/Site23_final_adj_5mpp_ColorSlope-120.png",
+      "dataset_or_layer": "LRO LOLA Color Slope 5mpp",
+      "notes": "regional preview map"
+    },
+    {
+      "manifest": "data/manifests/core_target_data_manifest.csv",
+      "manifest_row": 6,
+      "expected_local_file": "data/moon/trek_target_layers/malapert_lroc_dem_slope.png",
+      "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+      "actual_path_candidates": [
+        "data/moon/malapert_lroc_dem_slope.png"
+      ],
+      "source_url": "https://trek.nasa.gov/tiles/Moon/SP/LRO_NAC_Slope_86S356E_3mp/thumbnail/LRO_NAC_Slope_86S356E_3mp-120.png",
+      "dataset_or_layer": "LROC DEM Colorized Slope 3mpp",
+      "notes": "regional preview map"
+    },
+    {
+      "manifest": "data/manifests/core_target_data_manifest.csv",
+      "manifest_row": 7,
+      "expected_local_file": "data/mars/trek_target_layers/jezero_mola_hillshade.png",
+      "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+      "actual_path_candidates": [
+        "data/mars/jezero_mola_hillshade.png"
+      ],
+      "source_url": "https://trek.nasa.gov/tiles/Mars/EQ/Mars_MGS_MOLA_ClrShade_merge_global_463m/thumbnail/Mars_MGS_MOLA_ClrShade_merge_global_463m-120.png",
+      "dataset_or_layer": "MGS MOLA Global Color Hillshade",
+      "notes": "global preview map"
+    },
+    {
+      "manifest": "data/manifests/core_target_data_manifest.csv",
+      "manifest_row": 8,
+      "expected_local_file": "data/mars/trek_target_layers/jezero_mola_roughness.png",
+      "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+      "actual_path_candidates": [
+        "data/mars/jezero_mola_roughness.png"
+      ],
+      "source_url": "https://trek.nasa.gov/tiles/Mars/EQ/mola_roughness/thumbnail/mola_roughness-120.png",
+      "dataset_or_layer": "MGS MOLA Global Surface Roughness",
+      "notes": "global preview map"
+    },
+    {
+      "manifest": "data/manifests/core_target_data_manifest.csv",
+      "manifest_row": 9,
+      "expected_local_file": "data/mars/trek_target_layers/jezero_tes_dust.png",
+      "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+      "actual_path_candidates": [
+        "data/mars/jezero_tes_dust.png"
+      ],
+      "source_url": "https://trek.nasa.gov/tiles/Mars/EQ/TES_Dust/thumbnail/TES_Dust-120.png",
+      "dataset_or_layer": "MGS TES Global Dust",
+      "notes": "global preview map"
+    },
+    {
+      "manifest": "data/manifests/core_target_data_manifest.csv",
+      "manifest_row": 10,
+      "expected_local_file": "data/mars/trek_target_layers/jezero_tes_dust_index.png",
+      "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+      "actual_path_candidates": [
+        "data/mars/jezero_tes_dust_index.png"
+      ],
+      "source_url": "https://trek.nasa.gov/tiles/Mars/EQ/tes_ruffdust/thumbnail/tes_ruffdust-120.png",
+      "dataset_or_layer": "MGS TES Global Dust Index",
+      "notes": "global preview map"
+    },
+    {
+      "manifest": "data/manifests/core_target_data_manifest.csv",
+      "manifest_row": 11,
+      "expected_local_file": "data/mars/trek_target_layers/jezero_ctx_global_mosaic.png",
+      "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+      "actual_path_candidates": [
+        "data/mars/jezero_ctx_global_mosaic.png"
+      ],
+      "source_url": "https://trek.nasa.gov/tiles/Mars/EQ/CTX_beta01_uncontrolled_5m_Caltech/thumbnail/CTX_beta01_uncontrolled_5m_Caltech-120.png",
+      "dataset_or_layer": "MRO CTX Global Mosaic",
+      "notes": "global preview map"
+    },
+    {
+      "manifest": "data/manifests/core_target_data_manifest.csv",
+      "manifest_row": 12,
+      "expected_local_file": "data/mars/trek_target_layers/jezero_hirise_global_mosaic.png",
+      "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+      "actual_path_candidates": [
+        "data/mars/jezero_hirise_global_mosaic.png"
+      ],
+      "source_url": "https://trek.nasa.gov/tiles/Mars/EQ/HiRISE_Global/thumbnail/HiRISE_Global-120.png",
+      "dataset_or_layer": "MRO HiRISE Global Mosaic",
+      "notes": "global preview map"
+    },
+    {
+      "manifest": "data/manifests/core_target_data_manifest.csv",
+      "manifest_row": 13,
+      "expected_local_file": "data/mars/trek_target_layers/jezero_mola_hillshade_z6_r25_c91.jpg",
+      "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+      "actual_path_candidates": [
+        "data/mars/jezero_mola_hillshade_z6_r25_c91.jpg"
+      ],
+      "source_url": "https://trek.nasa.gov/tiles/Mars/EQ/Mars_MGS_MOLA_ClrShade_merge_global_463m/1.0.0/default/default028mm/6/25/91.jpg",
+      "dataset_or_layer": "MGS MOLA regional tile",
+      "notes": "regional map tile centered on Jezero"
+    },
+    {
+      "manifest": "data/manifests/core_target_data_manifest.csv",
+      "manifest_row": 14,
+      "expected_local_file": "data/mars/trek_target_layers/jezero_mola_roughness_z1_r0_c2.png",
+      "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+      "actual_path_candidates": [
+        "data/mars/jezero_mola_roughness_z1_r0_c2.png"
+      ],
+      "source_url": "https://trek.nasa.gov/tiles/Mars/EQ/mola_roughness/1.0.0/default/default028mm/1/0/2.png",
+      "dataset_or_layer": "MGS MOLA roughness regional tile",
+      "notes": "available-resolution tile centered on Jezero"
+    },
+    {
+      "manifest": "data/manifests/core_target_data_manifest.csv",
+      "manifest_row": 15,
+      "expected_local_file": "data/mars/trek_target_layers/jezero_tes_dust_z1_r0_c2.png",
+      "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+      "actual_path_candidates": [
+        "data/mars/jezero_tes_dust_z1_r0_c2.png"
+      ],
+      "source_url": "https://trek.nasa.gov/tiles/Mars/EQ/TES_Dust/1.0.0/default/default028mm/1/0/2.png",
+      "dataset_or_layer": "MGS TES dust regional tile",
+      "notes": "available-resolution tile centered on Jezero"
+    },
+    {
+      "manifest": "data/manifests/core_target_data_manifest.csv",
+      "manifest_row": 16,
+      "expected_local_file": "data/mars/trek_target_layers/jezero_tes_dust_index_z2_r1_c5.png",
+      "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+      "actual_path_candidates": [
+        "data/mars/jezero_tes_dust_index_z2_r1_c5.png"
+      ],
+      "source_url": "https://trek.nasa.gov/tiles/Mars/EQ/tes_ruffdust/1.0.0/default/default028mm/2/1/5.png",
+      "dataset_or_layer": "MGS TES dust index regional tile",
+      "notes": "available-resolution tile centered on Jezero"
+    },
+    {
+      "manifest": "data/manifests/core_target_data_manifest.csv",
+      "manifest_row": 17,
+      "expected_local_file": "data/earth/srtm/S24W070.SRTMGL1.2.jpg",
+      "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+      "actual_path_candidates": [
+        "data/earth/S24W070.SRTMGL1.2.jpg"
+      ],
+      "source_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/SRTMGL1.003/S24W070.SRTMGL1.hgt/S24W070.SRTMGL1.2.jpg",
+      "dataset_or_layer": "NASA SRTM GL1 browse tile",
+      "notes": "one-degree browse image"
+    },
+    {
+      "manifest": "data/manifests/core_target_data_manifest.csv",
+      "manifest_row": 18,
+      "expected_local_file": "data/earth/srtm/N36W117.SRTMGL1.2.jpg",
+      "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+      "actual_path_candidates": [
+        "data/earth/N36W117.SRTMGL1.2.jpg"
+      ],
+      "source_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/SRTMGL1.003/N36W117.SRTMGL1.hgt/N36W117.SRTMGL1.2.jpg",
+      "dataset_or_layer": "NASA SRTM GL1 browse tile",
+      "notes": "one-degree browse image"
+    },
+    {
+      "manifest": "data/manifests/core_target_data_manifest.csv",
+      "manifest_row": 19,
+      "expected_local_file": "data/earth/aster_gdem/ASTGTMV003_N75W090.1.jpg",
+      "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+      "actual_path_candidates": [
+        "data/earth/ASTGTMV003_N75W090.1.jpg"
+      ],
+      "source_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/ASTGTM.003/ASTGTMV003_N75W090.1.jpg",
+      "dataset_or_layer": "NASA ASTER GDEM V003 browse tile",
+      "notes": "one-degree browse image"
+    },
+    {
+      "manifest": "data/manifests/download_manifest.csv",
+      "manifest_row": 2,
+      "expected_local_file": "data/earth/srtm/S24W070.SRTMGL1.2.jpg",
+      "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+      "actual_path_candidates": [
+        "data/earth/S24W070.SRTMGL1.2.jpg"
+      ],
+      "source_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/SRTMGL1.003/S24W070.SRTMGL1.hgt/S24W070.SRTMGL1.2.jpg",
+      "dataset_or_layer": "NASA SRTM GL1 browse tile",
+      "notes": "30 m-class browse image for tile S24W070"
+    },
+    {
+      "manifest": "data/manifests/download_manifest.csv",
+      "manifest_row": 3,
+      "expected_local_file": "data/earth/srtm/N36W117.SRTMGL1.2.jpg",
+      "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+      "actual_path_candidates": [
+        "data/earth/N36W117.SRTMGL1.2.jpg"
+      ],
+      "source_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/SRTMGL1.003/N36W117.SRTMGL1.hgt/N36W117.SRTMGL1.2.jpg",
+      "dataset_or_layer": "NASA SRTM GL1 browse tile",
+      "notes": "30 m-class browse image for tile N36W117"
+    },
+    {
+      "manifest": "data/manifests/download_manifest.csv",
+      "manifest_row": 4,
+      "expected_local_file": "data/earth/aster_gdem/ASTGTMV003_S24W070.1.jpg",
+      "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+      "actual_path_candidates": [
+        "data/earth/ASTGTMV003_S24W070.1.jpg"
+      ],
+      "source_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/ASTGTM.003/ASTGTMV003_S24W070.1.jpg",
+      "dataset_or_layer": "NASA ASTER GDEM V003 browse tile",
+      "notes": "1 degree browse tile"
+    },
+    {
+      "manifest": "data/manifests/download_manifest.csv",
+      "manifest_row": 5,
+      "expected_local_file": "data/earth/aster_gdem/ASTGTMV003_N36W117.1.jpg",
+      "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+      "actual_path_candidates": [
+        "data/earth/ASTGTMV003_N36W117.1.jpg"
+      ],
+      "source_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/ASTGTM.003/ASTGTMV003_N36W117.1.jpg",
+      "dataset_or_layer": "NASA ASTER GDEM V003 browse tile",
+      "notes": "1 degree browse tile"
+    },
+    {
+      "manifest": "data/manifests/download_manifest.csv",
+      "manifest_row": 6,
+      "expected_local_file": "data/earth/aster_gdem/ASTGTMV003_N75W090.1.jpg",
+      "status": "UNIQUE_BASENAME_PATH_MISMATCH",
+      "actual_path_candidates": [
+        "data/earth/ASTGTMV003_N75W090.1.jpg"
+      ],
+      "source_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/ASTGTM.003/ASTGTMV003_N75W090.1.jpg",
+      "dataset_or_layer": "NASA ASTER GDEM V003 browse tile",
+      "notes": "1 degree browse tile; Haughton is outside SRTM coverage"
+    }
+  ],
+  "bundled_hgt_not_declared_by_local_file_manifest": [
+    "data/earth/N36W117.hgt",
+    "data/earth/S24W070.hgt"
+  ]
+}
