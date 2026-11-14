@@ -19,3 +19,281 @@ main:focus{outline:none}.muted{color:#aab8c8;font-size:13px;line-height:1.7}.sta
 .target-card .target-context{min-height:230px;height:100%;}.target-card .target-content{min-height:280px;}
 @media(max-width:540px){.target-card .target-context{min-height:130px;}.target-card .target-content{min-height:260px;}}
 @media(max-width:540px){.target-card{display:block;min-height:0;}.target-card .target-context{height:130px;min-height:130px;}.target-card .target-content{min-height:0;padding:22px;}.target-content .primary{margin-top:20px;}.score-notice b{white-space:normal;}.feature-evidence .section-heading{margin-bottom:20px;}}
+
+
+/* Scientific Browse Imagery, Interactive HUD, and Live Scoring Styles */
+.active-map-legend {
+  position: absolute !important;
+  top: 14px !important;
+  left: 14px !important;
+  transform: none !important;
+  width: auto !important;
+  max-width: 320px !important;
+  padding: 12px 16px !important;
+  background: rgba(7, 21, 34, 0.90) !important;
+  backdrop-filter: blur(10px) !important;
+  border-radius: 6px !important;
+  border: 1px solid #34536a !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45) !important;
+  z-index: 400 !important;
+  pointer-events: auto !important;
+}
+.active-map-legend h2 {
+  font-size: 16px !important;
+  margin: 4px 0 8px 0 !important;
+  color: #e3f3fa !important;
+}
+.active-map-legend small {
+  display: block;
+  margin-top: 8px;
+  color: #8fa5b5;
+  font-size: 11px;
+}
+.map-legend-pills {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.map-legend-pills .pill {
+  font-size: 11px;
+  color: #c5d1da;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(16, 38, 55, 0.7);
+  padding: 3px 8px;
+  border-radius: 3px;
+  border: 1px solid #234158;
+}
+.map-legend-pills .pill i {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.target-card-image-wrap {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  background: #07131f;
+  border-bottom: 1px solid #29475d;
+}
+.target-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.target-card:hover .target-card-img {
+  transform: scale(1.04);
+}
+.target-image-tag {
+  position: absolute;
+  bottom: 8px;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+.target-image-tag .source-tag {
+  background: rgba(7, 19, 31, 0.85);
+  backdrop-filter: blur(4px);
+  color: #9eb5c5;
+  font-size: 10px;
+  font-family: 'IBM Plex Mono', monospace;
+  padding: 3px 6px;
+  border-radius: 2px;
+  border: 1px solid #29475d;
+}
+.target-key-specs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 12px 0;
+  font-size: 12px;
+  color: #b3c6d3;
+}
+.target-key-specs b {
+  color: #45c5e8;
+}
+
+.site-image-gallery {
+  margin: 20px 0;
+  padding: 16px;
+  background: #081624;
+  border: 1px solid #234158;
+  border-radius: 6px;
+}
+.image-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-top: 12px;
+}
+.gallery-figure {
+  margin: 0;
+  background: #0b1f32;
+  border: 1px solid #29475d;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.gallery-figure img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  background: #050d15;
+}
+.gallery-figure figcaption {
+  padding: 12px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #c5d1da;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+.gallery-figure figcaption strong {
+  color: #e3f3fa;
+  font-size: 12px;
+}
+.gallery-figure figcaption p {
+  margin: 0;
+  font-size: 11px;
+  color: #9eb5c5;
+  line-height: 1.4;
+}
+.gallery-figure figcaption small {
+  color: #65cce8;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  margin-top: auto;
+}
+
+.live-score-card {
+  margin: 20px 0;
+  padding: 18px;
+  background: linear-gradient(135deg, rgba(16, 42, 66, 0.85) 0%, rgba(9, 26, 42, 0.95) 100%);
+  border: 1px solid #326285;
+  border-radius: 6px;
+}
+.score-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.score-header h3 {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 4px 0 0 0;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+}
+.score-header h3 small {
+  font-size: 15px;
+  color: #8fa5b5;
+  font-weight: 400;
+}
+.strength-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: 0.05em;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+.strength-strong {
+  background: rgba(16, 185, 129, 0.2);
+  color: #34d399;
+  border: 1px solid #10b981;
+}
+.strength-partial {
+  background: rgba(245, 158, 11, 0.2);
+  color: #fbbf24;
+  border: 1px solid #f59e0b;
+}
+.strength-weak {
+  background: rgba(239, 68, 68, 0.2);
+  color: #f87171;
+  border: 1px solid #ef4444;
+}
+.score-summary {
+  margin: 10px 0 14px 0;
+  font-size: 13px;
+  color: #b3c6d3;
+  line-height: 1.5;
+}
+.coverage-bar-wrap {
+  font-size: 11px;
+  color: #8fa5b5;
+}
+.coverage-bar {
+  width: 100%;
+  height: 6px;
+  background: #102638;
+  border-radius: 3px;
+  margin-top: 6px;
+  overflow: hidden;
+}
+.coverage-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #00e5ff, #34d399);
+}
+
+.candidate-table-wrap {
+  margin: 20px 0;
+  overflow-x: auto;
+}
+.candidate-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+.candidate-table th, .candidate-table td {
+  padding: 10px 12px;
+  border: 1px solid #234158;
+  text-align: left;
+}
+.candidate-table th {
+  background: #0e2436;
+  color: #e3f3fa;
+  font-weight: 600;
+}
+.candidate-table td {
+  background: #081726;
+  color: #c5d1da;
+}
+.candidate-table td.strong-match {
+  color: #34d399;
+  font-weight: 600;
+}
+.candidate-table td.partial-match {
+  color: #fbbf24;
+}
+.candidate-table td.weak-match {
+  color: #f87171;
+}
+.sim-meter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.sim-meter-bar {
+  flex: 1;
+  height: 6px;
+  background: #12283a;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.sim-meter-fill {
+  height: 100%;
+}
