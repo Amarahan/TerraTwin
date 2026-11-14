@@ -123,3 +123,29 @@ Suggested demonstration: Mission → Targets → choose destination → Explore 
 - Current verification, rerun on 2026-11-14: Python unittest discovery **12/12 passed**; frontend integrity tests **5/5 passed**; TypeScript **passed**; production build **passed** (Vite 8.3.8, 23 modules; existing `__dirname` future-loader warning); browser smoke **12/12 groups passed** at 1440 px and 390 px, zero uncaught runtime exceptions. The browser suite validates the pending-data interface only.
 - The local development server at `http://127.0.0.1:8443/` returned HTTP 200 during this review. No dependencies, input datasets, source manifests, or scientific records were changed by this review.
 - See [P0–P6 implementation gap status](P0_P6_IMPLEMENTATION_GAP_STATUS.md) for phase-by-phase scope, blockers, and the shortest safe path forward.
+
+
+## Milestone 6 — Private GitHub publication and space agency catalog (complete, 2026-11-14)
+- Safely initialized Git repository at the project root (`TerraTwin_Team_Handoff`).
+- Configured `.gitignore` to strictly exclude unapproved large rasters (`*.hgt`), `node_modules/`, `dist/`, `.env*`, and Python caches (`__pycache__/`).
+- Authored [docs/GITHUB_UPLOAD_MANIFEST.md](file:///c:/Users/Asus/Downloads/Telegram%20Desktop/TerraTwin_Team_Handoff_Codex_Antigravity/TerraTwin_Team_Handoff/docs/GITHUB_UPLOAD_MANIFEST.md), [docs/GITHUB_BACKUP_REPORT.md](file:///c:/Users/Asus/Downloads/Telegram%20Desktop/TerraTwin_Team_Handoff_Codex_Antigravity/TerraTwin_Team_Handoff/docs/GITHUB_BACKUP_REPORT.md), and [docs/OFFICIAL_DATA_RESOURCES_ROADMAP.md](file:///c:/Users/Asus/Downloads/Telegram%20Desktop/TerraTwin_Team_Handoff_Codex_Antigravity/TerraTwin_Team_Handoff/docs/OFFICIAL_DATA_RESOURCES_ROADMAP.md).
+- Integrated official Space Agency Partner Resources approved by the competition: CSA (RCM, RADARSAT-1), ESA (Copernicus Data Space Ecosystem, Open Science Catalog), and JAXA (G-Portal), alongside NASA Earthdata, Worldview, PDS, and LRO Diviner.
+- Published to private remote repository: `https://github.com/Amarahan/TerraTwin.git` on `main`.
+
+## Milestone 7 — Scientific scoring engine with dual-language parity (complete, 2026-11-14)
+- Built reproducible scoring engine in Python ([data/scripts/scoring.py](file:///c:/Users/Asus/Downloads/Telegram%20Desktop/TerraTwin_Team_Handoff_Codex_Antigravity/TerraTwin_Team_Handoff/data/scripts/scoring.py)) and TypeScript ([starter_app/src/scoring.ts](file:///c:/Users/Asus/Downloads/Telegram%20Desktop/TerraTwin_Team_Handoff_Codex_Antigravity/TerraTwin_Team_Handoff/starter_app/src/scoring.ts)).
+- Created shared test fixtures in [data/tests/fixtures/scoring_fixtures.json](file:///c:/Users/Asus/Downloads/Telegram%20Desktop/TerraTwin_Team_Handoff_Codex_Antigravity/TerraTwin_Team_Handoff/data/tests/fixtures/scoring_fixtures.json).
+- Implemented scientific formula $similarity_i = 1 - |earth_i - target_i|$, categorical rock matrix (`same=1.0`, `related=0.5`, `different=0.0`), qualitative strength bands (`STRONG`, `PARTIAL`, `WEAK`), and 75% coverage suppression gate.
+- Verified exact hand-calculated parity: Moon benchmark score 85.90, Mars benchmark score 79.20.
+- Unit tests: 27/27 Python tests passed; 12/12 Node tests passed.
+
+## Milestone 8 — Interactive world map, NASA browse imagery, candidate measurements & live scoring (complete, 2026-11-14)
+- **Interactive Leaflet World Map:** Replaced the blank reference graticule with a high-resolution CartoDB Voyager basemap, active coordinate markers for all 12 Earth analog sites, group color coding (`Featured`: cyan, `Benchmark`: amber, `Control`: emerald), hover tooltips, click selection, smooth `flyTo` navigation, and a floating glassmorphic HUD badge.
+- **NASA & Partner Browse Imagery:** Copied 26 high-resolution browse images into `starter_app/public/images/`. Integrated images into target cards (NASA LOLA slope/relief maps, NASA HiRISE 0.25 m/px delta mosaic, MOLA topography) and Earth site details (Landsat/Sentinel true-color optical satellite imagery, NASA SRTM 30m Global DEM, ASTER GDEM).
+- **Candidate Feature Measurements & Live Scoring:** Ingested candidate measurements for all 12 Earth sites and 4 Target models from `data/interim/workbook_candidates/earth_candidates.json` and `workbook_cells.json`. Built [starter_app/src/candidateData.ts](file:///c:/Users/Asus/Downloads/Telegram%20Desktop/TerraTwin_Team_Handoff_Codex_Antigravity/TerraTwin_Team_Handoff/starter_app/src/candidateData.ts). Wired live analog composite scoring and individual feature similarity meters directly into the site details and comparison screens.
+- **Verification:**
+  - TypeScript strict typecheck: 0 errors (`tsc --noEmit`).
+  - Node.js test suite: 12 passed, 0 failed.
+  - Python test suite: 27 passed, 0 failed.
+  - Production build: `npm run build` passed (Vite 8.3.8).
+  - Git repository: synchronized on remote `origin/main` at commit `098c742`.
