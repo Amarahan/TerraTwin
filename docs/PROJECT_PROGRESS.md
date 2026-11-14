@@ -209,3 +209,92 @@ Exact next task: hand the tested local revision to deployment-only Antigravity a
   - TypeScript: 0 errors (`tsc --noEmit`).
   - Production build: `npm run build` passed in 988ms with dynamic `/TerraTwin/` base.
 - **Git & GitHub Pages:** Synchronized and pushed to `main` and `gh-pages` on `https://github.com/Amarahan/TerraTwin.git`. Live site verified at `https://amarahan.github.io/TerraTwin/`.
+
+## Milestone 13 — Landing page refinement & authentic featured Earth photography (complete, 2026-11-14)
+- **Hero Section Text Refinements:**
+  - Removed `MISSION TT-01` completely from the hero kicker; preserved `PLANETARY ANALOG RECONNAISSANCE`.
+  - Removed `NO LIVE MODEL` and the unnecessary `CONTEXT VIEW` box with its status-card styling.
+  - Replaced the bottom-right status box with a transparent, subtle caption: `Illustrative planetary composition · Not to scale`.
+  - Preserved `Discover Earth's Twins Beyond Earth.`, exploratory introductory copy, CTA buttons, and key statistics (12 Earth Study Sites, 4 Planetary Targets, 8 Environmental Variables).
+- **Three Celestial Worlds in Planetary Illustration:**
+  - Integrated Earth (largest central visual), Moon (cratered grey reference celestial body), and Mars (reddish reference planet).
+  - Used authentic NASA imagery:
+    - Earth: NASA Blue Marble view (`GSFC_20171208_Archive_e001386`).
+    - Moon: Authentic NASA Galileo/LRO global lunar mosaic (`PIA00405`).
+    - Mars: Authentic NASA MOLA/Viking global surface tile (`mola_global_tile.jpg`).
+  - Added subtle connecting orbital paths and dashed trajectory lines connecting all three celestial bodies.
+  - Verified labels:
+    - `01 EARTH · NASA CONTEXT IMAGE`
+    - `02 MOON REFERENCE BODY`
+    - `03 MARS REFERENCE BODY`
+- **Real Location Images in Featured Earth Locations:**
+  - Saved user-uploaded real photographs to `starter_app/public/assets/featured/`:
+    - `mount-popa.jpg` (Mount Popa volcanic mountain with summit monastery)
+    - `twin-taung.jpg` (Twin Taung crater lake and surrounding landscape)
+    - `letpadaung.jpg` (Letpadaung copper-area landscape)
+    - `kawah-ijen.jpg` (Kawah Ijen turquoise acidic crater lake)
+  - Display order strictly preserved: Mount Popa → Twin Taung → Letpadaung → Kawah Ijen.
+  - Cards feature clean 4-card arrangement on desktop, with responsive stacking (2-column on tablet, 1-column on mobile 390px).
+  - Cards display clear site name, country/region, featured category badge, descriptive text, scanline overlay, and custom object-position styling preserving key subjects.
+  - Scientific integrity strictly maintained: no coordinates, measurements, or scoring parameters altered.
+- **Verification:**
+  - `npx --no-install tsc --noEmit`: 0 errors.
+  - `node --test tests/*.test.ts`: 25 passed, 0 failed.
+  - `npm run build`: built cleanly with Vite 8.3.8.
+  - Verified at 1440px desktop width and 390px mobile width with full screenshot QA artifacts saved in `docs/qa/landing-refinement/`.
+  - Local dev server active at `http://localhost:8443/`.
+
+## Milestone 14 — Targets page: real images + improved card layout (complete, 2026-11-15)
+- **Image assets saved to `starter_app/public/images/targets/`:**
+  - `shackleton-crater-rim.png` → Shackleton Crater Rim (Moon) — lunar surface oblique B&W view
+  - `malapert-massif.jpg` → Malapert Massif (Moon) — LRO colour elevation 3D render
+  - `jezero-crater.jpg` → Jezero Crater (Mars) — artist rendering of ancient lake basin
+  - `meridiani-planum.jpg` → Meridiani Planum (Mars) — Opportunity rover surface photograph
+  - Attribution for all four: "Attribution: pending review" (team to confirm source credits before submission)
+- **`starter_app/src/views.tsx` changes:**
+  - Added `TARGET_IMAGES` constant mapping each target ID to its local image path (`import.meta.env.BASE_URL`), alt text, and `objectPosition`.
+  - Replaced old `target-card` layout (side-by-side 42%/1fr with decorative `.target-context` div and external `TARGET_MODELS` URLs) with new `target-card-new` layout: full-width image at top (height 260px, `object-fit: cover`), body tag badge overlaid on image, then info section with eyebrow / h2 / description / Explore button.
+  - All existing functionality preserved: Moon/Mars segmented filter, Explore button navigates to `#explorer` with correct `targetId`, `PendingScore` notice retained.
+- **`starter_app/src/index.css` changes:**
+  - Added `.target-card-new`, `.target-card-image`, `.target-card-body-tag`, `.target-card-info` rules.
+  - 820px breakpoint: `.target-card-image` height reduced to 220px.
+  - 540px breakpoint: `.target-grid` collapses to single column; `.target-card-image` height reduced to 200px.
+  - Legacy `.target-card` and `.target-image` rules retained for backward compatibility.
+- **Scientific integrity:**
+  - Images are visual references only — no coordinates, measurements, scores, or scientific claims added or modified.
+  - Attribution marked as pending — no invented photographer names or licences.
+  - No scoring, feature, or normalization parameters altered.
+- **Verification:**
+  - `npx --no-install tsc --noEmit`: **0 errors**.
+  - `node --test tests/exploratoryData.test.ts tests/workbookData.test.ts tests/scoring.test.ts tests/data.test.ts tests/mapData.test.ts`: **25/25 passed, 0 failed**.
+  - `npm run build`: **exit 0** — Vite 8.3.8, 30 modules, CSS 89.54 kB, JS 452.69 kB.
+  - Screenshots captured and verified at `docs/qa/targets-page/`.
+
+## Milestone 15 — Method page cleanup & realistic planetary orbital illustration (complete, 2026-11-15)
+- **Top Planetary Target Selector Row Removed:**
+  - Removed `<div className="context-toolbar">` with the `TargetSelect` dropdown and candidate evidence heading on `screen === 'about'` only.
+  - Eliminated the unnecessary vertical space above the Method page headline; content now starts naturally at a proportional distance beneath the global status banner.
+  - Target selector toolbar remains intact on other screens (`explore`, `details`, `compare`).
+- **Realistic NASA Planetary Imagery for Orbital Illustration:**
+  - Downloaded and saved authentic NASA planetary imagery locally to `starter_app/public/images/celestial/`:
+    - `nasa_blue_marble_earth.jpg` (245 kB) — authentic NASA Blue Marble Earth view (`GSFC_20171208_Archive_e001386`).
+    - `nasa_galileo_moon.jpg` (202 kB) — authentic NASA Galileo/LRO global lunar mosaic (`PIA00405`).
+    - `nasa_mola_mars.jpg` (63 kB) — authentic NASA MOLA/Viking Mars global surface tile (`mola_global_tile.jpg`).
+  - Swapped generic CSS circles for realistic spherical celestial globes:
+    - **Earth**: Centered, prominent 110px sphere with soft cyan atmospheric glow, spherical shadow, and label `01 EARTH · NASA BLUE MARBLE`.
+    - **Moon**: Cratered grey 44px sphere with authentic lunar surface texture, inner orbit ring, and label `02 MOON REFERENCE BODY`.
+    - **Mars**: Distinct reddish-orange 58px sphere with warm limb glow, outer orbit ring, and label `03 MARS REFERENCE BODY`.
+  - Added subtle dashed orbital arcs, connecting trajectory curve, and waypoint node.
+  - Added transparency caption: `Conceptual planetary illustration · Not to scale`.
+  - Added source credits: `NASA GSFC (Blue Marble) · NASA JPL/USGS (Galileo PIA00405) · NASA MOLA Team`.
+- **Responsive Layout:**
+  - Full desktop (1440px) 2-column hero: clean headline and intro text on left, balanced orbital illustration on right.
+  - Mobile (390px): Clean single-column stack, scaled spheres (86px / 34px / 46px), compact typography with no label clipping or horizontal overflow.
+- **Verification:**
+  - `npx --no-install tsc --noEmit`: **0 errors**.
+  - `node --test tests/*.test.ts`: **25/25 passed**.
+  - `npm run build`: **exit 0** — Vite 8.3.8, 30 modules, CSS 92.32 kB, JS 454.25 kB.
+  - Visual QA verified and captured at `docs/qa/method-page/`:
+    - `method-after-1440px.png` (desktop)
+    - `method-after-390px.png` (mobile)
+    - `compare-verification-1440px.png` (verified compare page retains target toolbar)

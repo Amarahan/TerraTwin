@@ -7,6 +7,37 @@ import { modelScore } from './exploratoryData';
 import { WorkbookReadings } from './WorkbookEvidence';
 import { CANDIDATE_SITES, TARGET_MODELS } from './candidateData';
 
+/** Local target images — uploaded by the team and confirmed by visual inspection. */
+const TARGET_IMAGES: Record<string, { src: string; alt: string; objectPosition: string }> = {
+  'shackleton-crater-rim': {
+    src: `${import.meta.env.BASE_URL}images/targets/shackleton-crater-rim.png`,
+    alt: 'Shackleton Crater Rim — lunar surface oblique view. Attribution: pending review.',
+    objectPosition: 'center 40%',
+  },
+  'malapert-massif': {
+    src: `${import.meta.env.BASE_URL}images/targets/malapert-massif.jpg`,
+    alt: 'Malapert Massif — LRO elevation colour model of Shackleton/Malapert area. Attribution: pending review.',
+    objectPosition: 'center 50%',
+  },
+  'jezero-crater': {
+    src: `${import.meta.env.BASE_URL}images/targets/jezero-crater.jpg`,
+    alt: 'Jezero Crater — Mars impact crater with ancient lake basin. Attribution: pending review.',
+    objectPosition: 'center 55%',
+  },
+  'meridiani-planum': {
+    src: `${import.meta.env.BASE_URL}images/targets/meridiani-planum.jpg`,
+    alt: 'Meridiani Planum — Mars surface rocky terrain. Attribution: pending review.',
+    objectPosition: 'center 45%',
+  },
+};
+
+/** Verified authentic NASA planetary imagery for conceptual illustrations. */
+const CELESTIAL_IMAGES = {
+  earth: `${import.meta.env.BASE_URL}images/celestial/nasa_blue_marble_earth.jpg`,
+  moon: `${import.meta.env.BASE_URL}images/celestial/nasa_galileo_moon.jpg`,
+  mars: `${import.meta.env.BASE_URL}images/celestial/nasa_mola_mars.jpg`,
+};
+
 type Props = {
   data: AtlasData;
   screen: Screen;
@@ -554,7 +585,6 @@ function Compare({
         </p>
       )}
 
-      <ModelScore siteId={a.id} targetId={target.id}/><ModelScore siteId={b.id} targetId={target.id}/>
       <WorkbookReadings siteIds={[a.id,b.id]} />
       <div className="comparison-scroll" tabIndex={0} aria-label="Scrollable feature comparison">
         <table className="comparison-table">
@@ -631,8 +661,8 @@ export function AtlasViews(p: Props) {
   }
 
   return (
-    <main id="main-content" tabIndex={-1} className="page mvp-page">
-      {screen !== 'targets' && screen !== 'rankings' && (
+    <main id="main-content" tabIndex={-1} className={`page mvp-page ${screen === 'about' ? 'about-page' : ''}`}>
+      {screen !== 'targets' && screen !== 'rankings' && screen !== 'about' && (
         <div className="context-toolbar">
           <TargetSelect data={data} value={targetId} change={setTargetId} />
           <span className="muted">Interactive Candidate Evidence & NASA Browse Imagery</span>
@@ -662,29 +692,24 @@ export function AtlasViews(p: Props) {
             {data.targets
               .filter((t) => body === 'All' || t.body === body)
               .map((t) => {
-                const targetModel = TARGET_MODELS[t.id];
-
+                const img = TARGET_IMAGES[t.id];
                 return (
                   <article
-                    className={`target-card ${targetId === t.id ? 'selected' : ''}`}
+                    className={`target-card-new ${targetId === t.id ? 'selected' : ''}`}
                     key={t.id}
                   >
-                    {targetModel?.images.primary && (
-                      <div className="target-card-image-wrap">
+                    <div className="target-card-image">
+                      {img && (
                         <img
-                          src={targetModel.images.primary.url}
-                          alt={targetModel.images.primary.title}
-                          className="target-card-img"
+                          src={img.src}
+                          alt={img.alt}
+                          style={{ objectPosition: img.objectPosition }}
+                          loading="lazy"
                         />
-                        <div className="target-image-tag">
-                          <span className="source-tag">{targetModel.images.primary.source}</span>
-                        </div>
-                      </div>
-                    )}
-                    <div className={`target-context body-${t.body.toLowerCase()}`} aria-hidden="true">
-                      <span>{t.body}</span>
+                      )}
+                      <div className="target-card-body-tag">{t.body}</div>
                     </div>
-                    <div className="target-content">
+                    <div className="target-card-info">
                       <p className="eyebrow">{t.body} destination</p>
                       <h2>{t.name}</h2>
                       <p>{t.coordinate_issue}</p>
@@ -754,11 +779,46 @@ export function AtlasViews(p: Props) {
                 TerraTwin is a research prototype for comparing selected Earth environments with Moon and Mars targets. This release makes the candidate register, source references and scientific data gaps visible.
               </p>
             </div>
-            <div className="about-orbit">
-              <span>EARTH</span>
-              <i />
-              <b>MOON</b>
-              <em>MARS</em>
+            <div className="about-orbit-stage" aria-label="Conceptual planetary illustration showing Earth, Moon, and Mars">
+              <div className="about-orbit">
+                <div className="about-orbit-ring orbit-outer" />
+                <div className="about-orbit-ring orbit-inner" />
+                <div className="about-orbit-trajectory" />
+                <div className="about-orbit-node" />
+
+                {/* Earth (largest central visual) */}
+                <div className="celestial-sphere earth-sphere">
+                  <img src={CELESTIAL_IMAGES.earth} alt="Earth — NASA Blue Marble context image" />
+                  <div className="sphere-atmosphere earth-atmosphere" />
+                  <div className="celestial-label earth-label">
+                    <span>01</span> EARTH · NASA BLUE MARBLE
+                  </div>
+                </div>
+
+                {/* Moon (cratered grey reference body) */}
+                <div className="celestial-sphere moon-sphere">
+                  <img src={CELESTIAL_IMAGES.moon} alt="Moon — NASA Galileo cratered reference body" />
+                  <div className="sphere-atmosphere moon-atmosphere" />
+                  <div className="celestial-label moon-label">
+                    <span>02</span> MOON REFERENCE BODY
+                  </div>
+                </div>
+
+                {/* Mars (reddish reference planet) */}
+                <div className="celestial-sphere mars-sphere">
+                  <img src={CELESTIAL_IMAGES.mars} alt="Mars — NASA MOLA reddish reference body" />
+                  <div className="sphere-atmosphere mars-atmosphere" />
+                  <div className="celestial-label mars-label">
+                    <span>03</span> MARS REFERENCE BODY
+                  </div>
+                </div>
+              </div>
+              <div className="about-stage-caption">
+                Conceptual planetary illustration · Not to scale
+              </div>
+              <div className="about-stage-credits">
+                NASA GSFC (Blue Marble) · NASA JPL/USGS (Galileo PIA00405) · NASA MOLA Team
+              </div>
             </div>
           </section>
           <PendingScore target={target} />

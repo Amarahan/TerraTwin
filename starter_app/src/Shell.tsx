@@ -2,8 +2,11 @@ import { useState } from "react";
 import type { AtlasData } from "./data";
 export type Screen = "home" | "targets" | "explorer" | "rankings" | "details" | "compare" | "about";
 const images = {
-  earth: "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001386/GSFC_20171208_Archive_e001386~medium.jpg",
-  meridiani: "https://images-assets.nasa.gov/image/PIA04275/PIA04275~medium.jpg",
+  earth: `${import.meta.env.BASE_URL}images/celestial/nasa_blue_marble_earth.jpg`,
+  // Authentic NASA Galileo/LRO Lunar surface imagery (cratered grey celestial body)
+  moon: `${import.meta.env.BASE_URL}images/celestial/nasa_galileo_moon.jpg`,
+  // Authentic NASA Mars imagery (reddish planet)
+  mars: `${import.meta.env.BASE_URL}images/celestial/nasa_mola_mars.jpg`,
 };
 export const Icon = ({ name, size = 18 }: { name: string; size?: number }) => {
   const paths: Record<string, React.ReactNode> = {
@@ -143,6 +146,45 @@ export function SectionHeading({
   );
 }
 
+const FEATURED_LOCATIONS = [
+  {
+    id: "mount-popa-central-dry-zone",
+    name: "Mount Popa",
+    region: "Myanmar",
+    image: `${import.meta.env.BASE_URL}assets/featured/mount-popa.jpg`,
+    alt: "Mount Popa volcanic mountain with the monastery at the summit",
+    objectPosition: "center 35%",
+    description: "Volcanic plug with hydrothermal mineral deposits and distinct basaltic slopes.",
+  },
+  {
+    id: "twin-taung-maar-crater",
+    name: "Twin Taung Maar Crater",
+    region: "Myanmar",
+    image: `${import.meta.env.BASE_URL}assets/featured/twin-taung.jpg`,
+    alt: "Twin Taung crater lake and surrounding landscape",
+    objectPosition: "center center",
+    description: "Volcanic maar crater lake exhibiting steep ejecta walls and morphologic depression.",
+  },
+  {
+    id: "letpadaung-monywa-copper-area",
+    name: "Letpadaung / Monywa Copper Area",
+    region: "Myanmar",
+    image: `${import.meta.env.BASE_URL}assets/featured/letpadaung.jpg`,
+    alt: "Letpadaung copper-area landscape",
+    objectPosition: "center 45%",
+    description: "Open hydrothermal copper-porphyry deposit with diverse altered rock and mineral zones.",
+  },
+  {
+    id: "kawah-ijen",
+    name: "Kawah Ijen",
+    region: "Indonesia",
+    image: `${import.meta.env.BASE_URL}assets/featured/kawah-ijen.jpg`,
+    alt: "Kawah Ijen turquoise acidic crater lake",
+    objectPosition: "center 55%",
+    description: "Hyper-acidic turquoise crater lake characterized by active sulfur solfatara processes.",
+  },
+];
+
 export function Home({ navigate, data, selectSite }: { navigate: (s: Screen) => void; data: AtlasData; selectSite: (id: string) => void }) {
   return (
     <main id="main-content" tabIndex={-1}>
@@ -150,7 +192,6 @@ export function Home({ navigate, data, selectSite }: { navigate: (s: Screen) => 
         <div className="hero-grid" />
         <div className="hero-copy">
           <div className="mission-kicker">
-            <span>Mission TT–01</span>
             <i /> Planetary analog reconnaissance
           </div>
           <h1>
@@ -183,25 +224,29 @@ export function Home({ navigate, data, selectSite }: { navigate: (s: Screen) => 
             </div>
           </div>
         </div>
-        <div className="planet-stage" aria-label="Earth and Mars orbital visualization">
+        <div className="planet-stage" aria-label="Earth, Moon and Mars celestial visualization">
           <div className="orbit orbit-a" />
           <div className="orbit orbit-b" />
+          <div className="orbit orbit-c" />
           <div className="earth">
-            <img src={images.earth} alt="NASA Blue Marble view of Earth" />
+            <img src={images.earth} alt="NASA Blue Marble view of Earth from space" />
             <div className="atmosphere" />
           </div>
-          <div className="mars" style={{ backgroundImage: `url(${images.meridiani})` }} />
-          <div className="trajectory" />
+          <div className="moon" style={{ backgroundImage: `url(${images.moon})` }} aria-label="Moon cratered reference body" />
+          <div className="mars" style={{ backgroundImage: `url(${images.mars})` }} aria-label="Mars reddish reference body" />
+          <div className="trajectory trajectory-moon" />
+          <div className="trajectory trajectory-mars" />
           <div className="planet-label earth-label">
-            <span>01</span> Earth · NASA context image
+            <span>01</span> EARTH · NASA CONTEXT IMAGE
+          </div>
+          <div className="planet-label moon-label">
+            <span>02</span> MOON REFERENCE BODY
           </div>
           <div className="planet-label mars-label">
-            <span>02</span> Mars reference body
+            <span>03</span> MARS REFERENCE BODY
           </div>
-          <div className="telemetry">
-            <span>CONTEXT VIEW</span>
-            <b>NO LIVE MODEL</b>
-            <small>ORBITAL VIEW / NOT TO SCALE</small>
+          <div className="stage-caption">
+            Illustrative planetary composition · Not to scale
           </div>
         </div>
       </section>
@@ -252,12 +297,25 @@ export function Home({ navigate, data, selectSite }: { navigate: (s: Screen) => 
           </button>
         </div>
         <div className="feature-grid">
-          {data.sites.filter(s => s.group === "Featured").map((site, index) => (
-            <button className="feature-card pending-card" key={site.id} onClick={() => selectSite(site.id)}>
+          {FEATURED_LOCATIONS.map((loc, index) => (
+            <button
+              className="feature-card"
+              key={loc.id}
+              onClick={() => selectSite(loc.id)}
+            >
+              <img
+                src={loc.image}
+                alt={loc.alt}
+                style={{ objectPosition: loc.objectPosition }}
+                loading="lazy"
+              />
               <div className="card-scanlines" />
-              <span className="card-identifier">0{index + 1} / {site.region}</span>
-              <h3>{site.name}</h3>
-              <p>Candidate site · Geographic placement pending review</p>
+              <div className="card-header-tags">
+                <span className="card-identifier">0{index + 1} / {loc.region}</span>
+                <span className="card-badge">Featured</span>
+              </div>
+              <h3>{loc.name}</h3>
+              <p>{loc.description}</p>
             </button>
           ))}
         </div>
