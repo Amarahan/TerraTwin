@@ -10,7 +10,7 @@
 
 ## 1. SRTM guide availability and scope
 
-- Requested local guide `docs/references/SRTM_User_Guide_V3.pdf` present: **true** on 2026-11-14. I inspected the supplied 17-page PDF (title: *The Shuttle Radar Topography Mission (SRTM) Collection User Guide*; revised October 2015) directly. Its SRTM HGT specifications below were extracted from pages 10–11; the prior report's external-reference note is superseded.
+- Requested local guide `docs/references/SRTM_User_Guide_V3.pdf` present: **true**. The supplied PDF was inspected directly on 2026-11-14; format specifications below are in section 2.1.4, pages 10–11 of the Revised October 2015 guide. File presence does not establish provenance for the bundled HGT tiles.
 - The guide specifies SRTMGL1 as 3,601 × 3,601 at 1 arc-second and SRTMGL3 as 1,201 × 1,201 at 3 arc-seconds. Both HGT grids contain two-byte signed integer samples. The HGT convention is big-endian, row-major with the northernmost row first, with no embedded header/trailer. Elevation is in metres, referenced to the WGS84/EGM96 geoid (guide wording).
 - The guide says `-32768` marks voids for versions 1.0 and 2.1, while version 3.0 has no voids. Because exact input versions are unverified, the scan reports the sentinel count but does not classify or replace samples.
 

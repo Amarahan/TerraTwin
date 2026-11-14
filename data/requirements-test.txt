@@ -1,0 +1,2 @@
+# Already available in the stabilization environment; needed for strict PDF regression checks.
+pypdf==6.18.1

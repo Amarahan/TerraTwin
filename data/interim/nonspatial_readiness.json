@@ -3,8 +3,8 @@
   "scope": "non-spatial P1 readiness; no coordinate-based coverage claims",
   "local_srtm_guide": {
     "path": "docs/references/SRTM_User_Guide_V3.pdf",
-    "present": false,
-    "status": "NOT_PRESENT; official LP DAAC web copy consulted for format specification",
+    "present": true,
+    "status": "PRESENT",
     "official_web_reference": "https://lpdaac.usgs.gov/documents/179/SRTM_User_Guide_V3.pdf"
   },
   "hgt_files": [

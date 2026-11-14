@@ -1,5 +1,8 @@
 import unittest
 from pathlib import Path
+from copy import deepcopy
+
+from pypdf import PdfReader
 
 from data.scripts.audit_inputs import ROOT
 from data.scripts.nonspatial_readiness import (
@@ -8,6 +11,7 @@ from data.scripts.nonspatial_readiness import (
     build_readiness,
     inspect_hgt,
     reconcile_manifests,
+    _markdown_report,
 )
 
 
@@ -40,8 +44,39 @@ class NonspatialReadinessTests(unittest.TestCase):
         report = build_readiness()
         self.assertEqual(len(report["hgt_files"]), 2)
         self.assertEqual(len(report["scientific_feature_source_inventory"]), 24)
-        self.assertFalse(report["local_srtm_guide"]["present"])
+        # The team supplied this required reference after the initial audit.
+        guide = ROOT / report["local_srtm_guide"]["path"]
+        self.assertTrue(guide.is_file())
+        self.assertGreater(guide.stat().st_size, 0)
+        self.assertTrue(report["local_srtm_guide"]["present"])
+        self.assertEqual(report["local_srtm_guide"]["status"], "PRESENT")
         self.assertEqual(report["processing_status"], "NO_SPATIAL_EXTRACTION_OR_SCORING_PERFORMED")
+
+    def test_supplied_guide_is_parseable_srtm_reference(self):
+        guide = ROOT / "docs/references/SRTM_User_Guide_V3.pdf"
+        original = guide.read_bytes()
+        self.assertTrue(original.startswith(b"%PDF-"))
+        reader = PdfReader(guide, strict=True)
+        self.assertFalse(reader.is_encrypted)
+        self.assertGreater(len(reader.pages), 0)
+        self.assertIn("SRTM", reader.metadata.title)
+        text = "\n".join(page.extract_text() or "" for page in reader.pages)
+        self.assertIn("Revised October", text)
+        self.assertIn("big-endian", text)
+        self.assertIn("row major", text)
+        self.assertEqual(guide.read_bytes(), original)
+
+    def test_markdown_reports_present_and_missing_reference_truthfully(self):
+        report = build_readiness()
+        present = _markdown_report(report)
+        self.assertIn("present: **true**", present)
+        self.assertNotIn("The supplied copy is missing", present)
+        missing = deepcopy(report)
+        missing["local_srtm_guide"]["present"] = False
+        missing["local_srtm_guide"]["status"] = "NOT_PRESENT"
+        absent = _markdown_report(missing)
+        self.assertIn("present: **false**", absent)
+        self.assertIn("The supplied copy is missing", absent)
 
 
 if __name__ == "__main__":

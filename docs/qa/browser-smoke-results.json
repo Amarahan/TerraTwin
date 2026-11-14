@@ -1,0 +1,63 @@
+{
+  "base": "http://127.0.0.1:8443/",
+  "checks": [
+    "six desktop navigation sections",
+    "four target cards and body filters",
+    "all 12 sites synchronize list, detail and map status",
+    "search, categories and empty-state recovery",
+    "map zoom and reset",
+    "site detail tabs, eight features and missing values",
+    "comparison and all target selector options",
+    "methodology, limits and source references",
+    "mobile 390px navigation and layout",
+    "mobile target, site and feature panels",
+    "failed fetch, invalid JSON contract, and retry recovery",
+    "no runtime exceptions"
+  ],
+  "passed": 12,
+  "runtimeErrors": [],
+  "consoleErrors": [
+    "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+    "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+    "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+    "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+    "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+    "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+    "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+  ],
+  "failedRequests": [
+    {
+      "url": "http://127.0.0.1:8443/data/atlas.json",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap",
+      "error": "net::ERR_NETWORK_ACCESS_DENIED"
+    },
+    {
+      "url": "https://images-assets.nasa.gov/image/PIA04275/PIA04275~medium.jpg",
+      "error": "net::ERR_NETWORK_ACCESS_DENIED"
+    },
+    {
+      "url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001386/GSFC_20171208_Archive_e001386~medium.jpg",
+      "error": "net::ERR_NETWORK_ACCESS_DENIED"
+    },
+    {
+      "url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001386/GSFC_20171208_Archive_e001386~medium.jpg",
+      "error": "net::ERR_NETWORK_ACCESS_DENIED"
+    },
+    {
+      "url": "https://images-assets.nasa.gov/image/PIA04275/PIA04275~medium.jpg",
+      "error": "net::ERR_NETWORK_ACCESS_DENIED"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap",
+      "error": "net::ERR_NETWORK_ACCESS_DENIED"
+    },
+    {
+      "url": "http://127.0.0.1:8443/data/atlas.json",
+      "error": "net::ERR_ABORTED"
+    }
+  ],
+  "note": "HTTP 503 console errors in the failure fixture are intentional; source destinations were checked as links, not all opened."
+}
