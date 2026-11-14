@@ -1,0 +1,1228 @@
+{
+  "schema_version": "pending-display-v1",
+  "register_status": "PROVISIONAL_CANDIDATE_NOT_APPROVED",
+  "register_sha256": "c784c3dcea582ce39f2cd0b3f8f95357b8816b7947d71655417ae2ca9614f35b",
+  "register_sources": [
+    "data/manifests/site_targets.csv",
+    "data/raw/mee_lay_master_project_data(1).xlsx",
+    "data/raw/mee_lay_complete_analog_data_expanded.xlsx",
+    "docs/TerraTwin_Final_Development_Plan.md (planned site and target scope)"
+  ],
+  "features": [
+    {
+      "id": "feature-1",
+      "label": "Slope",
+      "unit": null,
+      "status": "PENDING_REVIEW",
+      "definition_source": "docs/TerraTwin_Final_Development_Plan.md, section 4",
+      "limitations": "Final definition, dataset, unit, QA and cross-body comparability require team approval."
+    },
+    {
+      "id": "feature-2",
+      "label": "Surface roughness",
+      "unit": null,
+      "status": "PENDING_REVIEW",
+      "definition_source": "docs/TerraTwin_Final_Development_Plan.md, section 4",
+      "limitations": "Final definition, dataset, unit, QA and cross-body comparability require team approval."
+    },
+    {
+      "id": "feature-3",
+      "label": "Temperature contrast (be precise: day–night LST contrast is not seasonal temperature range)",
+      "unit": null,
+      "status": "PENDING_REVIEW",
+      "definition_source": "docs/TerraTwin_Final_Development_Plan.md, section 4",
+      "limitations": "Final definition, dataset, unit, QA and cross-body comparability require team approval."
+    },
+    {
+      "id": "feature-4",
+      "label": "Dryness",
+      "unit": null,
+      "status": "PENDING_REVIEW",
+      "definition_source": "docs/TerraTwin_Final_Development_Plan.md, section 4",
+      "limitations": "Final definition, dataset, unit, QA and cross-body comparability require team approval."
+    },
+    {
+      "id": "feature-5",
+      "label": "Vegetation / bareness",
+      "unit": null,
+      "status": "PENDING_REVIEW",
+      "definition_source": "docs/TerraTwin_Final_Development_Plan.md, section 4",
+      "limitations": "Final definition, dataset, unit, QA and cross-body comparability require team approval."
+    },
+    {
+      "id": "feature-6",
+      "label": "Rock and mineral type",
+      "unit": null,
+      "status": "PENDING_REVIEW",
+      "definition_source": "docs/TerraTwin_Final_Development_Plan.md, section 4",
+      "limitations": "Final definition, dataset, unit, QA and cross-body comparability require team approval."
+    },
+    {
+      "id": "feature-7",
+      "label": "Water ice / permafrost",
+      "unit": null,
+      "status": "PENDING_REVIEW",
+      "definition_source": "docs/TerraTwin_Final_Development_Plan.md, section 4",
+      "limitations": "Final definition, dataset, unit, QA and cross-body comparability require team approval."
+    },
+    {
+      "id": "feature-8",
+      "label": "Dust and wind / aerosol proxy",
+      "unit": null,
+      "status": "PENDING_REVIEW",
+      "definition_source": "docs/TerraTwin_Final_Development_Plan.md, section 4",
+      "limitations": "Final definition, dataset, unit, QA and cross-body comparability require team approval."
+    }
+  ],
+  "sites": [
+    {
+      "id": "twin-taung-maar-crater",
+      "name": "Twin Taung Maar Crater",
+      "body": "Earth",
+      "group": "Featured",
+      "region": "Myanmar",
+      "coordinates": null,
+      "coordinate_status": "PENDING_HUMAN_REVIEW",
+      "coordinate_issue": "No coordinate row in site_targets.csv. Coordinate candidates differ between workbook sheets; none is selected. Workbook Coordinate check records: GVP Lower Chindwin field centre (shown on Wikipedia); the Twin Taung lake is east of the Chindwin river A workbook coordinate source note is recorded; its linked citation and applicability still require verification and human approval.",
+      "decision": "Approve a canonical coordinate, authoritative citation, and representative geometry/buffer; preserve this site in the register while pending.",
+      "score": null,
+      "measurements": {
+        "feature-1": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-2": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-3": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-4": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-5": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-6": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-7": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-8": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        }
+      }
+    },
+    {
+      "id": "letpadaung-monywa-copper-area",
+      "name": "Letpadaung / Monywa Copper Area",
+      "body": "Earth",
+      "group": "Featured",
+      "region": "Myanmar",
+      "coordinates": null,
+      "coordinate_status": "PENDING_HUMAN_REVIEW",
+      "coordinate_issue": "No coordinate row in site_targets.csv. Coordinate candidates differ between workbook sheets; none is selected. Workbook Coordinate check records: No coordinate found; Mitchell 2011 puts Letpadaung 7 km SE of Sabetaung No direct, coordinate-specific source citation is recorded for the candidate coordinate(s).",
+      "decision": "Approve a canonical coordinate, authoritative citation, and representative geometry/buffer; preserve this site in the register while pending.",
+      "score": null,
+      "measurements": {
+        "feature-1": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-2": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-3": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-4": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-5": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-6": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-7": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-8": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        }
+      }
+    },
+    {
+      "id": "mount-popa-central-dry-zone",
+      "name": "Mount Popa / Central Dry Zone",
+      "body": "Earth",
+      "group": "Featured",
+      "region": "Myanmar",
+      "coordinates": null,
+      "coordinate_status": "PENDING_HUMAN_REVIEW",
+      "coordinate_issue": "No coordinate row in site_targets.csv. Workbook Coordinate check records: GVP Popa (shown on VolcanoDiscovery) A workbook coordinate source note is recorded; its linked citation and applicability still require verification and human approval.",
+      "decision": "Approve a canonical coordinate, authoritative citation, and representative geometry/buffer; preserve this site in the register while pending.",
+      "score": null,
+      "measurements": {
+        "feature-1": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-2": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-3": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-4": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-5": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-6": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-7": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-8": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        }
+      }
+    },
+    {
+      "id": "kawah-ijen",
+      "name": "Kawah Ijen",
+      "body": "Earth",
+      "group": "Featured",
+      "region": "Indonesia",
+      "coordinates": null,
+      "coordinate_status": "PENDING_HUMAN_REVIEW",
+      "coordinate_issue": "No coordinate row in site_targets.csv. Coordinate candidates differ between workbook sheets; none is selected. Workbook Coordinate check records: No coordinate found; the CSV value was from memory No direct, coordinate-specific source citation is recorded for the candidate coordinate(s).",
+      "decision": "Approve a canonical coordinate, authoritative citation, and representative geometry/buffer; preserve this site in the register while pending.",
+      "score": null,
+      "measurements": {
+        "feature-1": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-2": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-3": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-4": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-5": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-6": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-7": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-8": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        }
+      }
+    },
+    {
+      "id": "atacama-desert",
+      "name": "Atacama Desert",
+      "body": "Earth",
+      "group": "Benchmark",
+      "region": "Chile",
+      "coordinates": null,
+      "coordinate_status": "PENDING_HUMAN_REVIEW",
+      "coordinate_issue": "CSV and workbook coordinate candidates differ; none is selected. No direct, coordinate-specific source citation is recorded for the candidate coordinate(s).",
+      "decision": "Approve a canonical coordinate, authoritative citation, and representative geometry/buffer; preserve this site in the register while pending.",
+      "score": null,
+      "measurements": {
+        "feature-1": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-2": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-3": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-4": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-5": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-6": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-7": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-8": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        }
+      }
+    },
+    {
+      "id": "haughton-crater",
+      "name": "Haughton Crater",
+      "body": "Earth",
+      "group": "Benchmark",
+      "region": "Canada",
+      "coordinates": null,
+      "coordinate_status": "PENDING_HUMAN_REVIEW",
+      "coordinate_issue": "CSV and workbook coordinate candidates differ; none is selected. No direct, coordinate-specific source citation is recorded for the candidate coordinate(s).",
+      "decision": "Approve a canonical coordinate, authoritative citation, and representative geometry/buffer; preserve this site in the register while pending.",
+      "score": null,
+      "measurements": {
+        "feature-1": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-2": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-3": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-4": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-5": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-6": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-7": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-8": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        }
+      }
+    },
+    {
+      "id": "mcmurdo-dry-valleys",
+      "name": "McMurdo Dry Valleys",
+      "body": "Earth",
+      "group": "Benchmark",
+      "region": "Antarctica",
+      "coordinates": null,
+      "coordinate_status": "PENDING_HUMAN_REVIEW",
+      "coordinate_issue": "No coordinate row in site_targets.csv. Coordinate candidates differ between workbook sheets; none is selected. No direct, coordinate-specific source citation is recorded for the candidate coordinate(s).",
+      "decision": "Approve a canonical coordinate, authoritative citation, and representative geometry/buffer; preserve this site in the register while pending.",
+      "score": null,
+      "measurements": {
+        "feature-1": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-2": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-3": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-4": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-5": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-6": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-7": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-8": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        }
+      }
+    },
+    {
+      "id": "death-valley",
+      "name": "Death Valley",
+      "body": "Earth",
+      "group": "Benchmark",
+      "region": "United States",
+      "coordinates": null,
+      "coordinate_status": "PENDING_HUMAN_REVIEW",
+      "coordinate_issue": "CSV and workbook coordinate candidates differ; none is selected. No direct, coordinate-specific source citation is recorded for the candidate coordinate(s).",
+      "decision": "Approve a canonical coordinate, authoritative citation, and representative geometry/buffer; preserve this site in the register while pending.",
+      "score": null,
+      "measurements": {
+        "feature-1": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-2": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-3": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-4": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-5": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-6": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-7": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-8": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        }
+      }
+    },
+    {
+      "id": "lonar-crater",
+      "name": "Lonar Crater",
+      "body": "Earth",
+      "group": "Benchmark",
+      "region": "India",
+      "coordinates": null,
+      "coordinate_status": "PENDING_HUMAN_REVIEW",
+      "coordinate_issue": "No coordinate row in site_targets.csv. No direct, coordinate-specific source citation is recorded for the candidate coordinate(s).",
+      "decision": "Approve a canonical coordinate, authoritative citation, and representative geometry/buffer; preserve this site in the register while pending.",
+      "score": null,
+      "measurements": {
+        "feature-1": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-2": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-3": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-4": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-5": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-6": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-7": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-8": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        }
+      }
+    },
+    {
+      "id": "amazon-rainforest",
+      "name": "Amazon Rainforest",
+      "body": "Earth",
+      "group": "Control",
+      "region": "Brazil",
+      "coordinates": null,
+      "coordinate_status": "PENDING_HUMAN_REVIEW",
+      "coordinate_issue": "No coordinate row in site_targets.csv. Coordinate candidates differ between workbook sheets; none is selected. No direct, coordinate-specific source citation is recorded for the candidate coordinate(s).",
+      "decision": "Approve a canonical coordinate, authoritative citation, and representative geometry/buffer; preserve this site in the register while pending.",
+      "score": null,
+      "measurements": {
+        "feature-1": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-2": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-3": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-4": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-5": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-6": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-7": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-8": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        }
+      }
+    },
+    {
+      "id": "congo-basin",
+      "name": "Congo Basin",
+      "body": "Earth",
+      "group": "Control",
+      "region": "Africa",
+      "coordinates": null,
+      "coordinate_status": "PENDING_HUMAN_REVIEW",
+      "coordinate_issue": "No coordinate row in site_targets.csv. Coordinate candidates differ between workbook sheets; none is selected. No direct, coordinate-specific source citation is recorded for the candidate coordinate(s).",
+      "decision": "Approve a canonical coordinate, authoritative citation, and representative geometry/buffer; preserve this site in the register while pending.",
+      "score": null,
+      "measurements": {
+        "feature-1": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-2": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-3": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-4": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-5": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-6": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-7": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-8": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        }
+      }
+    },
+    {
+      "id": "irrawaddy-delta-rice-fields",
+      "name": "Irrawaddy Delta rice fields",
+      "body": "Earth",
+      "group": "Control",
+      "region": "Myanmar",
+      "coordinates": null,
+      "coordinate_status": "PENDING_HUMAN_REVIEW",
+      "coordinate_issue": "No coordinate row in site_targets.csv. Coordinate candidates differ between workbook sheets; none is selected. No direct, coordinate-specific source citation is recorded for the candidate coordinate(s).",
+      "decision": "Approve a canonical coordinate, authoritative citation, and representative geometry/buffer; preserve this site in the register while pending.",
+      "score": null,
+      "measurements": {
+        "feature-1": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-2": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-3": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-4": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-5": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-6": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-7": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-8": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        }
+      }
+    }
+  ],
+  "targets": [
+    {
+      "id": "shackleton-crater-rim",
+      "name": "Shackleton Crater Rim",
+      "body": "Moon",
+      "group": null,
+      "region": null,
+      "coordinates": null,
+      "coordinate_status": "PENDING_HUMAN_REVIEW",
+      "coordinate_issue": "Workbook coordinate is retained as original text and has not been parsed or selected. No direct, coordinate-specific source citation is recorded for the candidate coordinate(s).",
+      "decision": "Approve a canonical coordinate, authoritative coordinate citation, and target geometry; keep this target in the register while pending.",
+      "score": null,
+      "measurements": {
+        "feature-1": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-2": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-3": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-4": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-5": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-6": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-7": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-8": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        }
+      }
+    },
+    {
+      "id": "malapert-massif",
+      "name": "Malapert Massif",
+      "body": "Moon",
+      "group": null,
+      "region": null,
+      "coordinates": null,
+      "coordinate_status": "PENDING_HUMAN_REVIEW",
+      "coordinate_issue": "Workbook coordinate is retained as original text and has not been parsed or selected. No direct, coordinate-specific source citation is recorded for the candidate coordinate(s).",
+      "decision": "Approve a canonical coordinate, authoritative coordinate citation, and target geometry; keep this target in the register while pending.",
+      "score": null,
+      "measurements": {
+        "feature-1": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-2": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-3": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-4": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-5": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-6": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-7": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-8": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        }
+      }
+    },
+    {
+      "id": "jezero-crater",
+      "name": "Jezero Crater",
+      "body": "Mars",
+      "group": null,
+      "region": null,
+      "coordinates": null,
+      "coordinate_status": "PENDING_HUMAN_REVIEW",
+      "coordinate_issue": "Workbook coordinate is retained as original text and has not been parsed or selected. No direct, coordinate-specific source citation is recorded for the candidate coordinate(s).",
+      "decision": "Approve a canonical coordinate, authoritative coordinate citation, and target geometry; keep this target in the register while pending.",
+      "score": null,
+      "measurements": {
+        "feature-1": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-2": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-3": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-4": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-5": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-6": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-7": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-8": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        }
+      }
+    },
+    {
+      "id": "meridiani-planum",
+      "name": "Meridiani Planum",
+      "body": "Mars",
+      "group": null,
+      "region": null,
+      "coordinates": null,
+      "coordinate_status": "PENDING_HUMAN_REVIEW",
+      "coordinate_issue": "No coordinate row in site_targets.csv. Workbook coordinate is retained as original text and has not been parsed or selected. No direct, coordinate-specific source citation is recorded for the candidate coordinate(s).",
+      "decision": "Approve a canonical coordinate, authoritative coordinate citation, and target geometry; keep this target in the register while pending.",
+      "score": null,
+      "measurements": {
+        "feature-1": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-2": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-3": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-4": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-5": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-6": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-7": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        },
+        "feature-8": {
+          "value": null,
+          "unit": null,
+          "source_id": null,
+          "status": "MISSING"
+        }
+      }
+    }
+  ],
+  "sources": [
+    {
+      "name": "NASA Moon Trek",
+      "body": "Luna",
+      "variables": "elevation; slope; roughness; illumination; imagery; crater layers",
+      "url": "https://trek.nasa.gov/moon/",
+      "notes": "Interactive public catalog; individual products can be searched and downloaded",
+      "status": "CANDIDATE_NOT_APPROVED",
+      "provenance": "data/manifests/dataset_inventory.csv"
+    },
+    {
+      "name": "LRO LOLA calibrated data",
+      "body": "Luna",
+      "variables": "topography; slope; roughness; polar illumination",
+      "url": "https://pds.nasa.gov/services/search/search?f.facet_agency.facet.prefix=2%2Cnasa%2C&f.facet_instrument.facet.prefix=3%2Caltimeter%2Clunar+orbiter+laser+altimeter",
+      "notes": " \"Large PDS collection; use regional subsets for target craters\"",
+      "status": "CANDIDATE_NOT_APPROVED",
+      "provenance": "data/manifests/dataset_inventory.csv"
+    },
+    {
+      "name": "LRO Diviner",
+      "body": "Luna",
+      "variables": "surface temperature; thermal environment; cold traps",
+      "url": "https://pds.nasa.gov/ds-view/pds/viewProfile.jsp?dsid=LRO-L-DLRE-5-GDR-V1.0",
+      "notes": "Use for lunar thermal comparison",
+      "status": "CANDIDATE_NOT_APPROVED",
+      "provenance": "data/manifests/dataset_inventory.csv"
+    },
+    {
+      "name": "LRO LEND",
+      "body": "Luna",
+      "variables": "hydrogen distribution; water-ice proxy",
+      "url": "https://science.nasa.gov/mission/lro/spacecraft-and-instruments/",
+      "notes": "Instrument overview and mission context",
+      "status": "CANDIDATE_NOT_APPROVED",
+      "provenance": "data/manifests/dataset_inventory.csv"
+    },
+    {
+      "name": "LRO LAMP",
+      "body": "Luna",
+      "variables": "surface frost and permanently shadowed-region observations",
+      "url": "https://science.nasa.gov/mission/lro/spacecraft-and-instruments/",
+      "notes": "Instrument overview and mission context",
+      "status": "CANDIDATE_NOT_APPROVED",
+      "provenance": "data/manifests/dataset_inventory.csv"
+    },
+    {
+      "name": "LRO LROC NAC/WAC",
+      "body": "Luna",
+      "variables": "high-resolution imagery; landing hazards; terrain context",
+      "url": "https://trek.nasa.gov/moon/",
+      "notes": "Moon Trek exposes mosaics and image products",
+      "status": "CANDIDATE_NOT_APPROVED",
+      "provenance": "data/manifests/dataset_inventory.csv"
+    },
+    {
+      "name": "NASA Mars Trek",
+      "body": "Mars",
+      "variables": "global imagery; DEM; slope; roughness; dust; minerals; geology",
+      "url": "https://trek.nasa.gov/mars/",
+      "notes": "Interactive public catalog with downloadable map products",
+      "status": "CANDIDATE_NOT_APPROVED",
+      "provenance": "data/manifests/dataset_inventory.csv"
+    },
+    {
+      "name": "MGS MOLA Global DEM",
+      "body": "Mars",
+      "variables": "elevation; slope; terrain roughness",
+      "url": "https://trek.nasa.gov/tiles/apidoc/trekAPI.html?body=mars",
+      "notes": "Global WMTS layer; use regional products for analysis",
+      "status": "CANDIDATE_NOT_APPROVED",
+      "provenance": "data/manifests/dataset_inventory.csv"
+    },
+    {
+      "name": "MGS TES Global Dust",
+      "body": "Mars",
+      "variables": "dust abundance; dust index",
+      "url": "https://trek.nasa.gov/tiles/apidoc/trekAPI.html?body=mars",
+      "notes": "Global WMTS layer",
+      "status": "CANDIDATE_NOT_APPROVED",
+      "provenance": "data/manifests/dataset_inventory.csv"
+    },
+    {
+      "name": "CRISM hydrous mineral detections",
+      "body": "Mars",
+      "variables": "clays; sulfates; hematite; hydrated minerals",
+      "url": "https://www.usgs.gov/centers/astrogeology-science-center/science/instruments-data-and-software",
+      "notes": "Use for Jezero and other mineral analog comparisons",
+      "status": "CANDIDATE_NOT_APPROVED",
+      "provenance": "data/manifests/dataset_inventory.csv"
+    },
+    {
+      "name": "MRO CTX and HiRISE",
+      "body": "Mars",
+      "variables": "high-resolution surface imagery; landforms; rover-scale context",
+      "url": "https://trek.nasa.gov/mars/",
+      "notes": "Jezero mosaics are listed in Mars Trek",
+      "status": "CANDIDATE_NOT_APPROVED",
+      "provenance": "data/manifests/dataset_inventory.csv"
+    },
+    {
+      "name": "NASA SRTM",
+      "body": "Earth",
+      "variables": "elevation; slope; terrain roughness",
+      "url": "https://search.earthdata.nasa.gov/search?as%5Borganization%5D%5B0%5D=Shuttle+Radar+Topography+Mission+%28SRTM%29",
+      "notes": "This bundle includes official LP DAAC browse images for S24W070 and N36W117; full HGT granules remain available through Earthdata Login",
+      "status": "CANDIDATE_NOT_APPROVED",
+      "provenance": "data/manifests/dataset_inventory.csv"
+    },
+    {
+      "name": "NASA ASTER GDEM V003",
+      "body": "Earth",
+      "variables": "elevation; slope; terrain roughness",
+      "url": "https://doi.org/10.5067/ASTER/ASTGTM.003",
+      "notes": "This bundle includes official LP DAAC browse images for S24W070, N36W117, and N75W090",
+      "status": "CANDIDATE_NOT_APPROVED",
+      "provenance": "data/manifests/dataset_inventory.csv"
+    },
+    {
+      "name": "NASA Worldview",
+      "body": "Earth",
+      "variables": "satellite imagery; vegetation; water; snow; dust; land cover",
+      "url": "https://worldview.earthdata.nasa.gov/",
+      "notes": "Use date and layer filters for Atacama, Death Valley, Haughton, and other sites",
+      "status": "CANDIDATE_NOT_APPROVED",
+      "provenance": "data/manifests/dataset_inventory.csv"
+    },
+    {
+      "name": "NASA EMIT",
+      "body": "Earth",
+      "variables": "surface mineralogy; arid-region mineral composition",
+      "url": "https://search.earthdata.nasa.gov/search?fpj=GEMx%21EMIT",
+      "notes": "Earthdata account may be required for some downloads",
+      "status": "CANDIDATE_NOT_APPROVED",
+      "provenance": "data/manifests/dataset_inventory.csv"
+    },
+    {
+      "name": "NASA Earthdata Search",
+      "body": "Earth",
+      "variables": "catalog metadata and downloadable Earth-observation products",
+      "url": "https://search.earthdata.nasa.gov/",
+      "notes": "Search by polygon or coordinates for each candidate site",
+      "status": "CANDIDATE_NOT_APPROVED",
+      "provenance": "data/manifests/dataset_inventory.csv"
+    }
+  ],
+  "scoring_status": "NOT_COMPUTED",
+  "policy": "No approved scoring policy or validated measurements. No spatial extraction performed.",
+  "gaps": [
+    "The workbook's Site data sheet cites mee_lay_earth_features.csv, but that file is not present in the supplied bundle.",
+    "No approved eight-feature source/configuration file exists; workbook mappings and derivation notes remain candidates.",
+    "Only two quantitative-raster candidates are supplied (the HGT tiles); exact product version/source provenance is unverified and site extraction is coordinate-gated.",
+    "Moon/Mars raster-like images are rendered previews or WMTS tiles, not calibrated numeric source rasters.",
+    "No browser-ready validated scientific measurements or reference sample are present."
+  ]
+}
