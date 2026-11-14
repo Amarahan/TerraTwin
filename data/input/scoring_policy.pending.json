@@ -1,0 +1,29 @@
+{
+  "schema_version": "scoring-policy-input-v1",
+  "status": "PENDING_HUMAN_REVIEW",
+  "eligible_for_scoring": false,
+  "source": "Team-supplied FULL SCIENTIFIC IMPLEMENTATION AUDIT brief, 2026-11-14, phases 4-8",
+  "continuous_similarity_as_supplied": "1 - abs(earth_i - target_i)",
+  "composite_as_supplied": "100 * sum(weight_i * similarity_i)",
+  "weights_by_source_label": {
+    "Moon": {"Slope": 0.22, "Roughness": 0.18, "Temperature": 0.20, "Water Ice": 0.20, "Rock/Mineral": 0.10, "Dryness": 0.04, "Vegetation": 0.03, "Dust/Wind": 0.03},
+    "Mars": {"Slope": 0.12, "Roughness": 0.10, "Temperature": 0.10, "Water Ice": 0.08, "Rock/Mineral": 0.22, "Dryness": 0.18, "Vegetation": 0.05, "Dust/Wind": 0.15}
+  },
+  "rock_similarity_as_supplied": {"same": 1.0, "related": 0.5, "different": 0.0},
+  "ice_similarity_as_supplied": "1 - abs(earth_ice - target_ice)",
+  "strength_thresholds_as_supplied": {"strong_minimum": 0.75, "partial_minimum": 0.40},
+  "reference_sample_size_as_supplied": 500,
+  "internal_checks_as_supplied": ["best benchmark >= 90th percentile", "median control <= 25th percentile", "median benchmark score > median control score"],
+  "required_approvals": {
+    "canonical_feature_label_mapping_and_definitions": null,
+    "normalization_ranges_and_direction": null,
+    "rock_categories_and_related_category_pairs": null,
+    "ice_encoding": null,
+    "missing_data_policy_and_minimum_coverage": null,
+    "weight_sum_tolerance": null,
+    "strength_band_application_and_scale": null,
+    "reference_seed_land_mask_and_sampling_method": null,
+    "percentile_and_tie_rules": null
+  },
+  "note": "Transcription of team-supplied parameters only. No missing choices are inferred and no live scores are enabled. Scientific inputs and complete policy approval are required by prompts/02_SCORING_ENGINE.md."
+}

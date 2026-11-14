@@ -28,6 +28,7 @@ credentials.json
 .DS_Store
 Thumbs.db
 desktop.ini
+*.lnk
 
 # Editor directories and caches
 .vscode/
