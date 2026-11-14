@@ -1,0 +1,205 @@
+{
+  "schema_version": "challenge-resources-v1",
+  "approved_date": "2026-11-14",
+  "policy_status": "APPROVED_BY_HUMAN_TEAM",
+  "disclaimer": "NASA does not endorse any non-U.S. Government entity and is not responsible for information contained on non-U.S. Government websites. For non-U.S. Government websites, participants must comply with any data use parameters of that specific website.",
+  "agencies": {
+    "NASA": {
+      "name": "National Aeronautics and Space Administration",
+      "status": "PRIMARY_SOURCE_AGENCY",
+      "portals": [
+        {
+          "id": "earthdata",
+          "name": "NASA Earthdata Search",
+          "url": "https://search.earthdata.nasa.gov/",
+          "domain": "Earth",
+          "description": "NASA's primary portal for discovering and accessing Earth science observations, including MODIS LST, MODIS NDVI, MAIAC AOD, SRTM DEM, and GPM precipitation."
+        },
+        {
+          "id": "worldview",
+          "name": "NASA Worldview",
+          "url": "https://worldview.earthdata.nasa.gov/",
+          "domain": "Earth",
+          "description": "Interactive environment for visually exploring daily NASA satellite imagery and environmental observations."
+        },
+        {
+          "id": "pds",
+          "name": "NASA Planetary Data System (PDS)",
+          "url": "https://pds.nasa.gov/",
+          "domain": "Moon / Mars",
+          "description": "Long-term archive for planetary science data from NASA orbital, lander, and rover missions spanning imagery, geoscience, atmospheres, and cartography."
+        },
+        {
+          "id": "lro",
+          "name": "NASA Lunar Reconnaissance Orbiter (LRO)",
+          "url": "https://pds-geosciences.wustl.edu/missions/lro/",
+          "domain": "Moon",
+          "description": "Orbital observations of the lunar surface including LOLA (topography/slope/roughness), LROC (imagery), LEND (neutron/water), and Mini-RF."
+        },
+        {
+          "id": "diviner",
+          "name": "NASA LRO Diviner Lunar Radiometer",
+          "url": "https://pds-geosciences.wustl.edu/missions/lro/diviner.htm",
+          "domain": "Moon",
+          "description": "Maps lunar surface temperature and provides polar thermal products, cold-trap maps, and rock abundance products."
+        }
+      ]
+    },
+    "CSA": {
+      "name": "Canadian Space Agency",
+      "status": "APPROVED_PARTNER_AGENCY",
+      "portals": [
+        {
+          "id": "rcm",
+          "name": "RADARSAT Constellation Mission (RCM) Data",
+          "url": "https://donnees-data.asc-csa.gc.ca/en/dataset/rcm",
+          "domain": "Earth",
+          "description": "Trio of Earth observation satellites providing C-band SAR for surface roughness, terrain, ice, and maritime monitoring."
+        },
+        {
+          "id": "radarsat1",
+          "name": "RADARSAT-1 Open Data Archive",
+          "url": "https://donnees-data.asc-csa.gc.ca/en/dataset/radarsat1",
+          "domain": "Earth",
+          "description": "Historical SAR imagery operating day/night through cloud cover under an open data license."
+        },
+        {
+          "id": "csa_sar_tutorial",
+          "name": "CSA Synthetic Aperture Radar (SAR) Python Tutorial",
+          "url": "https://github.com/asc-csa/Synthetic_Aperture_Radar_Tutorial",
+          "domain": "Earth / Pipeline",
+          "description": "Methods and Python routines for processing SAR imagery for surface roughness and texture extraction."
+        }
+      ]
+    },
+    "ESA": {
+      "name": "European Space Agency",
+      "status": "APPROVED_PARTNER_AGENCY",
+      "portals": [
+        {
+          "id": "copernicus_dataspace",
+          "name": "Copernicus Data Space Ecosystem",
+          "url": "https://dataspace.copernicus.eu/",
+          "domain": "Earth",
+          "description": "Free and open access to Sentinel Earth-observation data (Sentinel-1 SAR, Sentinel-2 Multispectral NDVI, Sentinel-3 SLSTR LST, Copernicus DEM GLO-30)."
+        },
+        {
+          "id": "esa_open_science",
+          "name": "ESA Open Science Catalog",
+          "url": "https://opensciencedata.esa.int/",
+          "domain": "Earth",
+          "description": "Public geoscience datasets, products, experiments, and workflows."
+        }
+      ]
+    },
+    "JAXA": {
+      "name": "Japan Aerospace Exploration Agency",
+      "status": "APPROVED_PARTNER_AGENCY",
+      "portals": [
+        {
+          "id": "jaxa_gportal",
+          "name": "JAXA G-Portal",
+          "url": "https://gportal.jaxa.jp/gpr/index/index",
+          "domain": "Earth",
+          "description": "Satellite Earth observation products including precipitation (GSMaP), snow/ice, and vegetation metrics."
+        }
+      ]
+    }
+  },
+  "feature_mapping": {
+    "slope": {
+      "Earth": [
+        {"agency": "NASA", "dataset": "SRTMGL1 V003 (30m)", "portal": "earthdata"},
+        {"agency": "ESA", "dataset": "Copernicus DEM GLO-30 (30m DSM)", "portal": "copernicus_dataspace"}
+      ],
+      "Moon": [
+        {"agency": "NASA", "dataset": "LRO LOLA Polar DTM (5m-20m/px)", "portal": "lro"}
+      ],
+      "Mars": [
+        {"agency": "NASA", "dataset": "MOLA MEGDR / HRSC DTM (200m/px)", "portal": "pds"}
+      ]
+    },
+    "surface_roughness": {
+      "Earth": [
+        {"agency": "ESA", "dataset": "Copernicus DEM 1km elevation std dev", "portal": "copernicus_dataspace"},
+        {"agency": "CSA", "dataset": "RADARSAT-1 / RCM C-band SAR backscatter roughness", "portal": "rcm"}
+      ],
+      "Moon": [
+        {"agency": "NASA", "dataset": "LRO LOLA Surface Roughness GDR", "portal": "lro"}
+      ],
+      "Mars": [
+        {"agency": "NASA", "dataset": "MOLA Surface Roughness Grid", "portal": "pds"}
+      ]
+    },
+    "temperature_contrast": {
+      "Earth": [
+        {"agency": "NASA", "dataset": "MODIS Terra/Aqua LST Day-Night (MOD11A1/MYD11A1)", "portal": "earthdata"},
+        {"agency": "ESA", "dataset": "Sentinel-3 SLSTR LST", "portal": "copernicus_dataspace"}
+      ],
+      "Moon": [
+        {"agency": "NASA", "dataset": "LRO Diviner Lunar Radiometer Polar GDR (Brightness Temp)", "portal": "diviner"}
+      ],
+      "Mars": [
+        {"agency": "NASA", "dataset": "MGS TES Surface Temperature / Mars Climate Database (MCD)", "portal": "pds"}
+      ]
+    },
+    "dryness": {
+      "Earth": [
+        {"agency": "NASA", "dataset": "GPM IMERG Final Precipitation V07", "portal": "earthdata"},
+        {"agency": "JAXA", "dataset": "GSMaP Global Precipitation", "portal": "jaxa_gportal"}
+      ],
+      "Moon": [
+        {"agency": "NASA", "dataset": "Hyper-arid regolith baseline (0 mm rainfall)", "portal": "pds"}
+      ],
+      "Mars": [
+        {"agency": "NASA", "dataset": "Hyper-arid surface baseline (0 mm rainfall)", "portal": "pds"}
+      ]
+    },
+    "vegetation_bareness": {
+      "Earth": [
+        {"agency": "NASA", "dataset": "MODIS 16-day NDVI (MOD13A2)", "portal": "earthdata"},
+        {"agency": "ESA", "dataset": "Sentinel-2 MSI 10m NDVI", "portal": "copernicus_dataspace"}
+      ],
+      "Moon": [
+        {"agency": "NASA", "dataset": "Barren lifeless surface baseline (0.00 NDVI)", "portal": "pds"}
+      ],
+      "Mars": [
+        {"agency": "NASA", "dataset": "Barren lifeless surface baseline (0.00 NDVI)", "portal": "pds"}
+      ]
+    },
+    "rock_mineral": {
+      "Earth": [
+        {"agency": "ESA", "dataset": "ESA Open Science Geological Catalogs & Macrostrat lithology", "portal": "esa_open_science"}
+      ],
+      "Moon": [
+        {"agency": "NASA", "dataset": "USGS Unified Geologic Map of the Moon & Diviner Rock Abundance", "portal": "diviner"}
+      ],
+      "Mars": [
+        {"agency": "NASA", "dataset": "MRO CRISM Global Spectral Summary & USGS Mars Geologic Map", "portal": "pds"}
+      ]
+    },
+    "water_ice_permafrost": {
+      "Earth": [
+        {"agency": "NASA", "dataset": "NSIDC / IPA Circum-Arctic Permafrost Map", "portal": "earthdata"}
+      ],
+      "Moon": [
+        {"agency": "NASA", "dataset": "LRO Diviner Cold Traps & LEND Polar Hydrogen (PDS)", "portal": "diviner"}
+      ],
+      "Mars": [
+        {"agency": "NASA", "dataset": "Subsurface Water Ice Mapping (SWIM) & SHARAD Radar Ice Detections", "portal": "pds"}
+      ]
+    },
+    "dust_wind": {
+      "Earth": [
+        {"agency": "NASA", "dataset": "MODIS/MAIAC Aerosol Optical Depth 0.55 um (MCD19A2)", "portal": "earthdata"},
+        {"agency": "ESA", "dataset": "Sentinel-5P TROPOMI UV Aerosol Index", "portal": "copernicus_dataspace"}
+      ],
+      "Mars": [
+        {"agency": "NASA", "dataset": "MGS TES Dust Optical Depth (PDS)", "portal": "pds"}
+      ],
+      "Moon": [
+        {"agency": "NASA", "dataset": "LADEE Exospheric Dust Context (PDS)", "portal": "pds"}
+      ]
+    }
+  }
+}
