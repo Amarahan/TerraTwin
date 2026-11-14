@@ -297,3 +297,119 @@ main:focus{outline:none}.muted{color:#aab8c8;font-size:13px;line-height:1.7}.sta
 .sim-meter-fill {
   height: 100%;
 }
+
+
+/* Map Toolbar & Layout Refinements */
+.map-toolbar-actions {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 400;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.map-tool-btn {
+  background: rgba(7, 21, 34, 0.90);
+  backdrop-filter: blur(8px);
+  border: 1px solid #34536a;
+  color: #c5d1da;
+  font-size: 11px;
+  font-family: 'IBM Plex Mono', monospace;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.map-tool-btn:hover {
+  background: #10334a;
+  color: #45c5e8;
+  border-color: #45c5e8;
+}
+
+/* Rankings & Primary Catalogue Screen */
+.rankings-screen {
+  margin-top: 10px;
+}
+.rankings-controls-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+  margin: 24px 0;
+  flex-wrap: wrap;
+}
+.rankings-filter-group {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.search-label input {
+  min-width: 260px;
+}
+.result-thumb {
+  width: 52px;
+  height: 52px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #29475d;
+  background: #061524;
+}
+.result-placeholder-thumb {
+  width: 52px;
+  height: 52px;
+  border-radius: 4px;
+  display: grid;
+  place-items: center;
+  font: 600 16px 'IBM Plex Mono', monospace;
+  background: #0d273d;
+  border: 1px solid #29475d;
+  color: #45c5e8;
+}
+.result-placeholder-thumb.group-featured {
+  border-color: #00e5ff;
+  color: #00e5ff;
+}
+.result-placeholder-thumb.group-benchmark {
+  border-color: #f59e0b;
+  color: #f59e0b;
+}
+.result-placeholder-thumb.group-control {
+  border-color: #10b981;
+  color: #10b981;
+}
+.results-head {
+  display: grid;
+  grid-template-columns: 55px 230px minmax(230px, 1fr) 100px 110px;
+  align-items: center;
+  min-width: 830px;
+  padding: 14px 18px;
+  background: #081a2c;
+  color: #8fa5b5;
+  font: 600 11px 'IBM Plex Mono', monospace;
+  letter-spacing: 0.08em;
+  border-bottom: 1px solid #29475d;
+}
+.result-row {
+  display: grid;
+  grid-template-columns: 55px 230px minmax(230px, 1fr) 100px 110px;
+  align-items: center;
+  min-width: 830px;
+  padding: 16px 18px;
+  border-bottom: 1px solid #1c384e;
+  transition: background 0.2s ease;
+}
+.result-row:hover {
+  background: rgba(16, 51, 74, 0.4);
+}
+.baseline-audit-section {
+  margin-top: 24px;
+  border-top: 1px solid #29475d;
+  padding-top: 14px;
+}
+.baseline-audit-section summary {
+  color: #8fa5b5;
+  font-size: 12px;
+  cursor: pointer;
+}

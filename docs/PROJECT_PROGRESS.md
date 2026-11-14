@@ -149,3 +149,18 @@ Suggested demonstration: Mission → Targets → choose destination → Explore 
   - Python test suite: 27 passed, 0 failed.
   - Production build: `npm run build` passed (Vite 8.3.8).
   - Git repository: synchronized on remote `origin/main` at commit `098c742`.
+
+
+## Milestone 9 — Explore map repair & Catalogue/Rankings Figma refinement (complete, 2026-11-14)
+- **Explore Map Repair:** Removed the CartoDB Voyager basemap which required an unavailable API key and caused "API KEY REQUIRED" watermarks and black unrendered tiles. Replaced with standard universal OpenStreetMap raster tiles (`https://tile.openstreetmap.org/{z}/{x}/{y}.png`) requiring zero API keys, with full attribution.
+- **Myanmar Quick-Focus & Global Bounds:** Added dedicated toolbar buttons: `Focus Myanmar` (flies to zoom 7 at `[21.0, 95.1]`, cleanly separating closely spaced sites), `Fit All Sites` (calculates geographic bounding box for active candidates), and `Reset map view` (resets to global view at `[20, 10]`, zoom 2).
+- **Synchronized Map & List Filters:** Category filtering (`All`, `Featured`, `Benchmark`, `Control`) is now synchronized between the left sidebar list and central map markers.
+- **Catalogue / Rankings Figma Consolidation:** Completely overhauled the Catalogue tab to match the Figma `.results` table design. Replaced duplicate button grids and redundant score cards with a single unified rankings table featuring rank numbers (`01`, `02`...), site thumbnail images/badges, lithology summaries, dynamic circular score badges with conic gradients, and `Inspect Site →` action buttons.
+- **Scientific Consistency:** Replaced overstated claims ("100% validated coverage") with honest, transparent scientific copy ("Candidate Feature Coverage: 8/8 features evaluated — Provisional workbook extraction"). Preserved the 16-missing-value baseline gate inside a collapsed `<details>` disclosure element on the full Details view.
+- **QA Documentation:** Authored [docs/EXPLORE_MAP_AND_CATALOGUE_QA.md](file:///c:/Users/Asus/Downloads/Telegram%20Desktop/TerraTwin_Team_Handoff_Codex_Antigravity/TerraTwin_Team_Handoff/docs/EXPLORE_MAP_AND_CATALOGUE_QA.md).
+- **Verification:**
+  - TypeScript: 0 errors (`tsc --noEmit`).
+  - Node.js tests: 12 passed, 0 failed.
+  - Python tests: 27 passed, 0 failed.
+  - Production build: `npm run build` passed in 1.58s.
+  - Development server: active at `http://127.0.0.1:8443/` (HTTP 200).
