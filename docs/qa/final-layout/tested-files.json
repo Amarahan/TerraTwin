@@ -1,0 +1,94 @@
+[
+  {
+    "path": "starter_app/src/App.tsx",
+    "sha256": "fe84dee30ef26f6522e9a43b644f61cc5ddf9954cf5a93b992498c21ca5e0f73"
+  },
+  {
+    "path": "starter_app/src/candidateData.ts",
+    "sha256": "2be129946b67d84a77f81bcc045f89cf97927e75b7f558c74ee4cc43ee4bcb79"
+  },
+  {
+    "path": "starter_app/src/data.ts",
+    "sha256": "3c7fd29ad19e6c297b806bd823c3ce61b29c67a4feaf12dc2859e8381e793791"
+  },
+  {
+    "path": "starter_app/src/index.css",
+    "sha256": "0edaf8beddf96b69ef285b08f9fb7387326fa2e4a3b9bccd9d604581349d27e3"
+  },
+  {
+    "path": "starter_app/src/main.tsx",
+    "sha256": "25d5dcf9b7b4c3c4af691f1cdece3b1f5d3c9e4affc9fb1535e3675dc504c172"
+  },
+  {
+    "path": "starter_app/src/mapData.ts",
+    "sha256": "7874e833cdb1af66b9ae8623125f921bc452f225b46f3fbbe07a63a8b017f156"
+  },
+  {
+    "path": "starter_app/src/mvp.css",
+    "sha256": "11be5cbdcf2e9a0825be518fd0843ea8ba2a59bb8d868b410d672981a382a2f5"
+  },
+  {
+    "path": "starter_app/src/scoring.ts",
+    "sha256": "67f605a169419a6c19994c70702ff1994b0c34ce8007e72d17e5829d854a05f7"
+  },
+  {
+    "path": "starter_app/src/Shell.tsx",
+    "sha256": "1172f89779ab8e85420339cb2f7a1dc41123cfcd4db5acdbde44a5ff25e4402b"
+  },
+  {
+    "path": "starter_app/src/views.tsx",
+    "sha256": "f5b74178125b2a1aaf053516a17c79b9265b81af8216db83f9f0993d9c3b2219"
+  },
+  {
+    "path": "starter_app/src/vite-env.d.ts",
+    "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+  },
+  {
+    "path": "starter_app/src/WorldMap.tsx",
+    "sha256": "e177461ed07dcf1cac18a5c7d61203eba2aadffae43610d3cbe94cf2182813a5"
+  },
+  {
+    "path": "starter_app/tests/browser-smoke.mjs",
+    "sha256": "30bcdbabbe200f34919a484f03381da9b4aeb63c75a975592c43d7c549b1319c"
+  },
+  {
+    "path": "starter_app/tests/data.test.ts",
+    "sha256": "3f2e39550eff2047c0fc2fbf2769a5af3800a79470d70ab537da08d5097d85cb"
+  },
+  {
+    "path": "starter_app/tests/layout-smoke.mjs",
+    "sha256": "7380211dee4440e020d7fc088242ed3ce4de3adf6460c44aaa160fb6235ebe51"
+  },
+  {
+    "path": "starter_app/tests/map-fixture.tsx",
+    "sha256": "35f5f6569106837bb81f63cb6dab61671efbd24d48716bbd551ef208ec37529d"
+  },
+  {
+    "path": "starter_app/tests/mapData.test.ts",
+    "sha256": "45b5ce338457774c2231b484bb0f3956e36cabda3fd130d1cc7c4721baab4c96"
+  },
+  {
+    "path": "starter_app/tests/scoring.test.ts",
+    "sha256": "b53cc1d238c5c64f392a798f519b1f3384ef8bc67741bb83af9ff54731f61905"
+  },
+  {
+    "path": "starter_app/package.json",
+    "sha256": "e77896c55917ff4465e8d567ec01ee6c81d099c6323841ce67706cf573bf16bb"
+  },
+  {
+    "path": "starter_app/package-lock.json",
+    "sha256": "7f655fd5f73a920bb4d2a9af431f49b5f3da74ccae3f0272a1666998b182f90c"
+  },
+  {
+    "path": "starter_app/vite.config.ts",
+    "sha256": "c0943b0b9ae2703ea34e6620f4fee03c1c40e6d8bf9114e58e429fa1549a0eb4"
+  },
+  {
+    "path": "starter_app/public/data/atlas.json",
+    "sha256": "a9223d943c9f8443ef6d4a44c0fc1e6386d582214f3099c0727fa378c9dca888"
+  },
+  {
+    "path": "data/input/scoring_policy.pending.json",
+    "sha256": "801cdd2ad0cc1ebccc8bda33f70fddef3d660cdf316818e2466718d495dd4317"
+  }
+]

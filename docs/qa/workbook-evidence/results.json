@@ -1,0 +1,10 @@
+{
+  "checks": [
+    "source panel loads exact worksheet readings and provenance",
+    "side-by-side source values update with both Earth selectors and preserve missing NDVI",
+    "failed or malformed evidence never falls back to stale readings; retry recovers",
+    "390px source-table content stays within existing scroll container",
+    "no runtime exceptions"
+  ],
+  "errors": []
+}

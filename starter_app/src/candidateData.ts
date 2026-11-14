@@ -3,7 +3,11 @@
  *
  * Source: Ingested from master workbook `mee_lay_master_project_data(1).xlsx`
  * and expanded dataset `mee_lay_complete_analog_data_expanded.xlsx` (Codex pipeline).
- * Approved by the human team for interactive display, visualization, and live scoring.
+ * LEGACY CANDIDATE RECORDS — NOT SCIENTIFIC APPROVAL.
+ * Coordinate/measurement constants and normalization below remain unapproved.
+ * Production views use contextual descriptions/images here. Exploratory calculations
+ * read generated exploratory-model.json, with explicit assumptions and source-cell traceability.
+ * Canonical scientific coordinates/measurements remain pending in atlas.json.
  */
 
 export interface CandidateMeasurement {

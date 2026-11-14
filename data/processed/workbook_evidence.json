@@ -1,0 +1,1636 @@
+{
+  "schema_version": "workbook-evidence-v1",
+  "eligible_for_scoring": false,
+  "register_sha256": "c784c3dcea582ce39f2cd0b3f8f95357b8816b7947d71655417ae2ca9614f35b",
+  "source_statement": "Earth features for the 12 sites (from mee_lay_earth_features.csv, Earth Engine run, 2020-2024)",
+  "warnings": [
+    "Workbook claims require scientific verification; file hashes establish local lineage only.",
+    "Formula cells retain cached results and are not recalculated.",
+    "Coordinates and original extraction provenance remain under review.",
+    "Referenced mee_lay_earth_features.csv and its originating extraction script must be recovered or reproduced.",
+    "Raw workbook readings are not approved feature measurements. Unit labels follow source headers; annual rainfall aggregation is unverified."
+  ],
+  "fields": [
+    {
+      "id": "slope_deg",
+      "label": "slope_deg",
+      "unit": "degrees",
+      "unit_status": "SOURCE_HEADER_INTERPRETATION"
+    },
+    {
+      "id": "roughness_m",
+      "label": "roughness_m",
+      "unit": "m",
+      "unit_status": "SOURCE_HEADER_INTERPRETATION"
+    },
+    {
+      "id": "elev_m",
+      "label": "elev_m",
+      "unit": "m",
+      "unit_status": "SOURCE_HEADER_INTERPRETATION"
+    },
+    {
+      "id": "lst_day_K",
+      "label": "lst_day_K",
+      "unit": "K",
+      "unit_status": "SOURCE_HEADER_INTERPRETATION"
+    },
+    {
+      "id": "lst_night_K",
+      "label": "lst_night_K",
+      "unit": "K",
+      "unit_status": "SOURCE_HEADER_INTERPRETATION"
+    },
+    {
+      "id": "lst_range_K",
+      "label": "lst_range_K",
+      "unit": "K",
+      "unit_status": "SOURCE_HEADER_INTERPRETATION"
+    },
+    {
+      "id": "ndvi",
+      "label": "ndvi",
+      "unit": "index",
+      "unit_status": "SOURCE_HEADER_INTERPRETATION"
+    },
+    {
+      "id": "aod_055",
+      "label": "aod_055",
+      "unit": "optical depth",
+      "unit_status": "SOURCE_HEADER_INTERPRETATION"
+    },
+    {
+      "id": "rain_era5_mm",
+      "label": "rain_era5_mm",
+      "unit": "mm (period unverified)",
+      "unit_status": "SOURCE_HEADER_INTERPRETATION"
+    },
+    {
+      "id": "rain_chirps_mm",
+      "label": "rain_chirps_mm",
+      "unit": "mm (period unverified)",
+      "unit_status": "SOURCE_HEADER_INTERPRETATION"
+    }
+  ],
+  "sites": [
+    {
+      "id": "twin-taung-maar-crater",
+      "name": "Twin Taung Maar Crater",
+      "variables": {
+        "slope_deg": {
+          "value": 1.0906,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "E5",
+            "header_cell": "E4"
+          },
+          "original_text": "1.0906"
+        },
+        "roughness_m": {
+          "value": 4.5155,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "F5",
+            "header_cell": "F4"
+          },
+          "original_text": "4.5155"
+        },
+        "elev_m": {
+          "value": 133.326,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "G5",
+            "header_cell": "G4"
+          },
+          "original_text": "133.326"
+        },
+        "lst_day_K": {
+          "value": 309.2953,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "H5",
+            "header_cell": "H4"
+          },
+          "original_text": "309.2953"
+        },
+        "lst_night_K": {
+          "value": 295.8425,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "I5",
+            "header_cell": "I4"
+          },
+          "original_text": "295.8425"
+        },
+        "lst_range_K": {
+          "value": 13.4528,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "J5",
+            "header_cell": "J4"
+          },
+          "original_text": "13.4528"
+        },
+        "ndvi": {
+          "value": 0.377,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "K5",
+            "header_cell": "K4"
+          },
+          "original_text": "0.377"
+        },
+        "aod_055": {
+          "value": 0.3112,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "L5",
+            "header_cell": "L4"
+          },
+          "original_text": "0.3112"
+        },
+        "rain_era5_mm": {
+          "value": 751.7461,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "M5",
+            "header_cell": "M4"
+          },
+          "original_text": "751.7461"
+        },
+        "rain_chirps_mm": {
+          "value": 846.3891,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "N5",
+            "header_cell": "N4"
+          },
+          "original_text": "846.3891"
+        }
+      }
+    },
+    {
+      "id": "letpadaung-monywa-copper-area",
+      "name": "Letpadaung / Monywa Copper Area",
+      "variables": {
+        "slope_deg": {
+          "value": 1.5022,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "E6",
+            "header_cell": "E4"
+          },
+          "original_text": "1.5022"
+        },
+        "roughness_m": {
+          "value": 6.3532,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "F6",
+            "header_cell": "F4"
+          },
+          "original_text": "6.3532"
+        },
+        "elev_m": {
+          "value": 116.0091,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "G6",
+            "header_cell": "G4"
+          },
+          "original_text": "116.0091"
+        },
+        "lst_day_K": {
+          "value": 308.1935,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "H6",
+            "header_cell": "H4"
+          },
+          "original_text": "308.1935"
+        },
+        "lst_night_K": {
+          "value": 295.8599,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "I6",
+            "header_cell": "I4"
+          },
+          "original_text": "295.8599"
+        },
+        "lst_range_K": {
+          "value": 12.3336,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "J6",
+            "header_cell": "J4"
+          },
+          "original_text": "12.3336"
+        },
+        "ndvi": {
+          "value": 0.3874,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "K6",
+            "header_cell": "K4"
+          },
+          "original_text": "0.3874"
+        },
+        "aod_055": {
+          "value": 0.3127,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "L6",
+            "header_cell": "L4"
+          },
+          "original_text": "0.3127"
+        },
+        "rain_era5_mm": {
+          "value": 762.1584,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "M6",
+            "header_cell": "M4"
+          },
+          "original_text": "762.1584"
+        },
+        "rain_chirps_mm": {
+          "value": 878.0491,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "N6",
+            "header_cell": "N4"
+          },
+          "original_text": "878.0491"
+        }
+      }
+    },
+    {
+      "id": "mount-popa-central-dry-zone",
+      "name": "Mount Popa / Central Dry Zone",
+      "variables": {
+        "slope_deg": {
+          "value": 4.619,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "E7",
+            "header_cell": "E4"
+          },
+          "original_text": "4.619"
+        },
+        "roughness_m": {
+          "value": 20.208,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "F7",
+            "header_cell": "F4"
+          },
+          "original_text": "20.208"
+        },
+        "elev_m": {
+          "value": 497.8368,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "G7",
+            "header_cell": "G4"
+          },
+          "original_text": "497.8368"
+        },
+        "lst_day_K": {
+          "value": 305.8196,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "H7",
+            "header_cell": "H4"
+          },
+          "original_text": "305.8196"
+        },
+        "lst_night_K": {
+          "value": 294.5915,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "I7",
+            "header_cell": "I4"
+          },
+          "original_text": "294.5915"
+        },
+        "lst_range_K": {
+          "value": 11.228,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "J7",
+            "header_cell": "J4"
+          },
+          "original_text": "11.228"
+        },
+        "ndvi": {
+          "value": 0.5373,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "K7",
+            "header_cell": "K4"
+          },
+          "original_text": "0.5373"
+        },
+        "aod_055": {
+          "value": 0.2532,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "L7",
+            "header_cell": "L4"
+          },
+          "original_text": "0.2532"
+        },
+        "rain_era5_mm": {
+          "value": 1014.6628,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "M7",
+            "header_cell": "M4"
+          },
+          "original_text": "1014.6628"
+        },
+        "rain_chirps_mm": {
+          "value": 1322.0569,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "N7",
+            "header_cell": "N4"
+          },
+          "original_text": "1322.0569"
+        }
+      }
+    },
+    {
+      "id": "kawah-ijen",
+      "name": "Kawah Ijen",
+      "variables": {
+        "slope_deg": {
+          "value": 11.6468,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "E8",
+            "header_cell": "E4"
+          },
+          "original_text": "11.6468"
+        },
+        "roughness_m": {
+          "value": 51.9491,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "F8",
+            "header_cell": "F4"
+          },
+          "original_text": "51.9491"
+        },
+        "elev_m": {
+          "value": 1307.7866,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "G8",
+            "header_cell": "G4"
+          },
+          "original_text": "1307.7866"
+        },
+        "lst_day_K": {
+          "value": 297.1733,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "H8",
+            "header_cell": "H4"
+          },
+          "original_text": "297.1733"
+        },
+        "lst_night_K": {
+          "value": 288.9886,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "I8",
+            "header_cell": "I4"
+          },
+          "original_text": "288.9886"
+        },
+        "lst_range_K": {
+          "value": 8.1847,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "J8",
+            "header_cell": "J4"
+          },
+          "original_text": "8.1847"
+        },
+        "ndvi": {
+          "value": 0.6869,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "K8",
+            "header_cell": "K4"
+          },
+          "original_text": "0.6869"
+        },
+        "aod_055": {
+          "value": 0.108,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "L8",
+            "header_cell": "L4"
+          },
+          "original_text": "0.108"
+        },
+        "rain_era5_mm": {
+          "value": 2282.7552,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "M8",
+            "header_cell": "M4"
+          },
+          "original_text": "2282.7552"
+        },
+        "rain_chirps_mm": {
+          "value": 2952.4079,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "N8",
+            "header_cell": "N4"
+          },
+          "original_text": "2952.4079"
+        }
+      }
+    },
+    {
+      "id": "atacama-desert",
+      "name": "Atacama Desert",
+      "variables": {
+        "slope_deg": {
+          "value": 4.8518,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "E9",
+            "header_cell": "E4"
+          },
+          "original_text": "4.8518"
+        },
+        "roughness_m": {
+          "value": 20.7992,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "F9",
+            "header_cell": "F4"
+          },
+          "original_text": "20.7992"
+        },
+        "elev_m": {
+          "value": 1158.9742,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "G9",
+            "header_cell": "G4"
+          },
+          "original_text": "1158.9742"
+        },
+        "lst_day_K": {
+          "value": 316.3884,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "H9",
+            "header_cell": "H4"
+          },
+          "original_text": "316.3884"
+        },
+        "lst_night_K": {
+          "value": 283.5068,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "I9",
+            "header_cell": "I4"
+          },
+          "original_text": "283.5068"
+        },
+        "lst_range_K": {
+          "value": 32.8816,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "J9",
+            "header_cell": "J4"
+          },
+          "original_text": "32.8816"
+        },
+        "ndvi": {
+          "value": 0.0978,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "K9",
+            "header_cell": "K4"
+          },
+          "original_text": "0.0978"
+        },
+        "aod_055": {
+          "value": 0.13,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "L9",
+            "header_cell": "L4"
+          },
+          "original_text": "0.13"
+        },
+        "rain_era5_mm": {
+          "value": 3.4481,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "M9",
+            "header_cell": "M4"
+          },
+          "original_text": "3.4481"
+        },
+        "rain_chirps_mm": {
+          "value": 222.4452,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "N9",
+            "header_cell": "N4"
+          },
+          "original_text": "222.4452"
+        }
+      }
+    },
+    {
+      "id": "haughton-crater",
+      "name": "Haughton Crater",
+      "variables": {
+        "slope_deg": {
+          "value": 4.0115,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "E10",
+            "header_cell": "E4"
+          },
+          "original_text": "4.0115"
+        },
+        "roughness_m": {
+          "value": 16.2928,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "F10",
+            "header_cell": "F4"
+          },
+          "original_text": "16.2928"
+        },
+        "elev_m": {
+          "value": 205.0579,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "G10",
+            "header_cell": "G4"
+          },
+          "original_text": "205.0579"
+        },
+        "lst_day_K": {
+          "value": 254.7064,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "H10",
+            "header_cell": "H4"
+          },
+          "original_text": "254.7064"
+        },
+        "lst_night_K": {
+          "value": 252.5819,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "I10",
+            "header_cell": "I4"
+          },
+          "original_text": "252.5819"
+        },
+        "lst_range_K": {
+          "value": 2.1245,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "J10",
+            "header_cell": "J4"
+          },
+          "original_text": "2.1245"
+        },
+        "ndvi": {
+          "value": 0.019,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "K10",
+            "header_cell": "K4"
+          },
+          "original_text": "0.019"
+        },
+        "aod_055": {
+          "value": 0.1562,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "L10",
+            "header_cell": "L4"
+          },
+          "original_text": "0.1562"
+        },
+        "rain_era5_mm": {
+          "value": 255.9516,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "M10",
+            "header_cell": "M4"
+          },
+          "original_text": "255.9516"
+        },
+        "rain_chirps_mm": {
+          "value": null,
+          "status": "MISSING",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "N10",
+            "header_cell": "N4"
+          },
+          "original_text": null
+        }
+      }
+    },
+    {
+      "id": "mcmurdo-dry-valleys",
+      "name": "McMurdo Dry Valleys",
+      "variables": {
+        "slope_deg": {
+          "value": 15.8622,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "E11",
+            "header_cell": "E4"
+          },
+          "original_text": "15.8622"
+        },
+        "roughness_m": {
+          "value": 73.2172,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "F11",
+            "header_cell": "F4"
+          },
+          "original_text": "73.2172"
+        },
+        "elev_m": {
+          "value": 897.6289,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "G11",
+            "header_cell": "G4"
+          },
+          "original_text": "897.6289"
+        },
+        "lst_day_K": {
+          "value": 246.4699,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "H11",
+            "header_cell": "H4"
+          },
+          "original_text": "246.4699"
+        },
+        "lst_night_K": {
+          "value": 245.3002,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "I11",
+            "header_cell": "I4"
+          },
+          "original_text": "245.3002"
+        },
+        "lst_range_K": {
+          "value": 1.1697,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "J11",
+            "header_cell": "J4"
+          },
+          "original_text": "1.1697"
+        },
+        "ndvi": {
+          "value": null,
+          "status": "MISSING",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "K11",
+            "header_cell": "K4"
+          },
+          "original_text": null
+        },
+        "aod_055": {
+          "value": 0.1428,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "L11",
+            "header_cell": "L4"
+          },
+          "original_text": "0.1428"
+        },
+        "rain_era5_mm": {
+          "value": 45.487,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "M11",
+            "header_cell": "M4"
+          },
+          "original_text": "45.487"
+        },
+        "rain_chirps_mm": {
+          "value": null,
+          "status": "MISSING",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "N11",
+            "header_cell": "N4"
+          },
+          "original_text": null
+        }
+      }
+    },
+    {
+      "id": "death-valley",
+      "name": "Death Valley",
+      "variables": {
+        "slope_deg": {
+          "value": 4.0577,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "E12",
+            "header_cell": "E4"
+          },
+          "original_text": "4.0577"
+        },
+        "roughness_m": {
+          "value": 17.7016,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "F12",
+            "header_cell": "F4"
+          },
+          "original_text": "17.7016"
+        },
+        "elev_m": {
+          "value": 96.1008,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "G12",
+            "header_cell": "G4"
+          },
+          "original_text": "96.1008"
+        },
+        "lst_day_K": {
+          "value": 310.6899,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "H12",
+            "header_cell": "H4"
+          },
+          "original_text": "310.6899"
+        },
+        "lst_night_K": {
+          "value": 293.7923,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "I12",
+            "header_cell": "I4"
+          },
+          "original_text": "293.7923"
+        },
+        "lst_range_K": {
+          "value": 16.8976,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "J12",
+            "header_cell": "J4"
+          },
+          "original_text": "16.8976"
+        },
+        "ndvi": {
+          "value": 0.0738,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "K12",
+            "header_cell": "K4"
+          },
+          "original_text": "0.0738"
+        },
+        "aod_055": {
+          "value": 0.1522,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "L12",
+            "header_cell": "L4"
+          },
+          "original_text": "0.1522"
+        },
+        "rain_era5_mm": {
+          "value": 116.8918,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "M12",
+            "header_cell": "M4"
+          },
+          "original_text": "116.8918"
+        },
+        "rain_chirps_mm": {
+          "value": null,
+          "status": "MISSING",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "N12",
+            "header_cell": "N4"
+          },
+          "original_text": null
+        }
+      }
+    },
+    {
+      "id": "lonar-crater",
+      "name": "Lonar Crater",
+      "variables": {
+        "slope_deg": {
+          "value": 1.2612,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "E13",
+            "header_cell": "E4"
+          },
+          "original_text": "1.2612"
+        },
+        "roughness_m": {
+          "value": 5.3491,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "F13",
+            "header_cell": "F4"
+          },
+          "original_text": "5.3491"
+        },
+        "elev_m": {
+          "value": 554.2513,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "G13",
+            "header_cell": "G4"
+          },
+          "original_text": "554.2513"
+        },
+        "lst_day_K": {
+          "value": 308.8161,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "H13",
+            "header_cell": "H4"
+          },
+          "original_text": "308.8161"
+        },
+        "lst_night_K": {
+          "value": 293.1964,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "I13",
+            "header_cell": "I4"
+          },
+          "original_text": "293.1964"
+        },
+        "lst_range_K": {
+          "value": 15.6197,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "J13",
+            "header_cell": "J4"
+          },
+          "original_text": "15.6197"
+        },
+        "ndvi": {
+          "value": 0.4367,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "K13",
+            "header_cell": "K4"
+          },
+          "original_text": "0.4367"
+        },
+        "aod_055": {
+          "value": 0.5086,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "L13",
+            "header_cell": "L4"
+          },
+          "original_text": "0.5086"
+        },
+        "rain_era5_mm": {
+          "value": 1155.3968,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "M13",
+            "header_cell": "M4"
+          },
+          "original_text": "1155.3968"
+        },
+        "rain_chirps_mm": {
+          "value": 1001.9969,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "N13",
+            "header_cell": "N4"
+          },
+          "original_text": "1001.9969"
+        }
+      }
+    },
+    {
+      "id": "amazon-rainforest",
+      "name": "Amazon Rainforest",
+      "variables": {
+        "slope_deg": {
+          "value": 2.7002,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "E14",
+            "header_cell": "E4"
+          },
+          "original_text": "2.7002"
+        },
+        "roughness_m": {
+          "value": 10.5864,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "F14",
+            "header_cell": "F4"
+          },
+          "original_text": "10.5864"
+        },
+        "elev_m": {
+          "value": 68.4802,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "G14",
+            "header_cell": "G4"
+          },
+          "original_text": "68.4802"
+        },
+        "lst_day_K": {
+          "value": 305.6195,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "H14",
+            "header_cell": "H4"
+          },
+          "original_text": "305.6195"
+        },
+        "lst_night_K": {
+          "value": 297.6747,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "I14",
+            "header_cell": "I4"
+          },
+          "original_text": "297.6747"
+        },
+        "lst_range_K": {
+          "value": 7.9448,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "J14",
+            "header_cell": "J4"
+          },
+          "original_text": "7.9448"
+        },
+        "ndvi": {
+          "value": 0.5424,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "K14",
+            "header_cell": "K4"
+          },
+          "original_text": "0.5424"
+        },
+        "aod_055": {
+          "value": 0.224,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "L14",
+            "header_cell": "L4"
+          },
+          "original_text": "0.224"
+        },
+        "rain_era5_mm": {
+          "value": 2529.2402,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "M14",
+            "header_cell": "M4"
+          },
+          "original_text": "2529.2402"
+        },
+        "rain_chirps_mm": {
+          "value": 2119.068,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "N14",
+            "header_cell": "N4"
+          },
+          "original_text": "2119.068"
+        }
+      }
+    },
+    {
+      "id": "congo-basin",
+      "name": "Congo Basin",
+      "variables": {
+        "slope_deg": {
+          "value": 2.8412,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "E15",
+            "header_cell": "E4"
+          },
+          "original_text": "2.8412"
+        },
+        "roughness_m": {
+          "value": 11.842,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "F15",
+            "header_cell": "F4"
+          },
+          "original_text": "11.842"
+        },
+        "elev_m": {
+          "value": 486.1728,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "G15",
+            "header_cell": "G4"
+          },
+          "original_text": "486.1728"
+        },
+        "lst_day_K": {
+          "value": 300.3945,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "H15",
+            "header_cell": "H4"
+          },
+          "original_text": "300.3945"
+        },
+        "lst_night_K": {
+          "value": 294.7313,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "I15",
+            "header_cell": "I4"
+          },
+          "original_text": "294.7313"
+        },
+        "lst_range_K": {
+          "value": 5.6633,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "J15",
+            "header_cell": "J4"
+          },
+          "original_text": "5.6633"
+        },
+        "ndvi": {
+          "value": 0.7887,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "K15",
+            "header_cell": "K4"
+          },
+          "original_text": "0.7887"
+        },
+        "aod_055": {
+          "value": 0.2844,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "L15",
+            "header_cell": "L4"
+          },
+          "original_text": "0.2844"
+        },
+        "rain_era5_mm": {
+          "value": 1240.3933,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "M15",
+            "header_cell": "M4"
+          },
+          "original_text": "1240.3933"
+        },
+        "rain_chirps_mm": {
+          "value": 1805.2405,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "N15",
+            "header_cell": "N4"
+          },
+          "original_text": "1805.2405"
+        }
+      }
+    },
+    {
+      "id": "irrawaddy-delta-rice-fields",
+      "name": "Irrawaddy Delta rice fields",
+      "variables": {
+        "slope_deg": {
+          "value": 0.1629,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "E16",
+            "header_cell": "E4"
+          },
+          "original_text": "0.1629"
+        },
+        "roughness_m": {
+          "value": 0.6635,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "F16",
+            "header_cell": "F4"
+          },
+          "original_text": "0.6635"
+        },
+        "elev_m": {
+          "value": 2.699,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "G16",
+            "header_cell": "G4"
+          },
+          "original_text": "2.699"
+        },
+        "lst_day_K": {
+          "value": 304.9024,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "H16",
+            "header_cell": "H4"
+          },
+          "original_text": "304.9024"
+        },
+        "lst_night_K": {
+          "value": 296.04,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "I16",
+            "header_cell": "I4"
+          },
+          "original_text": "296.04"
+        },
+        "lst_range_K": {
+          "value": 8.8623,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "J16",
+            "header_cell": "J4"
+          },
+          "original_text": "8.8623"
+        },
+        "ndvi": {
+          "value": 0.4942,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "K16",
+            "header_cell": "K4"
+          },
+          "original_text": "0.4942"
+        },
+        "aod_055": {
+          "value": 0.25,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "L16",
+            "header_cell": "L4"
+          },
+          "original_text": "0.25"
+        },
+        "rain_era5_mm": {
+          "value": 2356.1763,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "M16",
+            "header_cell": "M4"
+          },
+          "original_text": "2356.1763"
+        },
+        "rain_chirps_mm": {
+          "value": 2114.1398,
+          "status": "PENDING_REVIEW",
+          "source": {
+            "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+            "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+            "sheet": "Site data",
+            "cell": "N16",
+            "header_cell": "N4"
+          },
+          "original_text": "2114.1398"
+        }
+      }
+    }
+  ],
+  "targets": [
+    {
+      "id": "shackleton-crater-rim",
+      "name": "Shackleton Crater Rim",
+      "body": "Moon",
+      "approved_coordinates": null,
+      "coordinate_status": "PENDING_HUMAN_REVIEW",
+      "status": "PENDING_REVIEW",
+      "score": null
+    },
+    {
+      "id": "malapert-massif",
+      "name": "Malapert Massif",
+      "body": "Moon",
+      "approved_coordinates": null,
+      "coordinate_status": "PENDING_HUMAN_REVIEW",
+      "status": "PENDING_REVIEW",
+      "score": null
+    },
+    {
+      "id": "jezero-crater",
+      "name": "Jezero Crater",
+      "body": "Mars",
+      "approved_coordinates": null,
+      "coordinate_status": "PENDING_HUMAN_REVIEW",
+      "status": "PENDING_REVIEW",
+      "score": null
+    },
+    {
+      "id": "meridiani-planum",
+      "name": "Meridiani Planum",
+      "body": "Mars",
+      "approved_coordinates": null,
+      "coordinate_status": "PENDING_HUMAN_REVIEW",
+      "status": "PENDING_REVIEW",
+      "score": null
+    }
+  ],
+  "legacy_feature_associations": {
+    "slope": "slope_deg",
+    "roughness": "roughness_m",
+    "temperature": "lst_range_K",
+    "dryness": "rain_era5_mm",
+    "vegetation": "ndvi",
+    "dust_wind": "aod_055"
+  },
+  "association_status": "UNAPPROVED_LEGACY_ASSOCIATION"
+}

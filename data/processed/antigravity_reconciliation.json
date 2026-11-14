@@ -1,0 +1,2349 @@
+{
+  "schema_version": "legacy-reconciliation-v1",
+  "eligible_for_scoring": false,
+  "legacy_module": "starter_app/src/candidateData.ts",
+  "legacy_sha256": "63a748f2948b53c7191e7964eb86f0555fcb35810d32714a8d8c9320297cce87",
+  "comparisons": [
+    {
+      "site_id": "twin-taung-maar-crater",
+      "legacy_feature": "slope",
+      "workbook_variable": "slope_deg",
+      "workbook_value": 1.0906,
+      "legacy_value": 1.0906,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "E5",
+        "header_cell": "E4"
+      },
+      "legacy_source_claim": "SRTM / ALOS AW3D30 Elevation Model",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "twin-taung-maar-crater",
+      "legacy_feature": "roughness",
+      "workbook_variable": "roughness_m",
+      "workbook_value": 4.5155,
+      "legacy_value": 4.5155,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "F5",
+        "header_cell": "F4"
+      },
+      "legacy_source_claim": "SRTM Local Roughness Window",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "twin-taung-maar-crater",
+      "legacy_feature": "temperature",
+      "workbook_variable": "lst_range_K",
+      "workbook_value": 13.4528,
+      "legacy_value": 13.4528,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "J5",
+        "header_cell": "J4"
+      },
+      "legacy_source_claim": "NASA MODIS Land Surface Temp",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "twin-taung-maar-crater",
+      "legacy_feature": "dryness",
+      "workbook_variable": "rain_era5_mm",
+      "workbook_value": 751.7461,
+      "legacy_value": 751.7461,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "M5",
+        "header_cell": "M4"
+      },
+      "legacy_source_claim": "ECMWF ERA5 / CHIRPS Precipitation",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "twin-taung-maar-crater",
+      "legacy_feature": "vegetation",
+      "workbook_variable": "ndvi",
+      "workbook_value": 0.377,
+      "legacy_value": 0.377,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "K5",
+        "header_cell": "K4"
+      },
+      "legacy_source_claim": "NASA MODIS 16-Day NDVI",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "twin-taung-maar-crater",
+      "legacy_feature": "dust_wind",
+      "workbook_variable": "aod_055",
+      "workbook_value": 0.3112,
+      "legacy_value": 0.3112,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "L5",
+        "header_cell": "L4"
+      },
+      "legacy_source_claim": "NASA MAIAC MCD19A2 Aerosol",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "letpadaung-monywa-copper-area",
+      "legacy_feature": "slope",
+      "workbook_variable": "slope_deg",
+      "workbook_value": 1.5022,
+      "legacy_value": 1.5022,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "E6",
+        "header_cell": "E4"
+      },
+      "legacy_source_claim": "SRTM Elevation Model",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "letpadaung-monywa-copper-area",
+      "legacy_feature": "roughness",
+      "workbook_variable": "roughness_m",
+      "workbook_value": 6.3532,
+      "legacy_value": 6.3532,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "F6",
+        "header_cell": "F4"
+      },
+      "legacy_source_claim": "SRTM Topographic Window",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "letpadaung-monywa-copper-area",
+      "legacy_feature": "temperature",
+      "workbook_variable": "lst_range_K",
+      "workbook_value": 12.3336,
+      "legacy_value": 12.3336,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "J6",
+        "header_cell": "J4"
+      },
+      "legacy_source_claim": "NASA MODIS LST",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "letpadaung-monywa-copper-area",
+      "legacy_feature": "dryness",
+      "workbook_variable": "rain_era5_mm",
+      "workbook_value": 762.1584,
+      "legacy_value": 762.1584,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "M6",
+        "header_cell": "M4"
+      },
+      "legacy_source_claim": "ERA5 Land Reanalysis",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "letpadaung-monywa-copper-area",
+      "legacy_feature": "vegetation",
+      "workbook_variable": "ndvi",
+      "workbook_value": 0.3874,
+      "legacy_value": 0.3874,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "K6",
+        "header_cell": "K4"
+      },
+      "legacy_source_claim": "NASA MODIS NDVI",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "letpadaung-monywa-copper-area",
+      "legacy_feature": "dust_wind",
+      "workbook_variable": "aod_055",
+      "workbook_value": 0.3127,
+      "legacy_value": 0.3127,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "L6",
+        "header_cell": "L4"
+      },
+      "legacy_source_claim": "NASA MAIAC AOD",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "mount-popa-central-dry-zone",
+      "legacy_feature": "slope",
+      "workbook_variable": "slope_deg",
+      "workbook_value": 4.619,
+      "legacy_value": 4.619,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "E7",
+        "header_cell": "E4"
+      },
+      "legacy_source_claim": "SRTM 30m Global DEM",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "mount-popa-central-dry-zone",
+      "legacy_feature": "roughness",
+      "workbook_variable": "roughness_m",
+      "workbook_value": 20.208,
+      "legacy_value": 20.208,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "F7",
+        "header_cell": "F4"
+      },
+      "legacy_source_claim": "SRTM Local Roughness Window",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "mount-popa-central-dry-zone",
+      "legacy_feature": "temperature",
+      "workbook_variable": "lst_range_K",
+      "workbook_value": 11.228,
+      "legacy_value": 11.228,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "J7",
+        "header_cell": "J4"
+      },
+      "legacy_source_claim": "NASA MODIS LST",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "mount-popa-central-dry-zone",
+      "legacy_feature": "dryness",
+      "workbook_variable": "rain_era5_mm",
+      "workbook_value": 1014.6628,
+      "legacy_value": 1014.6628,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "M7",
+        "header_cell": "M4"
+      },
+      "legacy_source_claim": "ERA5 Land Reanalysis",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "mount-popa-central-dry-zone",
+      "legacy_feature": "vegetation",
+      "workbook_variable": "ndvi",
+      "workbook_value": 0.5373,
+      "legacy_value": 0.5373,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "K7",
+        "header_cell": "K4"
+      },
+      "legacy_source_claim": "NASA MODIS NDVI",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "mount-popa-central-dry-zone",
+      "legacy_feature": "dust_wind",
+      "workbook_variable": "aod_055",
+      "workbook_value": 0.2532,
+      "legacy_value": 0.2532,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "L7",
+        "header_cell": "L4"
+      },
+      "legacy_source_claim": "NASA MAIAC AOD",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "kawah-ijen",
+      "legacy_feature": "slope",
+      "workbook_variable": "slope_deg",
+      "workbook_value": 11.6468,
+      "legacy_value": 11.6468,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "E8",
+        "header_cell": "E4"
+      },
+      "legacy_source_claim": "SRTM 30m Global DEM",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "kawah-ijen",
+      "legacy_feature": "roughness",
+      "workbook_variable": "roughness_m",
+      "workbook_value": 51.9491,
+      "legacy_value": 51.9491,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "F8",
+        "header_cell": "F4"
+      },
+      "legacy_source_claim": "SRTM Local Roughness Window",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "kawah-ijen",
+      "legacy_feature": "temperature",
+      "workbook_variable": "lst_range_K",
+      "workbook_value": 8.1847,
+      "legacy_value": 8.1847,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "J8",
+        "header_cell": "J4"
+      },
+      "legacy_source_claim": "NASA MODIS LST",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "kawah-ijen",
+      "legacy_feature": "dryness",
+      "workbook_variable": "rain_era5_mm",
+      "workbook_value": 2282.7552,
+      "legacy_value": 2282.7552,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "M8",
+        "header_cell": "M4"
+      },
+      "legacy_source_claim": "ERA5 Land Reanalysis",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "kawah-ijen",
+      "legacy_feature": "vegetation",
+      "workbook_variable": "ndvi",
+      "workbook_value": 0.6869,
+      "legacy_value": 0.6869,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "K8",
+        "header_cell": "K4"
+      },
+      "legacy_source_claim": "NASA MODIS NDVI",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "kawah-ijen",
+      "legacy_feature": "dust_wind",
+      "workbook_variable": "aod_055",
+      "workbook_value": 0.108,
+      "legacy_value": 0.108,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "L8",
+        "header_cell": "L4"
+      },
+      "legacy_source_claim": "NASA MAIAC AOD",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "atacama-desert",
+      "legacy_feature": "slope",
+      "workbook_variable": "slope_deg",
+      "workbook_value": 4.8518,
+      "legacy_value": 4.8518,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "E9",
+        "header_cell": "E4"
+      },
+      "legacy_source_claim": "NASA SRTM 30m Global DEM (S24W070)",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "atacama-desert",
+      "legacy_feature": "roughness",
+      "workbook_variable": "roughness_m",
+      "workbook_value": 20.7992,
+      "legacy_value": 20.7992,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "F9",
+        "header_cell": "F4"
+      },
+      "legacy_source_claim": "SRTM Local Roughness Window",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "atacama-desert",
+      "legacy_feature": "temperature",
+      "workbook_variable": "lst_range_K",
+      "workbook_value": 32.8816,
+      "legacy_value": 32.8816,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "J9",
+        "header_cell": "J4"
+      },
+      "legacy_source_claim": "NASA MODIS Terra/Aqua Land Surface Temp",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "atacama-desert",
+      "legacy_feature": "dryness",
+      "workbook_variable": "rain_era5_mm",
+      "workbook_value": 3.4481,
+      "legacy_value": 3.4481,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "M9",
+        "header_cell": "M4"
+      },
+      "legacy_source_claim": "ECMWF ERA5 / CHIRPS Precipitation",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "atacama-desert",
+      "legacy_feature": "vegetation",
+      "workbook_variable": "ndvi",
+      "workbook_value": 0.0978,
+      "legacy_value": 0.0978,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "K9",
+        "header_cell": "K4"
+      },
+      "legacy_source_claim": "NASA MODIS MOD13A2 Vegetation Index",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "atacama-desert",
+      "legacy_feature": "dust_wind",
+      "workbook_variable": "aod_055",
+      "workbook_value": 0.13,
+      "legacy_value": 0.13,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "L9",
+        "header_cell": "L4"
+      },
+      "legacy_source_claim": "NASA MODIS MCD19A2 MAIAC Aerosol",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "haughton-crater",
+      "legacy_feature": "slope",
+      "workbook_variable": "slope_deg",
+      "workbook_value": 4.0115,
+      "legacy_value": 4.0115,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "E10",
+        "header_cell": "E4"
+      },
+      "legacy_source_claim": "ArcticDEM / ASTER Elevation Model",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "haughton-crater",
+      "legacy_feature": "roughness",
+      "workbook_variable": "roughness_m",
+      "workbook_value": 16.2928,
+      "legacy_value": 16.2928,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "F10",
+        "header_cell": "F4"
+      },
+      "legacy_source_claim": "High-Latitude Roughness Extraction",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "haughton-crater",
+      "legacy_feature": "temperature",
+      "workbook_variable": "lst_range_K",
+      "workbook_value": 2.1245,
+      "legacy_value": 2.1245,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "J10",
+        "header_cell": "J4"
+      },
+      "legacy_source_claim": "NASA MODIS Cold-Season LST",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "haughton-crater",
+      "legacy_feature": "dryness",
+      "workbook_variable": "rain_era5_mm",
+      "workbook_value": 255.9516,
+      "legacy_value": 255.9516,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "M10",
+        "header_cell": "M4"
+      },
+      "legacy_source_claim": "ERA5 High-Latitude Climate Model",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "haughton-crater",
+      "legacy_feature": "vegetation",
+      "workbook_variable": "ndvi",
+      "workbook_value": 0.019,
+      "legacy_value": 0.019,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "K10",
+        "header_cell": "K4"
+      },
+      "legacy_source_claim": "NASA MODIS Arctic Vegetation Mask",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "haughton-crater",
+      "legacy_feature": "dust_wind",
+      "workbook_variable": "aod_055",
+      "workbook_value": 0.1562,
+      "legacy_value": 0.1562,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "L10",
+        "header_cell": "L4"
+      },
+      "legacy_source_claim": "NASA MAIAC Arctic Aerosol Observation",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "mcmurdo-dry-valleys",
+      "legacy_feature": "slope",
+      "workbook_variable": "slope_deg",
+      "workbook_value": 15.8622,
+      "legacy_value": 15.8622,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "E11",
+        "header_cell": "E4"
+      },
+      "legacy_source_claim": "REMA / CryoSat Antarctic DEM",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "mcmurdo-dry-valleys",
+      "legacy_feature": "roughness",
+      "workbook_variable": "roughness_m",
+      "workbook_value": 73.2172,
+      "legacy_value": 73.2172,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "F11",
+        "header_cell": "F4"
+      },
+      "legacy_source_claim": "Antarctic High-Relief Roughness Grid",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "mcmurdo-dry-valleys",
+      "legacy_feature": "temperature",
+      "workbook_variable": "lst_range_K",
+      "workbook_value": 1.1697,
+      "legacy_value": 1.1697,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "J11",
+        "header_cell": "J4"
+      },
+      "legacy_source_claim": "NASA MODIS Antarctic LST Composite",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "mcmurdo-dry-valleys",
+      "legacy_feature": "dryness",
+      "workbook_variable": "rain_era5_mm",
+      "workbook_value": 45.487,
+      "legacy_value": 45.487,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "M11",
+        "header_cell": "M4"
+      },
+      "legacy_source_claim": "ERA5 High-Latitude Climate Reanalysis",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "mcmurdo-dry-valleys",
+      "legacy_feature": "vegetation",
+      "workbook_variable": "ndvi",
+      "workbook_value": null,
+      "legacy_value": 0,
+      "status": "CONFLICT",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "K11",
+        "header_cell": "K4"
+      },
+      "legacy_source_claim": "US Antarctic Program Long-Term Research",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "mcmurdo-dry-valleys",
+      "legacy_feature": "dust_wind",
+      "workbook_variable": "aod_055",
+      "workbook_value": 0.1428,
+      "legacy_value": 0.1428,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "L11",
+        "header_cell": "L4"
+      },
+      "legacy_source_claim": "NASA AERONET / MAIAC Antarctic Stations",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "death-valley",
+      "legacy_feature": "slope",
+      "workbook_variable": "slope_deg",
+      "workbook_value": 4.0577,
+      "legacy_value": 4.0577,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "E12",
+        "header_cell": "E4"
+      },
+      "legacy_source_claim": "NASA SRTM 1-arcsecond DEM (N36W117)",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "death-valley",
+      "legacy_feature": "roughness",
+      "workbook_variable": "roughness_m",
+      "workbook_value": 17.7016,
+      "legacy_value": 17.7016,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "F12",
+        "header_cell": "F4"
+      },
+      "legacy_source_claim": "SRTM Topographic Variance Grid",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "death-valley",
+      "legacy_feature": "temperature",
+      "workbook_variable": "lst_range_K",
+      "workbook_value": 16.8976,
+      "legacy_value": 16.8976,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "J12",
+        "header_cell": "J4"
+      },
+      "legacy_source_claim": "NASA MODIS Land Surface Temperature",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "death-valley",
+      "legacy_feature": "dryness",
+      "workbook_variable": "rain_era5_mm",
+      "workbook_value": 116.8918,
+      "legacy_value": 116.8918,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "M12",
+        "header_cell": "M4"
+      },
+      "legacy_source_claim": "ERA5 Land Reanalysis Precipitation",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "death-valley",
+      "legacy_feature": "vegetation",
+      "workbook_variable": "ndvi",
+      "workbook_value": 0.0738,
+      "legacy_value": 0.0738,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "K12",
+        "header_cell": "K4"
+      },
+      "legacy_source_claim": "NASA MODIS 16-Day NDVI",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "death-valley",
+      "legacy_feature": "dust_wind",
+      "workbook_variable": "aod_055",
+      "workbook_value": 0.1522,
+      "legacy_value": 0.1522,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "L12",
+        "header_cell": "L4"
+      },
+      "legacy_source_claim": "NASA MAIAC High-Res Aerosol Depth",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "lonar-crater",
+      "legacy_feature": "slope",
+      "workbook_variable": "slope_deg",
+      "workbook_value": 1.2612,
+      "legacy_value": 1.2612,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "E13",
+        "header_cell": "E4"
+      },
+      "legacy_source_claim": "SRTM 30m Global DEM",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "lonar-crater",
+      "legacy_feature": "roughness",
+      "workbook_variable": "roughness_m",
+      "workbook_value": 5.3491,
+      "legacy_value": 5.3491,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "F13",
+        "header_cell": "F4"
+      },
+      "legacy_source_claim": "SRTM Local Roughness Window",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "lonar-crater",
+      "legacy_feature": "temperature",
+      "workbook_variable": "lst_range_K",
+      "workbook_value": 15.6197,
+      "legacy_value": 15.6197,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "J13",
+        "header_cell": "J4"
+      },
+      "legacy_source_claim": "NASA MODIS LST",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "lonar-crater",
+      "legacy_feature": "dryness",
+      "workbook_variable": "rain_era5_mm",
+      "workbook_value": 1155.3968,
+      "legacy_value": 1155.3968,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "M13",
+        "header_cell": "M4"
+      },
+      "legacy_source_claim": "ERA5 Land Reanalysis",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "lonar-crater",
+      "legacy_feature": "vegetation",
+      "workbook_variable": "ndvi",
+      "workbook_value": 0.4367,
+      "legacy_value": 0.4367,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "K13",
+        "header_cell": "K4"
+      },
+      "legacy_source_claim": "NASA MODIS NDVI",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "lonar-crater",
+      "legacy_feature": "dust_wind",
+      "workbook_variable": "aod_055",
+      "workbook_value": 0.5086,
+      "legacy_value": 0.5086,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "L13",
+        "header_cell": "L4"
+      },
+      "legacy_source_claim": "NASA MAIAC AOD",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "amazon-rainforest",
+      "legacy_feature": "slope",
+      "workbook_variable": "slope_deg",
+      "workbook_value": 2.7002,
+      "legacy_value": 2.7002,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "E14",
+        "header_cell": "E4"
+      },
+      "legacy_source_claim": "SRTM 30m Global DEM",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "amazon-rainforest",
+      "legacy_feature": "roughness",
+      "workbook_variable": "roughness_m",
+      "workbook_value": 10.5864,
+      "legacy_value": 10.5864,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "F14",
+        "header_cell": "F4"
+      },
+      "legacy_source_claim": "SRTM Local Roughness Window",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "amazon-rainforest",
+      "legacy_feature": "temperature",
+      "workbook_variable": "lst_range_K",
+      "workbook_value": 7.9448,
+      "legacy_value": 7.9448,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "J14",
+        "header_cell": "J4"
+      },
+      "legacy_source_claim": "NASA MODIS LST",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "amazon-rainforest",
+      "legacy_feature": "dryness",
+      "workbook_variable": "rain_era5_mm",
+      "workbook_value": 2529.2402,
+      "legacy_value": 2529.2402,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "M14",
+        "header_cell": "M4"
+      },
+      "legacy_source_claim": "ERA5 Land Reanalysis",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "amazon-rainforest",
+      "legacy_feature": "vegetation",
+      "workbook_variable": "ndvi",
+      "workbook_value": 0.5424,
+      "legacy_value": 0.5424,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "K14",
+        "header_cell": "K4"
+      },
+      "legacy_source_claim": "NASA MODIS NDVI",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "amazon-rainforest",
+      "legacy_feature": "dust_wind",
+      "workbook_variable": "aod_055",
+      "workbook_value": 0.224,
+      "legacy_value": 0.224,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "L14",
+        "header_cell": "L4"
+      },
+      "legacy_source_claim": "NASA MAIAC AOD",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "congo-basin",
+      "legacy_feature": "slope",
+      "workbook_variable": "slope_deg",
+      "workbook_value": 2.8412,
+      "legacy_value": 2.8412,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "E15",
+        "header_cell": "E4"
+      },
+      "legacy_source_claim": "SRTM 30m Global DEM",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "congo-basin",
+      "legacy_feature": "roughness",
+      "workbook_variable": "roughness_m",
+      "workbook_value": 11.842,
+      "legacy_value": 11.842,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "F15",
+        "header_cell": "F4"
+      },
+      "legacy_source_claim": "SRTM Local Roughness Window",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "congo-basin",
+      "legacy_feature": "temperature",
+      "workbook_variable": "lst_range_K",
+      "workbook_value": 5.6633,
+      "legacy_value": 5.6633,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "J15",
+        "header_cell": "J4"
+      },
+      "legacy_source_claim": "NASA MODIS LST",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "congo-basin",
+      "legacy_feature": "dryness",
+      "workbook_variable": "rain_era5_mm",
+      "workbook_value": 1240.3933,
+      "legacy_value": 1240.3933,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "M15",
+        "header_cell": "M4"
+      },
+      "legacy_source_claim": "ERA5 Land Reanalysis",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "congo-basin",
+      "legacy_feature": "vegetation",
+      "workbook_variable": "ndvi",
+      "workbook_value": 0.7887,
+      "legacy_value": 0.7887,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "K15",
+        "header_cell": "K4"
+      },
+      "legacy_source_claim": "NASA MODIS NDVI",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "congo-basin",
+      "legacy_feature": "dust_wind",
+      "workbook_variable": "aod_055",
+      "workbook_value": 0.2844,
+      "legacy_value": 0.2844,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "L15",
+        "header_cell": "L4"
+      },
+      "legacy_source_claim": "NASA MAIAC AOD",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "irrawaddy-delta-rice-fields",
+      "legacy_feature": "slope",
+      "workbook_variable": "slope_deg",
+      "workbook_value": 0.1629,
+      "legacy_value": 0.1629,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "E16",
+        "header_cell": "E4"
+      },
+      "legacy_source_claim": "SRTM 30m Global DEM",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "irrawaddy-delta-rice-fields",
+      "legacy_feature": "roughness",
+      "workbook_variable": "roughness_m",
+      "workbook_value": 0.6635,
+      "legacy_value": 0.6635,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "F16",
+        "header_cell": "F4"
+      },
+      "legacy_source_claim": "SRTM Local Roughness Window",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "irrawaddy-delta-rice-fields",
+      "legacy_feature": "temperature",
+      "workbook_variable": "lst_range_K",
+      "workbook_value": 8.8623,
+      "legacy_value": 8.8623,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "J16",
+        "header_cell": "J4"
+      },
+      "legacy_source_claim": "NASA MODIS LST",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "irrawaddy-delta-rice-fields",
+      "legacy_feature": "dryness",
+      "workbook_variable": "rain_era5_mm",
+      "workbook_value": 2356.1763,
+      "legacy_value": 2356.1763,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "M16",
+        "header_cell": "M4"
+      },
+      "legacy_source_claim": "ERA5 Land Reanalysis",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "irrawaddy-delta-rice-fields",
+      "legacy_feature": "vegetation",
+      "workbook_variable": "ndvi",
+      "workbook_value": 0.4942,
+      "legacy_value": 0.4942,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "K16",
+        "header_cell": "K4"
+      },
+      "legacy_source_claim": "NASA MODIS NDVI",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    },
+    {
+      "site_id": "irrawaddy-delta-rice-fields",
+      "legacy_feature": "dust_wind",
+      "workbook_variable": "aod_055",
+      "workbook_value": 0.25,
+      "legacy_value": 0.25,
+      "status": "MATCH",
+      "source": {
+        "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+        "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+        "sheet": "Site data",
+        "cell": "L16",
+        "header_cell": "L4"
+      },
+      "legacy_source_claim": "NASA MAIAC AOD",
+      "note": "Matching a number does not validate the legacy source citation or comparability."
+    }
+  ],
+  "match_count": 71,
+  "conflict_count": 1,
+  "legacy_target_claims": {
+    "shackleton-crater-rim": {
+      "id": "shackleton-crater-rim",
+      "name": "Shackleton Crater Rim",
+      "body": "Moon",
+      "coordinates": [
+        -89.9,
+        0
+      ],
+      "missionContext": "Permanently shadowed lunar south pole cold trap; primary Artemis landing zone candidate.",
+      "primaryLithology": "Anorthositic highland regolith and impactites",
+      "rockCategory": "anorthosite",
+      "iceStatus": "Up to ~22% regolith water-ice equivalent in interior cold traps (LOLA/LCROSS)",
+      "iceIndex": 0.7,
+      "features": {
+        "slope": {
+          "raw": 10,
+          "displayValue": "10.0°",
+          "unit": "degrees",
+          "sourceCitation": "NASA LRO LOLA DEM (Haruyama et al. 2008)",
+          "normalized": 0.3333333333333333
+        },
+        "roughness": {
+          "raw": 25,
+          "displayValue": "25.0 m",
+          "unit": "meters (~1km baseline)",
+          "sourceCitation": "NASA LRO LOLA Surface Roughness Model",
+          "normalized": 0.3125
+        },
+        "temperature": {
+          "raw": 190,
+          "displayValue": "190.0 K (40K–230K)",
+          "unit": "Kelvin",
+          "sourceCitation": "NASA LRO Diviner Thermal Radiometer",
+          "normalized": 0.95
+        },
+        "dryness": {
+          "raw": 0,
+          "displayValue": "0.0 mm/yr (Hyper-arid vacuum)",
+          "unit": "mm/year",
+          "sourceCitation": "Lunar Surface Environment Reference",
+          "normalized": 1
+        },
+        "vegetation": {
+          "raw": 0,
+          "displayValue": "0.00 (Sterile regolith)",
+          "unit": "NDVI index",
+          "sourceCitation": "Exobiology baseline",
+          "normalized": 0
+        },
+        "dust_wind": {
+          "raw": 0.05,
+          "displayValue": "0.05 (Surface exosphere)",
+          "unit": "optical depth",
+          "sourceCitation": "LADEE / LRO Lunar Dust Environment",
+          "normalized": 0.05
+        },
+        "rock_mineral": {
+          "raw": "anorthosite",
+          "displayValue": "Anorthositic highland regolith",
+          "unit": "lithology category",
+          "sourceCitation": "USGS LCROSS / Apollo highland samples",
+          "normalized": "anorthosite"
+        },
+        "water_ice": {
+          "raw": 0.7,
+          "displayValue": "0.70 (Confirmed cold-trap ice)",
+          "unit": "ice presence index [0-1]",
+          "sourceCitation": "NASA LRO LAMP / LEND hydrogen detection",
+          "normalized": 0.7
+        }
+      },
+      "images": {
+        "primary": {
+          "url": "/images/moon/shackleton_lola_color_slope.png",
+          "title": "LOLA Topographic Slope Map",
+          "caption": "Color-coded slope map from the Lunar Orbiter Laser Altimeter at 20 m resolution.",
+          "source": "NASA LRO / LOLA Science Team"
+        },
+        "secondary": {
+          "url": "/images/moon/shackleton_lola_color_hillshade.png",
+          "title": "LOLA Lunar Polar Shaded Relief",
+          "caption": "Digital elevation shaded relief centered on the 89.9°S rim.",
+          "source": "NASA / GSFC / PDS Geosciences"
+        }
+      }
+    },
+    "malapert-massif": {
+      "id": "malapert-massif",
+      "name": "Malapert Massif",
+      "body": "Moon",
+      "coordinates": [
+        -86,
+        0
+      ],
+      "missionContext": "High-altitude lunar south pole peak offering near-continuous solar illumination and Earth line-of-sight.",
+      "primaryLithology": "Anorthosite and impact melt breccia",
+      "rockCategory": "anorthosite",
+      "iceStatus": "Localized cold traps in deep adjacent valleys (Diviner/LOLA)",
+      "iceIndex": 0.2,
+      "features": {
+        "slope": {
+          "raw": 17.5,
+          "displayValue": "17.5°",
+          "unit": "degrees",
+          "sourceCitation": "NASA LRO LOLA / LROC DEM",
+          "normalized": 0.5833333333333334
+        },
+        "roughness": {
+          "raw": 40,
+          "displayValue": "40.0 m",
+          "unit": "meters (~1km baseline)",
+          "sourceCitation": "NASA LRO LOLA Roughness Assessment",
+          "normalized": 0.5
+        },
+        "temperature": {
+          "raw": 200,
+          "displayValue": "200.0 K (100K–300K)",
+          "unit": "Kelvin",
+          "sourceCitation": "NASA LRO Diviner Lunar Data",
+          "normalized": 1
+        },
+        "dryness": {
+          "raw": 0,
+          "displayValue": "0.0 mm/yr (Vacuum)",
+          "unit": "mm/year",
+          "sourceCitation": "Lunar environment reference",
+          "normalized": 1
+        },
+        "vegetation": {
+          "raw": 0,
+          "displayValue": "0.00 (Sterile regolith)",
+          "unit": "NDVI index",
+          "sourceCitation": "Exobiology baseline",
+          "normalized": 0
+        },
+        "dust_wind": {
+          "raw": 0.05,
+          "displayValue": "0.05 (Surface exosphere)",
+          "unit": "optical depth",
+          "sourceCitation": "LADEE dust sensor measurements",
+          "normalized": 0.05
+        },
+        "rock_mineral": {
+          "raw": "anorthosite",
+          "displayValue": "Anorthosite / impact breccia",
+          "unit": "lithology category",
+          "sourceCitation": "NASA LRO LROC Multi-spectral mapping",
+          "normalized": "anorthosite"
+        },
+        "water_ice": {
+          "raw": 0.2,
+          "displayValue": "0.20 (Low to moderate cold trap potential)",
+          "unit": "ice presence index [0-1]",
+          "sourceCitation": "NASA LRO Diviner & Mini-RF radar",
+          "normalized": 0.2
+        }
+      },
+      "images": {
+        "primary": {
+          "url": "/images/moon/malapert_lola_color_slope.png",
+          "title": "LOLA Slope Gradient Model",
+          "caption": "High-resolution slope classification of the massif summit and steep flanks.",
+          "source": "NASA LRO LOLA Team / PDS"
+        },
+        "secondary": {
+          "url": "/images/moon/malapert_lroc_dem_slope.png",
+          "title": "LROC NAC Stereo DEM Analysis",
+          "caption": "High-detail surface slope extracted from Narrow Angle Camera stereo imagery.",
+          "source": "NASA / Arizona State University (ASU)"
+        },
+        "tertiary": {
+          "url": "/images/moon/malapert_lola_color_hillshade.png",
+          "title": "LOLA Color Shaded Relief",
+          "caption": "Elevation-tinted relief illustrating communications visibility toward Earth.",
+          "source": "NASA GSFC / LRO Team"
+        }
+      }
+    },
+    "jezero-crater": {
+      "id": "jezero-crater",
+      "name": "Jezero Crater",
+      "body": "Mars",
+      "coordinates": [
+        18.4,
+        77.5
+      ],
+      "missionContext": "Ancient paleolake delta system with preserved lacustrine sediments; NASA Perseverance rover landing site.",
+      "primaryLithology": "Carbonates, smectite clays, and olivine-bearing basaltic delta sands",
+      "rockCategory": "carbonate",
+      "iceStatus": "Low equatorial subsurface water equivalent hydrogen (~0.05-0.10)",
+      "iceIndex": 0.1,
+      "features": {
+        "slope": {
+          "raw": 5,
+          "displayValue": "5.0°",
+          "unit": "degrees",
+          "sourceCitation": "NASA MGS MOLA / Mars Express HRSC",
+          "normalized": 0.16666666666666666
+        },
+        "roughness": {
+          "raw": 15,
+          "displayValue": "15.0 m",
+          "unit": "meters (~1km baseline)",
+          "sourceCitation": "MOLA Surface Roughness Grid",
+          "normalized": 0.1875
+        },
+        "temperature": {
+          "raw": 125,
+          "displayValue": "125.0 K (150K–275K)",
+          "unit": "Kelvin",
+          "sourceCitation": "Mars Global Surveyor TES Surface Temperature",
+          "normalized": 0.625
+        },
+        "dryness": {
+          "raw": 0,
+          "displayValue": "0.0 mm/yr (Hyper-arid desert)",
+          "unit": "mm/year",
+          "sourceCitation": "Mars Climate Database (MCD)",
+          "normalized": 1
+        },
+        "vegetation": {
+          "raw": 0,
+          "displayValue": "0.00 (Biotic absence)",
+          "unit": "NDVI index",
+          "sourceCitation": "Astrobiology reference",
+          "normalized": 0
+        },
+        "dust_wind": {
+          "raw": 0.55,
+          "displayValue": "0.55 (AOD 0.3–0.8)",
+          "unit": "optical depth (9 µm)",
+          "sourceCitation": "NASA MGS TES Dust Optical Depth",
+          "normalized": 0.55
+        },
+        "rock_mineral": {
+          "raw": "carbonate",
+          "displayValue": "Smectite clays & Mg-carbonates",
+          "unit": "lithology category",
+          "sourceCitation": "NASA MRO CRISM (Ehlmann et al. 2008)",
+          "normalized": "carbonate"
+        },
+        "water_ice": {
+          "raw": 0.1,
+          "displayValue": "0.10 (Hydrated mineral matrix)",
+          "unit": "ice presence index [0-1]",
+          "sourceCitation": "Mars Odyssey GRS Subsurface Hydrogen",
+          "normalized": 0.1
+        }
+      },
+      "images": {
+        "primary": {
+          "url": "/images/mars/jezero_hirise_global_mosaic.png",
+          "title": "HiRISE Delta System Mosaic",
+          "caption": "0.25 m/pixel color mosaic showing ancient river delta deposits and lakebed sediment.",
+          "source": "NASA / JPL-Caltech / Univ. of Arizona"
+        },
+        "secondary": {
+          "url": "/images/mars/jezero_ctx_global_mosaic.png",
+          "title": "Context Camera (CTX) Overview",
+          "caption": "6 m/pixel regional context mosaic of the Jezero impact basin and Western Delta.",
+          "source": "NASA / JPL / MSSS"
+        },
+        "tertiary": {
+          "url": "/images/mars/jezero_tes_dust.png",
+          "title": "MGS TES Dust Index Map",
+          "caption": "Thermal Emission Spectrometer atmospheric aerosol and dust opacity mapping.",
+          "source": "NASA MGS TES Team / ASU"
+        }
+      }
+    },
+    "meridiani-planum": {
+      "id": "meridiani-planum",
+      "name": "Meridiani Planum",
+      "body": "Mars",
+      "coordinates": [
+        -1.9,
+        354.5
+      ],
+      "missionContext": "Equatorial smooth hematite and sulfate plain; landing site of NASA Mars Exploration Rover Opportunity.",
+      "primaryLithology": "Sulfate evaporites (jarosite), hematite spherules, and basaltic sand",
+      "rockCategory": "evaporite",
+      "iceStatus": "Hyper-dry equatorial regolith; no near-surface ground ice",
+      "iceIndex": 0.05,
+      "features": {
+        "slope": {
+          "raw": 1.5,
+          "displayValue": "1.5°",
+          "unit": "degrees",
+          "sourceCitation": "NASA MGS MOLA Precision Altimetry",
+          "normalized": 0.05
+        },
+        "roughness": {
+          "raw": 8,
+          "displayValue": "8.0 m",
+          "unit": "meters (~1km baseline)",
+          "sourceCitation": "MOLA Regional Topographic Variance",
+          "normalized": 0.1
+        },
+        "temperature": {
+          "raw": 120,
+          "displayValue": "120.0 K (160K–280K)",
+          "unit": "Kelvin",
+          "sourceCitation": "NASA MGS TES / Opportunity Mini-TES",
+          "normalized": 0.6
+        },
+        "dryness": {
+          "raw": 0,
+          "displayValue": "0.0 mm/yr (Hyper-arid)",
+          "unit": "mm/year",
+          "sourceCitation": "Mars Atmospheric Model",
+          "normalized": 1
+        },
+        "vegetation": {
+          "raw": 0,
+          "displayValue": "0.00 (Biotic absence)",
+          "unit": "NDVI index",
+          "sourceCitation": "Astrobiology reference",
+          "normalized": 0
+        },
+        "dust_wind": {
+          "raw": 0.5,
+          "displayValue": "0.50 (AOD 0.3–0.7)",
+          "unit": "optical depth (9 µm)",
+          "sourceCitation": "NASA MGS TES Dust Product",
+          "normalized": 0.5
+        },
+        "rock_mineral": {
+          "raw": "evaporite",
+          "displayValue": "Polyhydrated sulfates & jarosite",
+          "unit": "lithology category",
+          "sourceCitation": "NASA Opportunity Rover APXS & Mössbauer",
+          "normalized": "evaporite"
+        },
+        "water_ice": {
+          "raw": 0.05,
+          "displayValue": "0.05 (Negligible equatorial ice)",
+          "unit": "ice presence index [0-1]",
+          "sourceCitation": "Mars Odyssey Neutron Spectrometer",
+          "normalized": 0.05
+        }
+      },
+      "images": {
+        "primary": {
+          "url": "/images/mars/mola_global_tile.jpg",
+          "title": "MOLA Topographic Relief Tile",
+          "caption": "Global elevation tile depicting the smooth, low-gradient expanse of Meridiani Planum.",
+          "source": "NASA MGS MOLA Science Team / USGS"
+        },
+        "secondary": {
+          "url": "/images/mars/jezero_mola_roughness.png",
+          "title": "MOLA Regional Roughness Distribution",
+          "caption": "Topographic variance profile illustrating low surface obstacle density.",
+          "source": "NASA PDS Geosciences Node"
+        }
+      }
+    }
+  },
+  "legacy_model_choices": {
+    "weights": {
+      "Moon": {
+        "slope": 0.22,
+        "roughness": 0.18,
+        "temperature": 0.2,
+        "water_ice": 0.2,
+        "rock_mineral": 0.1,
+        "dryness": 0.04,
+        "vegetation": 0.03,
+        "dust_wind": 0.03
+      },
+      "Mars": {
+        "slope": 0.12,
+        "roughness": 0.1,
+        "temperature": 0.1,
+        "water_ice": 0.08,
+        "rock_mineral": 0.22,
+        "dryness": 0.18,
+        "vegetation": 0.05,
+        "dust_wind": 0.15
+      }
+    },
+    "related_rock_groups": [
+      [
+        "basalt",
+        "anorthosite",
+        "gabbro",
+        "volcanic_mafic"
+      ],
+      [
+        "sandstone",
+        "siltstone",
+        "mudstone",
+        "sedimentary_clastic"
+      ],
+      [
+        "evaporite",
+        "carbonate",
+        "gypsum",
+        "halite",
+        "sedimentary_chemical"
+      ],
+      [
+        "granite",
+        "rhyolite",
+        "felsic_igneous"
+      ],
+      [
+        "impact_breccia",
+        "regolith_breccia",
+        "impactite"
+      ]
+    ],
+    "minimum_weighted_coverage": 0.75,
+    "weight_sum_tolerance": 0.0001
+  },
+  "original_target_context": {
+    "source": {
+      "path": "data/raw/mee_lay_master_project_data(1).xlsx",
+      "sha256": "806a1628a81d1f8f9f99c1a55fd054e7e8e903d78ffec7c0c0e9680875b755a6",
+      "sheet": "Moon & Mars numbers"
+    },
+    "cells": {
+      "A1": {
+        "cell_type": "s",
+        "stored_value": "490",
+        "text": "Moon and Mars target values: what a web search can and cannot give",
+        "formula": null
+      },
+      "A2": {
+        "cell_type": "s",
+        "stored_value": "491",
+        "text": "Published numbers use different scales and definitions from your 200 m method, so they are context only. The plan-comparable values must be computed from the DEMs.",
+        "formula": null
+      },
+      "A4": {
+        "cell_type": "s",
+        "stored_value": "86",
+        "text": "Target",
+        "formula": null
+      },
+      "B4": {
+        "cell_type": "s",
+        "stored_value": "100",
+        "text": "Feature",
+        "formula": null
+      },
+      "C4": {
+        "cell_type": "s",
+        "stored_value": "492",
+        "text": "Value found (context only)",
+        "formula": null
+      },
+      "D4": {
+        "cell_type": "s",
+        "stored_value": "493",
+        "text": "Comparable to plan method?",
+        "formula": null
+      },
+      "E4": {
+        "cell_type": "s",
+        "stored_value": "494",
+        "text": "Source",
+        "formula": null
+      },
+      "F4": {
+        "cell_type": "s",
+        "stored_value": "109",
+        "text": "Source checked",
+        "formula": null
+      },
+      "G4": {
+        "cell_type": "s",
+        "stored_value": "107",
+        "text": "Status",
+        "formula": null
+      },
+      "H4": {
+        "cell_type": "s",
+        "stored_value": "495",
+        "text": "How to get the plan-comparable number",
+        "formula": null
+      },
+      "A5": {
+        "cell_type": "s",
+        "stored_value": "496",
+        "text": "Shackleton",
+        "formula": null
+      },
+      "B5": {
+        "cell_type": "s",
+        "stored_value": "497",
+        "text": "Slope",
+        "formula": null
+      },
+      "C5": {
+        "cell_type": "s",
+        "stored_value": "498",
+        "text": "Interior walls about 30 degrees (SELENE-based description). Not a 200 m mean.",
+        "formula": null
+      },
+      "D5": {
+        "cell_type": "s",
+        "stored_value": "499",
+        "text": "No",
+        "formula": null
+      },
+      "E5": {
+        "cell_type": "s",
+        "stored_value": "500",
+        "text": "Wikipedia summary of Haruyama et al. 2008",
+        "formula": null
+      },
+      "F5": {
+        "cell_type": "s",
+        "stored_value": "501",
+        "text": "https://en.wikipedia.org/wiki/Shackleton_(crater)",
+        "formula": null
+      },
+      "G5": {
+        "cell_type": "s",
+        "stored_value": "402",
+        "text": "Found (secondary source)",
+        "formula": null
+      },
+      "H5": {
+        "cell_type": "s",
+        "stored_value": "502",
+        "text": "LOLA 5 m DEM (87-90S) or 20 m slope map; clip about 20 km, resample to 200 m (dataset #13).",
+        "formula": null
+      },
+      "A6": {
+        "cell_type": "s",
+        "stored_value": "496",
+        "text": "Shackleton",
+        "formula": null
+      },
+      "B6": {
+        "cell_type": "s",
+        "stored_value": "503",
+        "text": "Roughness",
+        "formula": null
+      },
+      "C6": {
+        "cell_type": "s",
+        "stored_value": "504",
+        "text": "None found",
+        "formula": null
+      },
+      "D6": {
+        "cell_type": "s",
+        "stored_value": "424",
+        "text": "-",
+        "formula": null
+      },
+      "E6": {
+        "cell_type": "n",
+        "stored_value": null,
+        "text": null,
+        "formula": null
+      },
+      "F6": {
+        "cell_type": "n",
+        "stored_value": null,
+        "text": null,
+        "formula": null
+      },
+      "G6": {
+        "cell_type": "s",
+        "stored_value": "477",
+        "text": "Needs processing",
+        "formula": null
+      },
+      "H6": {
+        "cell_type": "s",
+        "stored_value": "505",
+        "text": "LOLA roughness map or std dev in a 1 km window (dataset #13).",
+        "formula": null
+      },
+      "A7": {
+        "cell_type": "s",
+        "stored_value": "496",
+        "text": "Shackleton",
+        "formula": null
+      },
+      "B7": {
+        "cell_type": "s",
+        "stored_value": "129",
+        "text": "Temperature range",
+        "formula": null
+      },
+      "C7": {
+        "cell_type": "s",
+        "stored_value": "506",
+        "text": "Floor average about 90 K, 88 K at the floor. Not a day/night range for the rim.",
+        "formula": null
+      },
+      "D7": {
+        "cell_type": "s",
+        "stored_value": "499",
+        "text": "No",
+        "formula": null
+      },
+      "E7": {
+        "cell_type": "s",
+        "stored_value": "507",
+        "text": "Wikipedia summary of published work",
+        "formula": null
+      },
+      "F7": {
+        "cell_type": "s",
+        "stored_value": "501",
+        "text": "https://en.wikipedia.org/wiki/Shackleton_(crater)",
+        "formula": null
+      },
+      "G7": {
+        "cell_type": "s",
+        "stored_value": "402",
+        "text": "Found (secondary source)",
+        "formula": null
+      },
+      "H7": {
+        "cell_type": "s",
+        "stored_value": "508",
+        "text": "Diviner GDR / Polar Resource Product (dataset #14). Fix one range definition first.",
+        "formula": null
+      },
+      "A8": {
+        "cell_type": "s",
+        "stored_value": "509",
+        "text": "Malapert",
+        "formula": null
+      },
+      "B8": {
+        "cell_type": "s",
+        "stored_value": "497",
+        "text": "Slope",
+        "formula": null
+      },
+      "C8": {
+        "cell_type": "s",
+        "stored_value": "510",
+        "text": "Artemis III candidate region has a relatively flat area at about 86S 0E above a roughly 5,000 m relief; NASA lander requirement is under 5 degrees (conference slides). No numeric slope.",
+        "formula": null
+      },
+      "D8": {
+        "cell_type": "s",
+        "stored_value": "499",
+        "text": "No",
+        "formula": null
+      },
+      "E8": {
+        "cell_type": "s",
+        "stored_value": "511",
+        "text": "LROC feature article; Artemis base camp slides",
+        "formula": null
+      },
+      "F8": {
+        "cell_type": "s",
+        "stored_value": "512",
+        "text": "https://lroc.im-ldi.com/images/1294",
+        "formula": null
+      },
+      "G8": {
+        "cell_type": "s",
+        "stored_value": "402",
+        "text": "Found (secondary source)",
+        "formula": null
+      },
+      "H8": {
+        "cell_type": "s",
+        "stored_value": "513",
+        "text": "LOLA 10 m or 20 m DEM (not the 5 m, which stops at 87S); dataset #13.",
+        "formula": null
+      },
+      "A9": {
+        "cell_type": "s",
+        "stored_value": "509",
+        "text": "Malapert",
+        "formula": null
+      },
+      "B9": {
+        "cell_type": "s",
+        "stored_value": "503",
+        "text": "Roughness",
+        "formula": null
+      },
+      "C9": {
+        "cell_type": "s",
+        "stored_value": "504",
+        "text": "None found",
+        "formula": null
+      },
+      "D9": {
+        "cell_type": "s",
+        "stored_value": "424",
+        "text": "-",
+        "formula": null
+      },
+      "E9": {
+        "cell_type": "n",
+        "stored_value": null,
+        "text": null,
+        "formula": null
+      },
+      "F9": {
+        "cell_type": "n",
+        "stored_value": null,
+        "text": null,
+        "formula": null
+      },
+      "G9": {
+        "cell_type": "s",
+        "stored_value": "477",
+        "text": "Needs processing",
+        "formula": null
+      },
+      "H9": {
+        "cell_type": "s",
+        "stored_value": "514",
+        "text": "Same as slope.",
+        "formula": null
+      },
+      "A10": {
+        "cell_type": "s",
+        "stored_value": "509",
+        "text": "Malapert",
+        "formula": null
+      },
+      "B10": {
+        "cell_type": "s",
+        "stored_value": "129",
+        "text": "Temperature range",
+        "formula": null
+      },
+      "C10": {
+        "cell_type": "s",
+        "stored_value": "504",
+        "text": "None found",
+        "formula": null
+      },
+      "D10": {
+        "cell_type": "s",
+        "stored_value": "424",
+        "text": "-",
+        "formula": null
+      },
+      "E10": {
+        "cell_type": "n",
+        "stored_value": null,
+        "text": null,
+        "formula": null
+      },
+      "F10": {
+        "cell_type": "n",
+        "stored_value": null,
+        "text": null,
+        "formula": null
+      },
+      "G10": {
+        "cell_type": "s",
+        "stored_value": "477",
+        "text": "Needs processing",
+        "formula": null
+      },
+      "H10": {
+        "cell_type": "s",
+        "stored_value": "515",
+        "text": "Diviner, dataset #14.",
+        "formula": null
+      },
+      "A11": {
+        "cell_type": "s",
+        "stored_value": "516",
+        "text": "Jezero",
+        "formula": null
+      },
+      "B11": {
+        "cell_type": "s",
+        "stored_value": "497",
+        "text": "Slope",
+        "formula": null
+      },
+      "C11": {
+        "cell_type": "s",
+        "stored_value": "504",
+        "text": "None found",
+        "formula": null
+      },
+      "D11": {
+        "cell_type": "s",
+        "stored_value": "424",
+        "text": "-",
+        "formula": null
+      },
+      "E11": {
+        "cell_type": "n",
+        "stored_value": null,
+        "text": null,
+        "formula": null
+      },
+      "F11": {
+        "cell_type": "n",
+        "stored_value": null,
+        "text": null,
+        "formula": null
+      },
+      "G11": {
+        "cell_type": "s",
+        "stored_value": "477",
+        "text": "Needs processing",
+        "formula": null
+      },
+      "H11": {
+        "cell_type": "s",
+        "stored_value": "517",
+        "text": "MOLA-HRSC 200 m DEM, 20 km clip (dataset #18). Inspect for blend artifacts.",
+        "formula": null
+      },
+      "A12": {
+        "cell_type": "s",
+        "stored_value": "516",
+        "text": "Jezero",
+        "formula": null
+      },
+      "B12": {
+        "cell_type": "s",
+        "stored_value": "129",
+        "text": "Temperature range",
+        "formula": null
+      },
+      "C12": {
+        "cell_type": "s",
+        "stored_value": "504",
+        "text": "None found",
+        "formula": null
+      },
+      "D12": {
+        "cell_type": "s",
+        "stored_value": "424",
+        "text": "-",
+        "formula": null
+      },
+      "E12": {
+        "cell_type": "n",
+        "stored_value": null,
+        "text": null,
+        "formula": null
+      },
+      "F12": {
+        "cell_type": "n",
+        "stored_value": null,
+        "text": null,
+        "formula": null
+      },
+      "G12": {
+        "cell_type": "s",
+        "stored_value": "477",
+        "text": "Needs processing",
+        "formula": null
+      },
+      "H12": {
+        "cell_type": "s",
+        "stored_value": "518",
+        "text": "Mars Climate Database, dataset #21. Record the dust scenario.",
+        "formula": null
+      },
+      "A13": {
+        "cell_type": "s",
+        "stored_value": "516",
+        "text": "Jezero",
+        "formula": null
+      },
+      "B13": {
+        "cell_type": "s",
+        "stored_value": "167",
+        "text": "Dust",
+        "formula": null
+      },
+      "C13": {
+        "cell_type": "s",
+        "stored_value": "504",
+        "text": "None found",
+        "formula": null
+      },
+      "D13": {
+        "cell_type": "s",
+        "stored_value": "424",
+        "text": "-",
+        "formula": null
+      },
+      "E13": {
+        "cell_type": "n",
+        "stored_value": null,
+        "text": null,
+        "formula": null
+      },
+      "F13": {
+        "cell_type": "n",
+        "stored_value": null,
+        "text": null,
+        "formula": null
+      },
+      "G13": {
+        "cell_type": "s",
+        "stored_value": "477",
+        "text": "Needs processing",
+        "formula": null
+      },
+      "H13": {
+        "cell_type": "s",
+        "stored_value": "519",
+        "text": "Mars Climate Database dust column optical depth.",
+        "formula": null
+      },
+      "A14": {
+        "cell_type": "s",
+        "stored_value": "520",
+        "text": "Meridiani",
+        "formula": null
+      },
+      "B14": {
+        "cell_type": "s",
+        "stored_value": "497",
+        "text": "Slope",
+        "formula": null
+      },
+      "C14": {
+        "cell_type": "s",
+        "stored_value": "521",
+        "text": "Opportunity crossed 'flat, nearly featureless plains' (qualitative).",
+        "formula": null
+      },
+      "D14": {
+        "cell_type": "s",
+        "stored_value": "499",
+        "text": "No",
+        "formula": null
+      },
+      "E14": {
+        "cell_type": "s",
+        "stored_value": "522",
+        "text": "Squyres and Knoll 2005, EPSL",
+        "formula": null
+      },
+      "F14": {
+        "cell_type": "s",
+        "stored_value": "456",
+        "text": "https://ui.adsabs.harvard.edu/abs/2005E%26PSL.240....1S/abstract",
+        "formula": null
+      },
+      "G14": {
+        "cell_type": "s",
+        "stored_value": "402",
+        "text": "Found (secondary source)",
+        "formula": null
+      },
+      "H14": {
+        "cell_type": "s",
+        "stored_value": "523",
+        "text": "MOLA-HRSC 200 m DEM (dataset #18).",
+        "formula": null
+      },
+      "A15": {
+        "cell_type": "s",
+        "stored_value": "520",
+        "text": "Meridiani",
+        "formula": null
+      },
+      "B15": {
+        "cell_type": "s",
+        "stored_value": "129",
+        "text": "Temperature range",
+        "formula": null
+      },
+      "C15": {
+        "cell_type": "s",
+        "stored_value": "504",
+        "text": "None found",
+        "formula": null
+      },
+      "D15": {
+        "cell_type": "s",
+        "stored_value": "424",
+        "text": "-",
+        "formula": null
+      },
+      "E15": {
+        "cell_type": "n",
+        "stored_value": null,
+        "text": null,
+        "formula": null
+      },
+      "F15": {
+        "cell_type": "n",
+        "stored_value": null,
+        "text": null,
+        "formula": null
+      },
+      "G15": {
+        "cell_type": "s",
+        "stored_value": "477",
+        "text": "Needs processing",
+        "formula": null
+      },
+      "H15": {
+        "cell_type": "s",
+        "stored_value": "524",
+        "text": "Mars Climate Database.",
+        "formula": null
+      },
+      "A16": {
+        "cell_type": "s",
+        "stored_value": "520",
+        "text": "Meridiani",
+        "formula": null
+      },
+      "B16": {
+        "cell_type": "s",
+        "stored_value": "167",
+        "text": "Dust",
+        "formula": null
+      },
+      "C16": {
+        "cell_type": "s",
+        "stored_value": "504",
+        "text": "None found",
+        "formula": null
+      },
+      "D16": {
+        "cell_type": "s",
+        "stored_value": "424",
+        "text": "-",
+        "formula": null
+      },
+      "E16": {
+        "cell_type": "n",
+        "stored_value": null,
+        "text": null,
+        "formula": null
+      },
+      "F16": {
+        "cell_type": "n",
+        "stored_value": null,
+        "text": null,
+        "formula": null
+      },
+      "G16": {
+        "cell_type": "s",
+        "stored_value": "477",
+        "text": "Needs processing",
+        "formula": null
+      },
+      "H16": {
+        "cell_type": "s",
+        "stored_value": "524",
+        "text": "Mars Climate Database.",
+        "formula": null
+      },
+      "A17": {
+        "cell_type": "s",
+        "stored_value": "525",
+        "text": "Shackleton, Malapert",
+        "formula": null
+      },
+      "B17": {
+        "cell_type": "s",
+        "stored_value": "167",
+        "text": "Dust",
+        "formula": null
+      },
+      "C17": {
+        "cell_type": "s",
+        "stored_value": "526",
+        "text": "LADEE measured the dust cloud around the Moon, not surface dust at a site, so no per-site value exists.",
+        "formula": null
+      },
+      "D17": {
+        "cell_type": "s",
+        "stored_value": "499",
+        "text": "No",
+        "formula": null
+      },
+      "E17": {
+        "cell_type": "s",
+        "stored_value": "527",
+        "text": "LADEE LDEX, PDS",
+        "formula": null
+      },
+      "F17": {
+        "cell_type": "s",
+        "stored_value": "308",
+        "text": "https://sbn.psi.edu/pds/resource/ldex.html",
+        "formula": null
+      },
+      "G17": {
+        "cell_type": "s",
+        "stored_value": "441",
+        "text": "Not found",
+        "formula": null
+      },
+      "H17": {
+        "cell_type": "s",
+        "stored_value": "528",
+        "text": "Show 'no data' per the plan's rule.",
+        "formula": null
+      }
+    }
+  },
+  "approval_status": "PENDING_HUMAN_REVIEW",
+  "unresolved": [
+    "Legacy target constants need exact quantitative source citations and matching geometry/time/scale.",
+    "Normalization ranges/direction, related rock groups, ice encoding and missing-data policy are not approved.",
+    "No approved coordinates or reference population exists; maps/sampling/ranks cannot be approved from these constants.",
+    "Legacy citations are preserved as claims, not verified source attribution."
+  ]
+}

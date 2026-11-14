@@ -1,0 +1,125 @@
+{
+  "schema_version": "exploratory-policy-v1",
+  "status": "EXPLORATORY_TEAM_AUTHORIZED",
+  "scientifically_validated": false,
+  "authorization": "Explicit team request 2026-11-14: implement legacy exploratory candidate model, label provisional, preserve McMurdo K11 null and feature coverage; candidate markers requested. Not approval of canonical geometry or scientific validity.",
+  "score_label": "Indicative Model Score (Provisional Candidate Extraction — Subject to Peer Review)",
+  "weights": {
+    "Moon": {
+      "slope": 0.22,
+      "roughness": 0.18,
+      "temperature": 0.2,
+      "water_ice": 0.2,
+      "rock_mineral": 0.1,
+      "dryness": 0.04,
+      "vegetation": 0.03,
+      "dust_wind": 0.03
+    },
+    "Mars": {
+      "slope": 0.12,
+      "roughness": 0.1,
+      "temperature": 0.1,
+      "water_ice": 0.08,
+      "rock_mineral": 0.22,
+      "dryness": 0.18,
+      "vegetation": 0.05,
+      "dust_wind": 0.15
+    }
+  },
+  "related_rock_groups": [
+    [
+      "basalt",
+      "anorthosite",
+      "gabbro",
+      "volcanic_mafic"
+    ],
+    [
+      "sandstone",
+      "siltstone",
+      "mudstone",
+      "sedimentary_clastic"
+    ],
+    [
+      "evaporite",
+      "carbonate",
+      "gypsum",
+      "halite",
+      "sedimentary_chemical"
+    ],
+    [
+      "granite",
+      "rhyolite",
+      "felsic_igneous"
+    ],
+    [
+      "impact_breccia",
+      "regolith_breccia",
+      "impactite"
+    ]
+  ],
+  "minimum_weighted_coverage": 0.75,
+  "weight_sum_tolerance": 0.0001,
+  "feature_slots": {
+    "feature-1": "slope",
+    "feature-2": "roughness",
+    "feature-3": "temperature",
+    "feature-4": "dryness",
+    "feature-5": "vegetation",
+    "feature-6": "rock_mineral",
+    "feature-7": "water_ice",
+    "feature-8": "dust_wind"
+  },
+  "normalization": {
+    "slope": {
+      "operation": "divide",
+      "divisor": 30
+    },
+    "roughness": {
+      "operation": "divide",
+      "divisor": 80
+    },
+    "temperature": {
+      "operation": "divide",
+      "divisor": 200
+    },
+    "dryness": {
+      "operation": "inverse_clamp_lower",
+      "divisor": 2500
+    },
+    "vegetation": {
+      "operation": "identity"
+    },
+    "dust_wind": {
+      "operation": "identity"
+    },
+    "water_ice": {
+      "operation": "identity"
+    },
+    "rock_mineral": {
+      "operation": "category"
+    }
+  },
+  "missing_policy": "Preserve null; omit its contribution without renormalizing weights. Suppress score below 75% weighted coverage. This is a partial weighted sum, not a full-data estimate.",
+  "strength_bands": {
+    "scope": "per_feature",
+    "strong_min": 0.75,
+    "partial_min": 0.4
+  },
+  "tie_rule": "Equal displayed scores retain canonical register order; no percentile or reference validation is computed.",
+  "limitations": [
+    "Target values and rock/ice encodings are unverified model assumptions, not extracted observations.",
+    "Temperature contrasts, terrain scales, rainfall periods and aerosol wavelengths may be incompatible across bodies.",
+    "Feature coverage counts model inputs, not verified scientific measurements.",
+    "Candidate map positions remain provisional and do not authorize spatial extraction."
+  ],
+  "primary_references": [
+    {
+      "title": "NASA MODIS vegetation products",
+      "url": "https://modis.gsfc.nasa.gov/data/dataprod/mod13.php"
+    },
+    {
+      "title": "PDS Diviner products",
+      "url": "https://pds-geosciences.wustl.edu/missions/lro/diviner.htm"
+    }
+  ]
+}

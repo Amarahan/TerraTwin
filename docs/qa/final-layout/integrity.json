@@ -1,0 +1,164 @@
+{
+  "backup": "C:\\Users\\Asus\\.codex\\visualizations\\2026\\11\\14\\01a1d7e6-e416-7080-b7a1-29da61536fb4\\terratwin-backups\\workspace-20261114-201217.zip",
+  "data_reference_files_verified": 81,
+  "changed_or_missing": [],
+  "images": [
+    {
+      "image": "starter_app/public/images/earth/ASTGTMV003_N36W117.1.jpg",
+      "originals": [
+        "data/earth/ASTGTMV003_N36W117.1.jpg"
+      ]
+    },
+    {
+      "image": "starter_app/public/images/earth/ASTGTMV003_N75W090.1.jpg",
+      "originals": [
+        "data/earth/ASTGTMV003_N75W090.1.jpg"
+      ]
+    },
+    {
+      "image": "starter_app/public/images/earth/ASTGTMV003_S24W070.1.jpg",
+      "originals": [
+        "data/earth/ASTGTMV003_S24W070.1.jpg"
+      ]
+    },
+    {
+      "image": "starter_app/public/images/earth/atacama_true_color.jpg",
+      "originals": [
+        "data/earth/atacama_true_color.jpg"
+      ]
+    },
+    {
+      "image": "starter_app/public/images/earth/death_valley_aster_dem.jpg",
+      "originals": [
+        "data/earth/death_valley_aster_dem.jpg"
+      ]
+    },
+    {
+      "image": "starter_app/public/images/earth/death_valley_true_color.jpg",
+      "originals": [
+        "data/earth/death_valley_true_color.jpg"
+      ]
+    },
+    {
+      "image": "starter_app/public/images/earth/haughton_aster_dem.jpg",
+      "originals": [
+        "data/earth/haughton_aster_dem.jpg"
+      ]
+    },
+    {
+      "image": "starter_app/public/images/earth/haughton_true_color.jpg",
+      "originals": [
+        "data/earth/haughton_true_color.jpg"
+      ]
+    },
+    {
+      "image": "starter_app/public/images/earth/N36W117.SRTMGL1.2.jpg",
+      "originals": [
+        "data/earth/N36W117.SRTMGL1.2.jpg"
+      ]
+    },
+    {
+      "image": "starter_app/public/images/earth/S24W070.SRTMGL1.2.jpg",
+      "originals": [
+        "data/earth/S24W070.SRTMGL1.2.jpg"
+      ]
+    },
+    {
+      "image": "starter_app/public/images/mars/jezero_ctx_global_mosaic.png",
+      "originals": [
+        "data/mars/jezero_ctx_global_mosaic.png"
+      ]
+    },
+    {
+      "image": "starter_app/public/images/mars/jezero_hirise_global_mosaic.png",
+      "originals": [
+        "data/mars/jezero_hirise_global_mosaic.png"
+      ]
+    },
+    {
+      "image": "starter_app/public/images/mars/jezero_mola_hillshade.png",
+      "originals": [
+        "data/mars/jezero_mola_hillshade.png"
+      ]
+    },
+    {
+      "image": "starter_app/public/images/mars/jezero_mola_hillshade_z6_r25_c91.jpg",
+      "originals": [
+        "data/mars/jezero_mola_hillshade_z6_r25_c91.jpg"
+      ]
+    },
+    {
+      "image": "starter_app/public/images/mars/jezero_mola_roughness.png",
+      "originals": [
+        "data/mars/jezero_mola_roughness.png"
+      ]
+    },
+    {
+      "image": "starter_app/public/images/mars/jezero_mola_roughness_z1_r0_c2.png",
+      "originals": [
+        "data/mars/jezero_mola_roughness_z1_r0_c2.png"
+      ]
+    },
+    {
+      "image": "starter_app/public/images/mars/jezero_tes_dust.png",
+      "originals": [
+        "data/mars/jezero_tes_dust.png"
+      ]
+    },
+    {
+      "image": "starter_app/public/images/mars/jezero_tes_dust_index.png",
+      "originals": [
+        "data/mars/jezero_tes_dust_index.png"
+      ]
+    },
+    {
+      "image": "starter_app/public/images/mars/jezero_tes_dust_index_z2_r1_c5.png",
+      "originals": [
+        "data/mars/jezero_tes_dust_index_z2_r1_c5.png"
+      ]
+    },
+    {
+      "image": "starter_app/public/images/mars/jezero_tes_dust_z1_r0_c2.png",
+      "originals": [
+        "data/mars/jezero_tes_dust_z1_r0_c2.png"
+      ]
+    },
+    {
+      "image": "starter_app/public/images/mars/mola_global_tile.jpg",
+      "originals": [
+        "data/mars/mola_global_tile.jpg"
+      ]
+    },
+    {
+      "image": "starter_app/public/images/moon/malapert_lola_color_hillshade.png",
+      "originals": [
+        "data/moon/malapert_lola_color_hillshade.png"
+      ]
+    },
+    {
+      "image": "starter_app/public/images/moon/malapert_lola_color_slope.png",
+      "originals": [
+        "data/moon/malapert_lola_color_slope.png"
+      ]
+    },
+    {
+      "image": "starter_app/public/images/moon/malapert_lroc_dem_slope.png",
+      "originals": [
+        "data/moon/malapert_lroc_dem_slope.png"
+      ]
+    },
+    {
+      "image": "starter_app/public/images/moon/shackleton_lola_color_hillshade.png",
+      "originals": [
+        "data/moon/shackleton_lola_color_hillshade.png"
+      ]
+    },
+    {
+      "image": "starter_app/public/images/moon/shackleton_lola_color_slope.png",
+      "originals": [
+        "data/moon/shackleton_lola_color_slope.png"
+      ]
+    }
+  ],
+  "unmatched_images": []
+}

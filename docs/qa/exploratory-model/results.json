@@ -1,0 +1,11 @@
+{
+  "checks": [
+    "12 provisional markers and exact model label",
+    "all 48 displayed scores agree with reproducible Python outputs",
+    "McMurdo has missing NDVI, seven meters and honest weighted coverage",
+    "provisional map marker selects its site",
+    "failed and malformed model loads clear scores and markers; retry restores them",
+    "model method is visible and no runtime exceptions"
+  ],
+  "errors": []
+}

@@ -2,7 +2,9 @@ import { useState } from 'react';
 import type { AtlasData, Category, RecordEntry } from './data';
 import { SectionHeading, Icon, type Screen } from './Shell';
 import { WorldMap } from './WorldMap';
-import { calculateSiteScore, DEFAULT_WEIGHT_PROFILES } from './scoring';
+import { ModelScore, ModelStatus, ModelMethod, Reading, useExploratory } from './ExploratoryModel';
+import { modelScore } from './exploratoryData';
+import { WorkbookReadings } from './WorkbookEvidence';
 import { CANDIDATE_SITES, TARGET_MODELS } from './candidateData';
 
 type Props = {
@@ -16,63 +18,12 @@ type Props = {
 };
 
 const categories: Category[] = ['Featured', 'Benchmark', 'Control'];
+function matchesQuery(site: RecordEntry, query: string) {
+  return `${site.name} ${site.region ?? ''} ${CANDIDATE_SITES[site.id]?.primaryLithology ?? ''}`.toLowerCase().includes(query.trim().toLowerCase());
+}
 
 function PendingScore({ site, target }: { site?: RecordEntry; target?: RecordEntry }) {
-  if (site && target) {
-    const candidateSite = CANDIDATE_SITES[site.id];
-    const targetModel = TARGET_MODELS[target.id];
-
-    if (candidateSite && targetModel) {
-      const earthNorm: Record<string, any> = {};
-      for (const [k, v] of Object.entries(candidateSite.features)) {
-        earthNorm[k] = v.normalized;
-      }
-      const targetNorm: Record<string, any> = {};
-      for (const [k, v] of Object.entries(targetModel.features)) {
-        targetNorm[k] = v.normalized;
-      }
-      const weights =
-        (target.body === 'Mars' ? DEFAULT_WEIGHT_PROFILES.Mars : DEFAULT_WEIGHT_PROFILES.Moon) ??
-        DEFAULT_WEIGHT_PROFILES.Moon;
-      const result = calculateSiteScore(earthNorm, targetNorm, weights);
-
-      const score = result.compositeScore ?? 0;
-      const strengthClass = score >= 70 ? 'strong' : score >= 50 ? 'partial' : 'weak';
-      const strengthText = score >= 70 ? 'STRONG MATCH' : score >= 50 ? 'PARTIAL MATCH' : 'WEAK MATCH';
-
-      return (
-        <div className="live-score-card">
-          <div className="score-header">
-            <div>
-              <span className="eyebrow">Indicative Model Score</span>
-              <h3>
-                {score.toFixed(1)} <small>/ 100</small>
-              </h3>
-            </div>
-            <span className={`strength-badge strength-${strengthClass}`}>{strengthText}</span>
-          </div>
-          <p className="score-summary">
-            Provisional analog similarity comparing <b>{site.name}</b> with <b>{target.name}</b> ({target.body} weight preset). Derived from project workbook candidate measurements; subject to peer review.
-          </p>
-          <div className="coverage-bar-wrap">
-            <span>Candidate Feature Coverage: 8/8 features evaluated (Provisional workbook extraction)</span>
-            <div className="coverage-bar">
-              <div className="coverage-fill" style={{ width: '100%' }} />
-            </div>
-          </div>
-        </div>
-      );
-    }
-  }
-
-  return (
-    <div className="notice score-notice">
-      <b>Planetary comparison active · Evidence before similarity</b>
-      <p>
-        Select an Earth field site and planetary target to inspect candidate feature evidence and evaluate indicative similarity scores.
-      </p>
-    </div>
-  );
+  return <ModelScore siteId={site?.id} targetId={target?.id}/>;
 }
 
 function TargetSelect({
@@ -98,144 +49,19 @@ function TargetSelect({
   );
 }
 
-function Features({ data, site, target }: { data: AtlasData; site: RecordEntry; target: RecordEntry }) {
-  return (
-    <section aria-label="Eight scientific features">
-      <SectionHeading
-        eyebrow="Evidence comparison"
-        title="Eight scientific features"
-        text={`${site.name} ↔ ${target.name}`}
-      />
-      <div className="feature-comparisons">
-        {data.features.map((f) => (
-          <article key={f.id} className="feature-evidence">
-            <h3>{f.label.split(' (')[0]}</h3>
-            <div className="measurement-pair">
-              <div>
-                <small>Earth · {site.name}</small>
-                <strong>{site.measurements[f.id].value ?? 'No data'}</strong>
-              </div>
-              <div>
-                <small>
-                  {target.body} · {target.name}
-                </small>
-                <strong>{target.measurements[f.id].value ?? 'No data'}</strong>
-              </div>
-            </div>
-            <p>Pending review · Unit and comparable measurement not approved.</p>
-            <details>
-              <summary>Definition & provenance</summary>
-              <p>{f.label}</p>
-              <p>{f.limitations}</p>
-              <p>Feature concept: {f.definition_source}</p>
-              <p>Measurement source: No data</p>
-            </details>
-          </article>
-        ))}
-      </div>
-    </section>
-  );
-}
-
-function CandidateFeatureTable({
-  siteId,
-  targetId,
-  targetBody,
-}: {
-  siteId: string;
-  targetId: string;
-  targetBody: 'Earth' | 'Moon' | 'Mars';
-}) {
-  const candidateSite = CANDIDATE_SITES[siteId];
-  const targetModel = TARGET_MODELS[targetId];
-
-  if (!candidateSite || !targetModel) return null;
-
-  const featureKeys: Array<{ key: keyof typeof candidateSite.features; label: string }> = [
-    { key: 'slope', label: 'Slope Gradient' },
-    { key: 'roughness', label: 'Surface Roughness' },
-    { key: 'temperature', label: 'Temperature Contrast' },
-    { key: 'dryness', label: 'Dryness / Aridity' },
-    { key: 'vegetation', label: 'Vegetation (NDVI)' },
-    { key: 'dust_wind', label: 'Dust & Aerosols' },
-    { key: 'rock_mineral', label: 'Rock & Mineral Lithology' },
-    { key: 'water_ice', label: 'Water Ice / Permafrost' },
-  ];
-
-  const weights =
-    (targetBody === 'Mars' ? DEFAULT_WEIGHT_PROFILES.Mars : DEFAULT_WEIGHT_PROFILES.Moon) ??
-    DEFAULT_WEIGHT_PROFILES.Moon;
-  const earthNorm: Record<string, any> = {};
-  for (const [k, v] of Object.entries(candidateSite.features)) {
-    earthNorm[k] = v.normalized;
-  }
-  const targetNorm: Record<string, any> = {};
-  for (const [k, v] of Object.entries(targetModel.features)) {
-    targetNorm[k] = v.normalized;
-  }
-  const result = calculateSiteScore(earthNorm, targetNorm, weights);
-
-  return (
-    <div className="candidate-table-wrap">
-      <span className="eyebrow">Candidate Feature Evidence (Workbook Ingestion)</span>
-      <table className="candidate-table">
-        <thead>
-          <tr>
-            <th>Feature</th>
-            <th>Earth: {candidateSite.name}</th>
-            <th>Target: {targetModel.name}</th>
-            <th>Weight</th>
-            <th>Similarity</th>
-          </tr>
-        </thead>
-        <tbody>
-          {featureKeys.map(({ key, label }) => {
-            const earthFeat = candidateSite.features[key];
-            const targetFeat = targetModel.features[key];
-            const weight = weights[key] ?? 0;
-            const sim = result.similarities[key];
-            const simPercent = sim !== null ? (sim * 100).toFixed(0) : '—';
-            const band = result.strengthBands[key];
-            const matchClass = band === 'STRONG' ? 'strong-match' : band === 'PARTIAL' ? 'partial-match' : 'weak-match';
-
-            return (
-              <tr key={key}>
-                <td>
-                  <b>{label}</b>
-                  <br />
-                  <small className="muted">{earthFeat.sourceCitation}</small>
-                </td>
-                <td>
-                  <strong>{earthFeat.displayValue}</strong>
-                </td>
-                <td>
-                  <strong>{targetFeat.displayValue}</strong>
-                </td>
-                <td>{(weight * 100).toFixed(0)}%</td>
-                <td className={matchClass}>
-                  <div className="sim-meter">
-                    <span>{simPercent}%</span>
-                    {sim !== null && (
-                      <div className="sim-meter-bar">
-                        <div
-                          className="sim-meter-fill"
-                          style={{
-                            width: `${Math.round(sim * 100)}%`,
-                            background:
-                              band === 'STRONG' ? '#10b981' : band === 'PARTIAL' ? '#f59e0b' : '#ef4444',
-                          }}
-                        />
-                      </div>
-                    )}
-                  </div>
-                </td>
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
-    </div>
-  );
+function Features({data,site,target}:{data:AtlasData;site:RecordEntry;target:RecordEntry}) {
+ const {model}=useExploratory();if(!model)return <ModelStatus/>;
+ const earth=model.sites.find(s=>s.id===site.id)!,planet=model.targets.find(t=>t.id===target.id)!;
+ const score=modelScore(model,site.id,target.id);
+ return <section aria-label="Eight scientific features"><SectionHeading eyebrow="Provisional model evidence" title="Eight scientific features" text={`${site.name} ↔ ${target.name}`}/>
+  <div className="feature-comparisons">{data.features.map(f=>{
+   const key=model.policy.feature_slots[f.id],a=earth.features[key],b=planet.features[key],similarity=score.similarities[key];
+   return <article key={f.id} className="feature-evidence"><h3>{f.label.split(' (')[0]}</h3><div className="measurement-pair"><div><small>Earth · {site.name}</small><Reading feature={a}/></div><div><small>{target.body} · {target.name}</small><Reading feature={b}/></div></div>
+    <p>{similarity===null?'Similarity unavailable':`Model similarity ${(similarity*100).toFixed(1)}% · ${score.strengthBands[key].toLowerCase()}`}</p>
+    {similarity!==null&&<meter min={0} max={1} value={similarity} aria-label={`${f.label} provisional similarity`} style={{width:'100%'}}/>}
+    <details><summary>Definition & provenance</summary><p>{f.limitations}</p><p>Feature concept: {f.definition_source}</p><p>Earth source: {a.source.path} {a.source.sheet} {a.source.cell} {a.source.claim}</p><p>Target source claim (unverified): {b.source.claim}</p><p>Raw input status: {a.status} / {b.status}. Normalization and target comparability are exploratory assumptions.</p></details>
+   </article>;
+  })}</div></section>;
 }
 
 function SiteImageGallery({ siteId, targetId }: { siteId: string; targetId: string }) {
@@ -256,7 +82,7 @@ function SiteImageGallery({ siteId, targetId }: { siteId: string; targetId: stri
             <img src={candidateSite.images.photo.url} alt={candidateSite.images.photo.title} />
             <figcaption>
               <strong>{candidateSite.images.photo.title}</strong>
-              <p>{candidateSite.images.photo.caption}</p>
+              <p>Browse image · not a quantitative measurement.</p>
               <small>{candidateSite.images.photo.source}</small>
             </figcaption>
           </figure>
@@ -266,7 +92,7 @@ function SiteImageGallery({ siteId, targetId }: { siteId: string; targetId: stri
             <img src={candidateSite.images.dem.url} alt={candidateSite.images.dem.title} />
             <figcaption>
               <strong>{candidateSite.images.dem.title}</strong>
-              <p>{candidateSite.images.dem.caption}</p>
+              <p>Browse image · not a quantitative measurement.</p>
               <small>{candidateSite.images.dem.source}</small>
             </figcaption>
           </figure>
@@ -276,7 +102,7 @@ function SiteImageGallery({ siteId, targetId }: { siteId: string; targetId: stri
             <img src={candidateSite.images.aster.url} alt={candidateSite.images.aster.title} />
             <figcaption>
               <strong>{candidateSite.images.aster.title}</strong>
-              <p>{candidateSite.images.aster.caption}</p>
+              <p>Browse image · not a quantitative measurement.</p>
               <small>{candidateSite.images.aster.source}</small>
             </figcaption>
           </figure>
@@ -288,7 +114,7 @@ function SiteImageGallery({ siteId, targetId }: { siteId: string; targetId: stri
               <strong>
                 {targetModel.name} · {targetModel.images.primary.title}
               </strong>
-              <p>{targetModel.images.primary.caption}</p>
+              <p>Target browse image · not a quantitative measurement.</p>
               <small>{targetModel.images.primary.source}</small>
             </figcaption>
           </figure>
@@ -375,13 +201,11 @@ function SitePanel({
   data,
   site,
   target,
-  full = false,
   openDetails,
 }: {
   data: AtlasData;
   site: RecordEntry;
   target: RecordEntry;
-  full?: boolean;
   openDetails?: () => void;
 }) {
   const [tab, setTab] = useState('Fit');
@@ -394,7 +218,7 @@ function SitePanel({
       </p>
       <h2>{site.name}</h2>
       <p className="status-label">
-        Coordinates: {candidateSite?.coordinates ? `${candidateSite.coordinates[0].toFixed(2)}°, ${candidateSite.coordinates[1].toFixed(2)}° (Provisional candidate)` : 'Pending review'}
+        Geographic placement pending human review
       </p>
       <p className="muted">
         Compared with {target.name} · {target.body}
@@ -415,43 +239,7 @@ function SitePanel({
         <>
           <PendingScore site={site} target={target} />
           <SiteImageGallery siteId={site.id} targetId={target.id} />
-          <CandidateFeatureTable siteId={site.id} targetId={target.id} targetBody={target.body} />
-          {full ? (
-            <details className="baseline-audit-section">
-              <summary>Baseline verification gate (16 missing value audit)</summary>
-              <Features data={data} site={site} target={target} />
-            </details>
-          ) : (
-            <ul className="compact-features">
-              {data.features.map((f) => {
-                const featKey = f.id.replace('feature-', '') as any;
-                const matchVal = candidateSite?.features[
-                  featKey === '1'
-                    ? 'slope'
-                    : featKey === '2'
-                    ? 'roughness'
-                    : featKey === '3'
-                    ? 'temperature'
-                    : featKey === '4'
-                    ? 'dryness'
-                    : featKey === '5'
-                    ? 'vegetation'
-                    : featKey === '6'
-                    ? 'rock_mineral'
-                    : featKey === '7'
-                    ? 'water_ice'
-                    : 'dust_wind'
-                ]?.displayValue;
-
-                return (
-                  <li key={f.id}>
-                    <span>{f.label.split(' (')[0]}</span>
-                    <b>{matchVal ?? 'No data'}</b>
-                  </li>
-                );
-              })}
-            </ul>
-          )}
+          <Features data={data} site={site} target={target} />
         </>
       )}
       {tab === 'Mission' && (
@@ -459,7 +247,7 @@ function SitePanel({
           <h3>Hypothesis to test</h3>
           <p>
             {candidateSite?.primaryLithology
-              ? `Geological analog hypothesis: ${candidateSite.primaryLithology}. Evaluated for ${target.name} planetary research.`
+              ? `Provisional geological context: ${candidateSite.primaryLithology}. Its relevance to ${target.name} requires scientific review.`
               : 'This candidate is retained for future evidence review. No site-specific mission capability has been established.'}
           </p>
           <Reality target={target} />
@@ -473,7 +261,7 @@ function SitePanel({
           <Reality target={target} />
         </>
       )}
-      {tab === 'Sources' && <Sources data={data} />}
+      {tab === 'Sources' && <><WorkbookReadings siteIds={[site.id]} /><p>Measurement units, dates, extraction methods and confidence remain pending approval. Browse images are contextual and are not used to calculate features. Geological descriptions are legacy candidate context with source verification pending.</p><Sources data={data} /></>}
       {openDetails && (
         <button className="primary wide" onClick={openDetails}>
           Open site details
@@ -490,6 +278,8 @@ function Catalogue({
   category,
   onSelectCategory,
   compact = false,
+  query,
+  setQuery,
 }: {
   data: AtlasData;
   activeId: string;
@@ -497,12 +287,13 @@ function Catalogue({
   category: string;
   onSelectCategory: (c: string) => void;
   compact?: boolean;
+  query: string;
+  setQuery: (query: string) => void;
 }) {
-  const [query, setQuery] = useState('');
   const visible = data.sites.filter(
     (s) =>
       (category === 'All' || s.group === category) &&
-      `${s.name} ${s.region}`.toLowerCase().includes(query.toLowerCase()),
+      matchesQuery(s, query),
   );
   return (
     <section className={compact ? 'catalogue compact' : 'catalogue'} aria-label="Earth site catalogue">
@@ -511,7 +302,7 @@ function Catalogue({
         <input
           type="search"
           value={query}
-          placeholder="Site or region…"
+          placeholder="Site, region or geology…"
           onChange={(e) => setQuery(e.target.value)}
         />
       </label>
@@ -580,62 +371,43 @@ function RankingsView({
   setTargetId: (id: string) => void;
   onSelectSite: (id: string) => void;
 }) {
+  const {model}=useExploratory();
   const [query, setQuery] = useState('');
   const [category, setCategory] = useState('All');
 
-  const weights =
-    (target.body === 'Mars' ? DEFAULT_WEIGHT_PROFILES.Mars : DEFAULT_WEIGHT_PROFILES.Moon) ??
-    DEFAULT_WEIGHT_PROFILES.Moon;
-  const targetModel = TARGET_MODELS[target.id];
+  const siteEntries = data.sites.map((site, index) => ({
+    site, candidateSite: CANDIDATE_SITES[site.id], registerNumber: index + 1, result:model ? modelScore(model,site.id,targetId) : null,
+  }));
 
-  const siteEntries = data.sites.map((site) => {
-    const candidateSite = CANDIDATE_SITES[site.id];
-    let score: number | null = null;
-    let band = 'UNAVAILABLE';
-
-    if (candidateSite && targetModel) {
-      const eNorm: Record<string, any> = {};
-      for (const [k, v] of Object.entries(candidateSite.features)) eNorm[k] = v.normalized;
-      const tNorm: Record<string, any> = {};
-      for (const [k, v] of Object.entries(targetModel.features)) tNorm[k] = v.normalized;
-      const res = calculateSiteScore(eNorm, tNorm, weights);
-      score = res.compositeScore;
-      band = score !== null ? (score >= 70 ? 'STRONG' : score >= 50 ? 'PARTIAL' : 'WEAK') : 'UNAVAILABLE';
-    }
-
-    return {
-      site,
-      candidateSite,
-      score,
-      band,
-    };
-  });
-
-  const filtered = siteEntries.filter(({ site, candidateSite }) => {
+  const filtered = siteEntries.filter(({ site }) => {
     const matchesCat = category === 'All' || site.group === category;
-    const searchTarget = `${site.name} ${site.region} ${candidateSite?.primaryLithology ?? ''}`.toLowerCase();
-    const matchesQuery = searchTarget.includes(query.toLowerCase());
-    return matchesCat && matchesQuery;
+    const matchesSearch = matchesQuery(site, query);
+    return matchesCat && matchesSearch;
   });
 
-  // Sort descending by model score
-  filtered.sort((a, b) => (b.score ?? 0) - (a.score ?? 0));
 
+  filtered.sort((a,b)=>{
+    const left=a.result?.compositeScore??null,right=b.result?.compositeScore??null;
+    if(left===null)return right===null?a.registerNumber-b.registerNumber:1;
+    if(right===null)return -1;
+    return right-left||a.registerNumber-b.registerNumber;
+  });
   return (
     <section className="rankings-screen" aria-label="Earth site catalogue and rankings">
       <SectionHeading
         eyebrow="Planetary Analog Register"
         title="Earth Site Catalogue & Model Rankings"
-        text={`Complete register of 12 candidate environments evaluated against ${target.name} (${target.body}). Indicative scores reflect normalized physical similarity.`}
+        text={`Explore 12 candidate environments alongside ${target.name}. Sorted by indicative model score. Candidate inputs and target assumptions are subject to peer review.`}
       />
 
+      {!model && <ModelStatus/>}
       {/* Target & Filter Bar */}
       <div className="rankings-controls-bar">
         <TargetSelect data={data} value={targetId} change={setTargetId} />
 
         <div className="rankings-filter-group">
-          <label className="selector-label">
-            Filter by group
+          <div className="selector-label" role="group" aria-label="Filter by group">
+            <span>Filter by group</span>
             <div className="category-filters" aria-label="Site categories">
               {['All', ...categories].map((c) => (
                 <button
@@ -651,7 +423,7 @@ function RankingsView({
                 </button>
               ))}
             </div>
-          </label>
+          </div>
 
           <label className="selector-label search-label">
             Search register
@@ -675,11 +447,9 @@ function RankingsView({
           <span>Action</span>
         </div>
 
-        {filtered.map(({ site, candidateSite, score, band }, idx) => {
-          const rankNum = String(idx + 1).padStart(2, '0');
+        {filtered.map(({ site, candidateSite, result }, index) => {
+          const rankNum = String(index + 1).padStart(2, '0');
           const thumb = candidateSite?.images.photo?.url ?? candidateSite?.images.dem?.url;
-          const strengthColor = band === 'STRONG' ? '#34d399' : band === 'PARTIAL' ? '#fbbf24' : '#f87171';
-          const deg = score !== null ? Math.round((score / 100) * 360) : 0;
 
           return (
             <article className="result-row" key={site.id}>
@@ -702,14 +472,11 @@ function RankingsView({
               </div>
 
               <p>
-                {candidateSite?.primaryLithology ?? 'Provisional candidate site under scientific evidence review.'}
+                {candidateSite?.primaryLithology ?? 'Geological context pending review.'}<small className="context-status">Provisional context · source verification pending</small>
               </p>
 
-              <div className="score">
-                <div style={{ background: `conic-gradient(${strengthColor} ${deg}deg, #1b384c ${deg}deg)` }}>
-                  <span>{score !== null ? score.toFixed(1) : '—'}</span>
-                </div>
-                <small style={{ color: strengthColor }}>{band}</small>
+              <div className="score pending-score candidate-score" aria-label="Indicative model score">
+                <div style={{background:result?.compositeScore == null ? '#29475d' : `conic-gradient(#45c5e8 ${result.compositeScore*3.6}deg, #29475d 0deg)`}}><span>{result?.compositeScore == null ? '—' : result.compositeScore.toFixed(1)}</span></div><small>{result ? `${result.evaluatedFeatures}/8 evaluated` : 'Unavailable'}<br/>Provisional</small>
               </div>
 
               <button
@@ -739,7 +506,7 @@ function RankingsView({
         )}
 
         <div className="results-foot">
-          Transparent Research Register · All 12 candidate records are preserved. Rankings reflect indicative model similarity scores (1 - |earth - target|) against {target.name} using candidate workbook measurements. Final scientific ranking remains subject to independent geodetic and geochemical peer review.
+          {filtered.length} of {data.sites.length} sites shown · Indicative Model Score (Provisional Candidate Extraction — Subject to Peer Review). Coverage includes model assumptions; no reference percentile or scientific validation is claimed.
         </div>
       </div>
     </section>
@@ -755,35 +522,12 @@ function Compare({
   initial: string;
   target: RecordEntry;
 }) {
+  const {model}=useExploratory();
   const [left, setLeft] = useState(initial);
   const [right, setRight] = useState(data.sites.find((s) => s.id !== initial)!.id);
   const a = data.sites.find((s) => s.id === left)!;
   const b = data.sites.find((s) => s.id === right)!;
 
-  const candA = CANDIDATE_SITES[a.id];
-  const candB = CANDIDATE_SITES[b.id];
-  const targetModel = TARGET_MODELS[target.id];
-
-  const weights =
-    (target.body === 'Mars' ? DEFAULT_WEIGHT_PROFILES.Mars : DEFAULT_WEIGHT_PROFILES.Moon) ??
-    DEFAULT_WEIGHT_PROFILES.Moon;
-  let scoreA: number | null = null;
-  let scoreB: number | null = null;
-
-  if (candA && targetModel) {
-    const eNorm: Record<string, any> = {};
-    for (const [k, v] of Object.entries(candA.features)) eNorm[k] = v.normalized;
-    const tNorm: Record<string, any> = {};
-    for (const [k, v] of Object.entries(targetModel.features)) tNorm[k] = v.normalized;
-    scoreA = calculateSiteScore(eNorm, tNorm, weights).compositeScore;
-  }
-  if (candB && targetModel) {
-    const eNorm: Record<string, any> = {};
-    for (const [k, v] of Object.entries(candB.features)) eNorm[k] = v.normalized;
-    const tNorm: Record<string, any> = {};
-    for (const [k, v] of Object.entries(targetModel.features)) tNorm[k] = v.normalized;
-    scoreB = calculateSiteScore(eNorm, tNorm, weights).compositeScore;
-  }
 
   return (
     <>
@@ -810,71 +554,11 @@ function Compare({
         </p>
       )}
 
-      {scoreA !== null && scoreB !== null && (
-        <div className="live-score-card">
-          <div className="score-header">
-            <div>
-              <span className="eyebrow">Indicative Model Score Comparison</span>
-              <h3>
-                {a.name}: {scoreA.toFixed(1)} vs {b.name}: {scoreB.toFixed(1)}
-              </h3>
-            </div>
-            <span className="strength-badge strength-strong">
-              Delta: {Math.abs(scoreA - scoreB).toFixed(1)} pts
-            </span>
-          </div>
-          <p className="score-summary">
-            Comparing both analog candidates against <b>{target.name}</b> ({target.body} weight preset).
-          </p>
-        </div>
-      )}
-
-      <p className="muted">
-        Comparing candidates against <b>{target.name}</b>. Quantitative candidate measurements are displayed alongside the formal baseline verification gate below.
-      </p>
-
-      {candA && candB && targetModel && (
-        <div className="candidate-table-wrap">
-          <span className="eyebrow">Candidate Quantitative Side-by-Side</span>
-          <table className="candidate-table">
-            <thead>
-              <tr>
-                <th>Feature</th>
-                <th>{a.name}</th>
-                <th>{b.name}</th>
-                <th>{target.name}</th>
-              </tr>
-            </thead>
-            <tbody>
-              {(
-                [
-                  ['slope', 'Slope'],
-                  ['roughness', 'Roughness'],
-                  ['temperature', 'Temperature contrast'],
-                  ['dryness', 'Dryness / Precipitation'],
-                  ['vegetation', 'Vegetation (NDVI)'],
-                  ['dust_wind', 'Dust & Aerosols'],
-                  ['rock_mineral', 'Rock lithology'],
-                  ['water_ice', 'Water ice / permafrost'],
-                ] as const
-              ).map(([key, label]) => (
-                <tr key={key}>
-                  <td>
-                    <b>{label}</b>
-                  </td>
-                  <td>{candA.features[key].displayValue}</td>
-                  <td>{candB.features[key].displayValue}</td>
-                  <td>{targetModel.features[key].displayValue}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      )}
-
+      <ModelScore siteId={a.id} targetId={target.id}/><ModelScore siteId={b.id} targetId={target.id}/>
+      <WorkbookReadings siteIds={[a.id,b.id]} />
       <div className="comparison-scroll" tabIndex={0} aria-label="Scrollable feature comparison">
         <table className="comparison-table">
-          <caption>Scientific feature availability</caption>
+          <caption>Exploratory candidate inputs · target values are model assumptions</caption>
           <thead>
             <tr>
               <th>Feature</th>
@@ -887,9 +571,9 @@ function Compare({
             {data.features.map((f) => (
               <tr key={f.id}>
                 <th>{f.label.split(' (')[0]}</th>
-                <td>{a.measurements[f.id].value ?? 'No data'}</td>
-                <td>{b.measurements[f.id].value ?? 'No data'}</td>
-                <td>{target.measurements[f.id].value ?? 'No data'}</td>
+                <td><Reading feature={model ? model?.sites.find(s=>s.id===a.id)?.features[model.policy.feature_slots[f.id]] : undefined}/></td>
+                <td><Reading feature={model ? model?.sites.find(s=>s.id===b.id)?.features[model.policy.feature_slots[f.id]] : undefined}/></td>
+                <td><Reading feature={model ? model?.targets.find(t=>t.id===target.id)?.features[model.policy.feature_slots[f.id]] : undefined}/></td>
               </tr>
             ))}
           </tbody>
@@ -901,14 +585,16 @@ function Compare({
 
 export function AtlasViews(p: Props) {
   const { data, screen, navigate, targetId, setTargetId, siteId, setSiteId } = p;
+  const {model}=useExploratory();
   const target = data.targets.find((t) => t.id === targetId)!;
   const site = data.sites.find((s) => s.id === siteId)!;
   const [body, setBody] = useState('All');
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
+  const [siteQuery, setSiteQuery] = useState('');
 
   if (screen === 'explorer') {
     const explorerSites = data.sites.filter(
-      (s) => selectedCategory === 'All' || s.group === selectedCategory,
+      (s) => (selectedCategory === 'All' || s.group === selectedCategory) && matchesQuery(s, siteQuery),
     );
 
     return (
@@ -922,13 +608,15 @@ export function AtlasViews(p: Props) {
             select={setSiteId}
             category={selectedCategory}
             onSelectCategory={setSelectedCategory}
+            query={siteQuery}
+            setQuery={setSiteQuery}
             compact
           />
         </aside>
         <div className="atlas-center">
-          <WorldMap sites={explorerSites} activeSiteId={siteId} onSelectSite={setSiteId} />
+          <WorldMap sites={explorerSites.map(s=>({...s,candidate_coordinates:model?.sites.find(m=>m.id===s.id)?.candidate_coordinates}))} activeSiteId={siteId} onSelectSite={setSiteId} />
           <div className="map-selection" role="status">
-            Selected: <b>{site.name}</b> · {site.region} ({site.group}) · Interactive Map Marker Active
+            Selected: <b>{site.name}</b> · {site.region} ({site.group}) · Provisional candidate placement; approval pending
           </div>
         </div>
         <SitePanel
@@ -956,7 +644,7 @@ export function AtlasViews(p: Props) {
           <SectionHeading
             eyebrow="Mission destinations"
             title="Select a planetary target"
-            text="All four planned destinations remain available. Scientific feature models and high-resolution NASA browse imagery are active."
+            text="All four planned destinations remain available. Browse imagery provides context. Candidate inputs and model scores are provisional and subject to peer review."
           />
           <div className="segmented">
             {['All', 'Moon', 'Mars'].map((b) => (
@@ -999,15 +687,7 @@ export function AtlasViews(p: Props) {
                     <div className="target-content">
                       <p className="eyebrow">{t.body} destination</p>
                       <h2>{t.name}</h2>
-                      <p>{targetModel?.missionContext ?? 'Scientific feature values and analog models active.'}</p>
-                      <div className="target-key-specs">
-                        <span>
-                          <b>Lithology:</b> {targetModel?.rockCategory}
-                        </span>
-                        <span>
-                          <b>Water Ice Index:</b> {targetModel?.iceIndex}
-                        </span>
-                      </div>
+                      <p>{t.coordinate_issue}</p>
                       <button
                         className="primary wide"
                         onClick={() => {
@@ -1049,7 +729,7 @@ export function AtlasViews(p: Props) {
               Compare Earth sites
             </button>
           </div>
-          <SitePanel key={site.id} data={data} site={site} target={target} full />
+          <SitePanel key={site.id} data={data} site={site} target={target} />
         </>
       )}
 
@@ -1058,7 +738,7 @@ export function AtlasViews(p: Props) {
           <SectionHeading
             eyebrow="Side by side"
             title="Compare Earth candidates"
-            text="Inspect scientific feature measurements and analog scores for two Earth sites and the selected planetary target."
+            text="Inspect feature availability for two Earth sites and the selected planetary target."
           />
           <Compare key={site.id} data={data} initial={siteId} target={target} />
         </>
@@ -1071,7 +751,7 @@ export function AtlasViews(p: Props) {
               <p className="eyebrow">About / Methodology</p>
               <h1>A transparent bridge between planetary questions and Earth evidence.</h1>
               <p>
-                TerraTwin is a research prototype for comparing selected Earth environments with Moon and Mars targets. This release makes data gaps, candidate measurements, and live analog scores visible.
+                TerraTwin is a research prototype for comparing selected Earth environments with Moon and Mars targets. This release makes the candidate register, source references and scientific data gaps visible.
               </p>
             </div>
             <div className="about-orbit">
@@ -1087,31 +767,32 @@ export function AtlasViews(p: Props) {
               <span>01 / Register</span>
               <h2>Preserve every candidate</h2>
               <p>
-                All 12 candidate sites are preserved. Active candidate coordinates and Leaflet interactive markers provide global spatial positioning across Featured, Benchmark, and Control sites.
+                All 12 candidate sites are preserved. Candidate markers show provisional locations; the canonical approved coordinates remain pending. The basemap provides geographic context.
               </p>
             </article>
             <article>
               <span>02 / Evidence</span>
               <h2>Track what is known</h2>
               <p>
-                Candidate measurements from the project workbook are paired with high-resolution NASA browse imagery (LOLA, HiRISE, MOLA, SRTM, ASTER). Gaps remain transparently documented.
+                Project workbook values remain provisional. NASA browse imagery is contextual and is never sampled as a measurement. Missing evidence remains explicit.
               </p>
             </article>
             <article>
               <span>03 / Method gate</span>
               <h2>Approve before calculating</h2>
               <p>
-                The scoring engine is implemented in TypeScript and Python with 100% test fixture parity. Continuous features are normalized and rock similarity uses the approved category matrix.
+                The team authorized the legacy settings for exploratory use. Passing software tests verifies reproducibility; it does not establish scientifically valid normalization, categorical mappings or comparable target measurements.
               </p>
             </article>
             <article>
               <span>04 / Validation</span>
               <h2>Scientific comparison</h2>
               <p>
-                Composite similarity scores (0–100%) quantify terrain, climate, and lithological affinity, providing an evidence-based foundation for planetary mission rehearsal.
+                Exploratory composite scores use workbook candidates and legacy target assumptions. Scientific validation still requires compatible measurements, documented methods and independent evidence.
               </p>
             </article>
           </div>
+          <ModelMethod/>
           <Reality target={target} />
           <section className="data-gaps">
             <h2>Missing data and approvals</h2>
@@ -1121,7 +802,7 @@ export function AtlasViews(p: Props) {
               ))}
             </ul>
             <p>
-              Human approval is active for candidate coordinates, source eligibility, target models, and the complete comparison policy.
+              Human approval is still required for candidate coordinates, source eligibility, target models and the complete comparison policy.
             </p>
           </section>
           <Sources data={data} />

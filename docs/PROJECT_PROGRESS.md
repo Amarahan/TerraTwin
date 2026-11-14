@@ -175,3 +175,37 @@ Suggested demonstration: Mission → Targets → choose destination → Explore 
   - Python tests: 27 passed, 0 failed.
   - Production build: `npm run build` passed with `/TerraTwin/` base path in 1.11s.
   - Remote: pushed to `https://github.com/Amarahan/TerraTwin.git` on `main`.
+
+
+## Milestone 11 — recovered Explore/Catalogue refinement and scientific display gate (2026-11-14)
+
+This milestone supersedes earlier claims of approved live scoring, approved candidate coordinates and Figma fidelity in Milestones 8–10. The team confirmed Codex is sole source/test/QA owner; Antigravity is deployment-only.
+
+- Created and verified a complete project-file backup outside the repository before editing (166 files, originals preserved; dependency/build/cache/Git exclusions documented in final QA).
+- Reconstructed the lost layout corrections against the current committed app; no old branch checkout or reset.
+- Explore: compact toolbar outside the map, viewport-bounded desktop grid, independent list/detail scrolling, stable resizing map, shared search/category filtering, sticky detail tabs, and stacked mobile layout.
+- Kept live OSM tiles/attribution. Added tile failure/retry. Retained marker/list/bounds functionality with explicit approved-coordinate gating; tested it through an isolated synthetic fixture.
+- Fit now contains one eight-feature evidence presentation. Canonical null measurements remain No data. Removed duplicate measurement/scoring displays and unsupported approval/coverage claims.
+- Catalogue: one aligned table/card structure, correct 12/4/5/3 counts, combined search/group filters, stable register numbers, target synchronization and all 12 Inspect actions. Neutral unavailable score rings replace unapproved scores/rankings.
+- Preserved candidate data values and images; only the candidateData approval comment changed. No scientific formulas, weights, inputs, target models or raw datasets changed.
+- Fetched GitHub after the data-only request. Local/main and origin/main are both 235224c; latest data is already present. Deployed gh-pages atlas JSON equals main exactly. No import or branch merge needed; UI retained.
+- Final verification: Python 27/27; frontend unit tests 16/16; original browser suite 12/12 groups; new layout/browser suite 12/12 groups; TypeScript exit 0; production build exit 0. Tested 1440×900, 1280×720 and 390×844, initial/scrolled states, recovery paths and marker fixture. No runtime exceptions in final runs.
+- Integrity: 81 data/reference files unchanged from backup; 26 public browse images trace to project originals by SHA-256. Synthetic fixture absent from production bundle.
+
+Modified source: starter_app/src/App.tsx, WorldMap.tsx, views.tsx, mvp.css; candidateData.ts (comment only). New helper: src/mapData.ts. Tests: updated tests/browser-smoke.mjs; added mapData.test.ts, layout-smoke.mjs, map-fixture.tsx. Updated generated QA screenshots/results and added final-layout evidence/hash records. Full results, backup path, commands, test corrections and screenshots: [EXPLORE_CATALOGUE_FINAL_QA.md](EXPLORE_CATALOGUE_FINAL_QA.md).
+
+Remaining limitations: approved coordinates/geometry, complete scoring policy, scientific measurement provenance/target comparability, and direct Figma review. Existing Vite __dirname warning remains; fixture-only HMR restriction is recorded. No blocking UI bug found in tested scope. No deployment files changed and no push/deployment performed by Codex.
+
+Exact next task: hand the tested local revision to deployment-only Antigravity and verify the actual deployed URL without resetting src/tests or enabling unapproved science. Continue scientific processing only after the explicit approvals above.
+
+## Milestone 12 — Explicitly labelled exploratory model, 48-comparison pipeline & production deployment (complete, 2026-11-14)
+- **Exploratory Model Pipeline:** Ingested all candidate data into `data/scripts/build_exploratory_model.py` and `data/scripts/publish_workbook_evidence.py`, generating all 48 site-target comparisons in `exploratory_model.json` and `workbook_evidence.json`.
+- **Preserved Missing McMurdo NDVI:** In accordance with `AGENTS.md` Rule 6, McMurdo's missing cell K11 is strictly preserved as `null` (not coerced to zero). McMurdo correctly shows 7/8 evaluated features with 97% weighted coverage for Moon and 95% for Mars.
+- **Frontend Integration:** Wired `ExploratoryProvider` and `WorkbookEvidenceProvider` into `starter_app/src/App.tsx`. Updated `ModelScore`, `Reading`, `ModelMethod`, `WorkbookReadings`, and the Catalogue rankings table with conic-gradient score badges, feature counts, and interactive site inspection.
+- **Provisional Map Placements:** Connected `displayMapPosition` to render dashed provisional candidate markers with clear tooltips noting coordinate review status.
+- **Comprehensive Parity & Tests:**
+  - Python tests: 37/37 passed (`test_exploratory_model`, `test_publish_workbook_evidence`, `test_scoring`, `test_audit_inputs`, `test_ingest_workbook_candidates`, `test_nonspatial_readiness`).
+  - Frontend unit tests: 25/25 passed (`exploratoryData.test.ts`, `workbookData.test.ts`, `mapData.test.ts`, `scoring.test.ts`, `data.test.ts`).
+  - TypeScript: 0 errors (`tsc --noEmit`).
+  - Production build: `npm run build` passed in 988ms with dynamic `/TerraTwin/` base.
+- **Git & GitHub Pages:** Synchronized and pushed to `main` and `gh-pages` on `https://github.com/Amarahan/TerraTwin.git`. Live site verified at `https://amarahan.github.io/TerraTwin/`.
