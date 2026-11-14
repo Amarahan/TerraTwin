@@ -1,0 +1,40 @@
+1
+00:00:00,000 --> 00:00:05,000
+TerraTwin — an open planetary analog atlas
+that uses NASA data to find Earth environments
+that mirror the Moon and Mars.
+
+2
+00:00:05,000 --> 00:00:10,000
+We compare 12 Earth analog sites against
+four planetary targets —
+two on the Moon, two on Mars.
+
+3
+00:00:10,000 --> 00:00:15,000
+The interactive map shows
+12 Earth candidate sites.
+Coordinates are provisional,
+pending team confirmation.
+
+4
+00:00:15,000 --> 00:00:22,000
+Each site is scored against the selected target
+using 8 NASA-derived features: slope, temperature,
+dryness, vegetation, rock type, and more.
+All scores are explicitly labeled
+exploratory and provisional.
+
+5
+00:00:22,000 --> 00:00:27,000
+The rankings catalogue lets you compare
+all 12 sites at a glance —
+filtered by group, with transparent
+scoring for every site.
+
+6
+00:00:27,000 --> 00:00:30,000
+TerraTwin is live at
+amarahan.github.io/TerraTwin —
+open-source, transparent,
+and built on NASA data.
