@@ -1,0 +1,263 @@
+{
+  "schema_version": "scoring-fixture-v1",
+  "minimum_weighted_coverage": 0.75,
+  "weight_sum_tolerance": 0.0001,
+  "weight_profiles": {
+    "Moon": {
+      "slope": 0.22,
+      "roughness": 0.18,
+      "temperature": 0.20,
+      "water_ice": 0.20,
+      "rock_mineral": 0.10,
+      "dryness": 0.04,
+      "vegetation": 0.03,
+      "dust_wind": 0.03
+    },
+    "Mars": {
+      "slope": 0.12,
+      "roughness": 0.10,
+      "temperature": 0.10,
+      "water_ice": 0.08,
+      "rock_mineral": 0.22,
+      "dryness": 0.18,
+      "vegetation": 0.05,
+      "dust_wind": 0.15
+    }
+  },
+  "rock_categories": {
+    "same_similarity": 1.0,
+    "related_similarity": 0.5,
+    "different_similarity": 0.0,
+    "related_groups": [
+      ["basalt", "anorthosite", "gabbro", "volcanic_mafic"],
+      ["sandstone", "siltstone", "mudstone", "sedimentary_clastic"],
+      ["evaporite", "carbonate", "gypsum", "halite", "sedimentary_chemical"],
+      ["granite", "rhyolite", "felsic_igneous"],
+      ["impact_breccia", "regolith_breccia", "impactite"]
+    ]
+  },
+  "test_cases": [
+    {
+      "name": "perfect_match_moon",
+      "target_body": "Moon",
+      "earth_features": {
+        "slope": 0.15,
+        "roughness": 0.40,
+        "temperature": 0.50,
+        "water_ice": 0.00,
+        "rock_mineral": "basalt",
+        "dryness": 0.95,
+        "vegetation": 0.00,
+        "dust_wind": 0.20
+      },
+      "target_features": {
+        "slope": 0.15,
+        "roughness": 0.40,
+        "temperature": 0.50,
+        "water_ice": 0.00,
+        "rock_mineral": "basalt",
+        "dryness": 0.95,
+        "vegetation": 0.00,
+        "dust_wind": 0.20
+      },
+      "expected_similarities": {
+        "slope": 1.0,
+        "roughness": 1.0,
+        "temperature": 1.0,
+        "water_ice": 1.0,
+        "rock_mineral": 1.0,
+        "dryness": 1.0,
+        "vegetation": 1.0,
+        "dust_wind": 1.0
+      },
+      "expected_weighted_coverage": 1.0,
+      "expected_score": 100.0,
+      "expected_status": "COMPUTED"
+    },
+    {
+      "name": "hand_calculated_moon",
+      "target_body": "Moon",
+      "earth_features": {
+        "slope": 0.10,
+        "roughness": 0.30,
+        "temperature": 0.80,
+        "water_ice": 0.00,
+        "rock_mineral": "basalt",
+        "dryness": 0.90,
+        "vegetation": 0.00,
+        "dust_wind": 0.40
+      },
+      "target_features": {
+        "slope": 0.20,
+        "roughness": 0.50,
+        "temperature": 0.70,
+        "water_ice": 0.00,
+        "rock_mineral": "anorthosite",
+        "dryness": 1.00,
+        "vegetation": 0.00,
+        "dust_wind": 0.10
+      },
+      "expected_similarities": {
+        "slope": 0.90,
+        "roughness": 0.80,
+        "temperature": 0.90,
+        "water_ice": 1.00,
+        "rock_mineral": 0.50,
+        "dryness": 0.90,
+        "vegetation": 1.00,
+        "dust_wind": 0.70
+      },
+      "expected_weighted_coverage": 1.0,
+      "expected_score": 85.90,
+      "expected_status": "COMPUTED"
+    },
+    {
+      "name": "hand_calculated_mars",
+      "target_body": "Mars",
+      "earth_features": {
+        "slope": 0.20,
+        "roughness": 0.35,
+        "temperature": 0.60,
+        "water_ice": 0.10,
+        "rock_mineral": "sandstone",
+        "dryness": 0.80,
+        "vegetation": 0.00,
+        "dust_wind": 0.50
+      },
+      "target_features": {
+        "slope": 0.10,
+        "roughness": 0.25,
+        "temperature": 0.40,
+        "water_ice": 0.00,
+        "rock_mineral": "siltstone",
+        "dryness": 0.90,
+        "vegetation": 0.00,
+        "dust_wind": 0.30
+      },
+      "expected_similarities": {
+        "slope": 0.90,
+        "roughness": 0.90,
+        "temperature": 0.80,
+        "water_ice": 0.90,
+        "rock_mineral": 0.50,
+        "dryness": 0.90,
+        "vegetation": 1.00,
+        "dust_wind": 0.80
+      },
+      "expected_weighted_coverage": 1.0,
+      "expected_score": 79.20,
+      "expected_status": "COMPUTED"
+    },
+    {
+      "name": "missing_vegetation_sufficient_coverage",
+      "target_body": "Moon",
+      "earth_features": {
+        "slope": 0.10,
+        "roughness": 0.30,
+        "temperature": 0.80,
+        "water_ice": 0.00,
+        "rock_mineral": "basalt",
+        "dryness": 0.90,
+        "vegetation": null,
+        "dust_wind": 0.40
+      },
+      "target_features": {
+        "slope": 0.20,
+        "roughness": 0.50,
+        "temperature": 0.70,
+        "water_ice": 0.00,
+        "rock_mineral": "anorthosite",
+        "dryness": 1.00,
+        "vegetation": 0.00,
+        "dust_wind": 0.10
+      },
+      "expected_similarities": {
+        "slope": 0.90,
+        "roughness": 0.80,
+        "temperature": 0.90,
+        "water_ice": 1.00,
+        "rock_mineral": 0.50,
+        "dryness": 0.90,
+        "vegetation": null,
+        "dust_wind": 0.70
+      },
+      "expected_weighted_coverage": 0.97,
+      "expected_score": 82.90,
+      "expected_status": "COMPUTED"
+    },
+    {
+      "name": "insufficient_coverage_missing_major_features",
+      "target_body": "Moon",
+      "earth_features": {
+        "slope": null,
+        "roughness": null,
+        "temperature": null,
+        "water_ice": 0.00,
+        "rock_mineral": "basalt",
+        "dryness": 0.90,
+        "vegetation": 0.00,
+        "dust_wind": 0.40
+      },
+      "target_features": {
+        "slope": 0.20,
+        "roughness": 0.50,
+        "temperature": 0.70,
+        "water_ice": 0.00,
+        "rock_mineral": "anorthosite",
+        "dryness": 1.00,
+        "vegetation": 0.00,
+        "dust_wind": 0.10
+      },
+      "expected_similarities": {
+        "slope": null,
+        "roughness": null,
+        "temperature": null,
+        "water_ice": 1.00,
+        "rock_mineral": 0.50,
+        "dryness": 0.90,
+        "vegetation": 1.00,
+        "dust_wind": 0.70
+      },
+      "expected_weighted_coverage": 0.40,
+      "expected_score": null,
+      "expected_status": "INSUFFICIENT_COVERAGE"
+    },
+    {
+      "name": "all_null_features",
+      "target_body": "Moon",
+      "earth_features": {
+        "slope": null,
+        "roughness": null,
+        "temperature": null,
+        "water_ice": null,
+        "rock_mineral": null,
+        "dryness": null,
+        "vegetation": null,
+        "dust_wind": null
+      },
+      "target_features": {
+        "slope": null,
+        "roughness": null,
+        "temperature": null,
+        "water_ice": null,
+        "rock_mineral": null,
+        "dryness": null,
+        "vegetation": null,
+        "dust_wind": null
+      },
+      "expected_similarities": {
+        "slope": null,
+        "roughness": null,
+        "temperature": null,
+        "water_ice": null,
+        "rock_mineral": null,
+        "dryness": null,
+        "vegetation": null,
+        "dust_wind": null
+      },
+      "expected_weighted_coverage": 0.0,
+      "expected_score": null,
+      "expected_status": "INSUFFICIENT_COVERAGE"
+    }
+  ]
+}
