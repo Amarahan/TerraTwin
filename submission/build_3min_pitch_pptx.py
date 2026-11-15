@@ -207,10 +207,10 @@ def create_deck():
     p.font.color.rgb = CYAN
 
     features_desc = [
-        ("Interactive Leaflet Map:", "Universal OpenStreetMap tiles, 12 provisional candidate markers, Focus Myanmar tool."),
-        ("Catalogue Rankings:", "Dynamic conic-gradient similarity badges, lithology filters, direct site inspection."),
-        ("Side-by-Side Compare:", "Compare any two Earth analogs against any Moon/Mars target simultaneously."),
-        ("Live Deployment:", "Hosted on GitHub Pages: amarahan.github.io/TerraTwin")
+        ("Mission Objective Simulator:", "Dynamic sensitivity presets (Rover Mobility, Cryo-ISRU, EVA Dust, Astrobiology) & real-time auto-balancing sliders (Σw = 1.0000)."),
+        ("Multi-Objective Readiness:", "Site Details breakdown showing analog specialization across all operational mission phases."),
+        ("Catalogue & Leaflet Map:", "12 candidate environments with authentic thumbnail photography, global map, side-by-side comparison."),
+        ("Live Deployment:", "Hosted on GitHub Pages: https://amarahan.github.io/TerraTwin/")
     ]
     for heading, detail in features_desc:
         p1 = tf.add_paragraph()
@@ -237,7 +237,7 @@ def create_deck():
     honesty_points = [
         ("Nulls Are Preserved (The McMurdo Case)", "Polar darkness prevents satellite NDVI readings at McMurdo Dry Valleys. We NEVER coerce missing data to 0. TerraTwin preserves null, evaluates 7/8 features, and enforces a strict 75% weighted coverage gate (McMurdo achieves 97% Moon, 95% Mars)."),
         ("Full Cell-by-Cell Traceability", "Every score links back to raw NASA PDS product IDs, sensor bands, and original workbook cell coordinates. Zero black-box AI guessing."),
-        ("Rigorous Validation Engine", "Dual Python & TypeScript scoring engines verified by 37 automated tests with 0 decimal divergence. Deliberate control sites score <25%, proving the model works.")
+        ("Rigorous Validation Engine", "Dual Python & TypeScript scoring engines verified by 28 automated Node tests & Python test suites with 0 decimal divergence. Deliberate control sites score <25%, proving the model works.")
     ]
     for i, (title, text) in enumerate(honesty_points):
         y = Inches(1.8) + i * Inches(1.7)
@@ -307,7 +307,7 @@ def create_deck():
     links = [
         ("Live Web Application:", "https://amarahan.github.io/TerraTwin/"),
         ("Public Source Code:", "https://github.com/Amarahan/TerraTwin"),
-        ("Test Verification:", "37 Python Tests Passed | 25 Node Tests Passed"),
+        ("Test Verification:", "28 Automated Node Tests Passed (100% Pass Rate) | 0 TypeScript Errors"),
         ("Final Message:", "Analog research is humanity's rehearsal before deep space. TerraTwin makes it measurable.")
     ]
     for heading, detail in links:

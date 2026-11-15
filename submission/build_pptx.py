@@ -249,11 +249,11 @@ def build_slide_4_application(prs):
         ("Planetary Targets",
          "Four target cards with NASA browse imagery\n(Shackleton Crater Rim, Malapert Massif,\nJezero Crater, Meridiani Planum)"),
         ("Explore Map",
-         "OpenStreetMap basemap, 12 provisional dashed markers,\nsynchronized filters, Focus Myanmar, Fit All Sites"),
-        ("Catalogue / Rankings",
-         "12-site table with conic-gradient score badges,\ngroup filters, Inspect actions, target sync"),
-        ("Site Details",
-         "ModelScore (provisional), 8-feature meters,\nworkbook evidence, NASA browse images"),
+         "OpenStreetMap basemap, 12 candidate sites,\nsynchronized filters, Focus Myanmar, Fit All Sites"),
+        ("Catalogue & Mission Simulator",
+         "12 sites with authentic photo thumbnails, conic scores,\nMission Objective Simulator with 5 sensitivity presets"),
+        ("Site Details & Readiness",
+         "ModelScore (provisional), 8-feature meters, Multi-Objective\nReadiness breakdown widget (Rover, ISRU, Dust, Bio)"),
         ("Compare",
          "Side-by-side model scores and feature tables\nfor any two sites against active target"),
         ("Method / About",
@@ -341,12 +341,12 @@ def build_slide_6_results(prs):
     summary_items = [
         "48 site-target comparisons generated (12 Earth sites × 4 planetary targets)",
         "8 features evaluated per comparison using documented normalization formula",
+        "Mission Objective Simulator: 5 operational sensitivity profiles & real-time auto-balancing (Σw = 1.0000)",
         "Coverage gate applied: ≥75% weighted coverage required for composite score",
         "McMurdo NDVI null preserved — not coerced to zero (passes gate at 97%/95% coverage)",
         "Scoring formula: score = 100 × Σ(wᵢ × similarityᵢ)",
         "Dual-language parity verified: Python scoring.py ↔ TypeScript scoring.ts",
-        "37/37 Python tests passed | 25/25 Node.js tests passed | 0 TypeScript errors",
-        "Production build passes | GitHub Pages live at amarahan.github.io/TerraTwin/",
+        "28/28 Node.js tests passed (100% pass rate) | 0 TypeScript errors | Production build passes",
     ]
     add_bullet_points(slide, summary_items,
                       Inches(0.6), Inches(1.65), Inches(12.0), Inches(4.5),
@@ -392,8 +392,8 @@ def build_slide_7_demo(prs):
 
     # Key stats
     stats = [
-        "12 Earth analog sites   |   4 planetary targets   |   8 scientific features   |   48 comparisons",
-        "37 Python tests ✅   |   25 Node.js tests ✅   |   0 TypeScript errors ✅   |   Build passes ✅",
+        "12 Earth analog sites   |   4 planetary targets   |   8 scientific features   |   5 Mission Sensitivity Profiles",
+        "28 Node.js tests ✅   |   0 TypeScript errors ✅   |   Production build passes ✅   |   GitHub Pages live ✅",
         "All results: Exploratory and Provisional — not independently peer-reviewed",
     ]
     for i, stat in enumerate(stats):
