@@ -451,8 +451,8 @@ function RankingsView({
     <section className="rankings-screen" aria-label="Earth site catalogue and rankings">
       <SectionHeading
         eyebrow="Planetary Analog Register"
-        title="Earth Site Catalogue & Model Rankings"
-        text={`Explore 12 candidate environments alongside ${target.name}. Sorted by indicative model score under the ${customWeights ? 'custom mission profile' : MISSION_SCENARIOS[scenarioId].name.toLowerCase()}. Candidate inputs and target assumptions are subject to peer review.`}
+        title="Earth Site Catalogue & Exploratory Rankings"
+        text={`Explore 12 candidate environments alongside ${target.name}. Sorted by provisional candidate score under the ${customWeights ? 'custom mission profile' : MISSION_SCENARIOS[scenarioId].name.toLowerCase()}. Candidate inputs and target assumptions are subject to scientific review.`}
       />
 
       {!model && <ModelStatus/>}
@@ -510,7 +510,7 @@ function RankingsView({
           <span>#</span>
           <span>Analog Site</span>
           <span>Geological Context & Lithology</span>
-          <span>Match ({customWeights ? 'Custom' : MISSION_SCENARIOS[scenarioId].shortName})</span>
+          <span>Candidate Match ({customWeights ? 'Custom' : MISSION_SCENARIOS[scenarioId].shortName})</span>
           <span>Action</span>
         </div>
 
@@ -542,7 +542,7 @@ function RankingsView({
                 {candidateSite?.primaryLithology ?? 'Geological context pending review.'}<small className="context-status">Provisional context · source verification pending</small>
               </p>
 
-              <div className="score pending-score candidate-score" aria-label="Indicative model score">
+              <div className="score pending-score candidate-score" aria-label="Provisional candidate score">
                 <div style={{background:result?.compositeScore == null ? '#29475d' : `conic-gradient(#45c5e8 ${result.compositeScore*3.6}deg, #29475d 0deg)`}}><span>{result?.compositeScore == null ? '—' : result.compositeScore.toFixed(1)}</span></div><small>{result ? `${result.evaluatedFeatures}/8 evaluated` : 'Unavailable'}<br/>Provisional</small>
               </div>
 

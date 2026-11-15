@@ -320,3 +320,32 @@ Exact next task: hand the tested local revision to deployment-only Antigravity a
   - `node --test tests/*.test.ts`: **25/25 passed, 0 failed**.
   - `npm run build`: **exit 0** — Vite 8.3.8, 30 modules, CSS 92.39 kB, JS 454.93 kB.
   - Full desktop QA screenshot captured and archived at `docs/qa/catalogue-thumbnails-verified.png`.
+
+## Milestone 16b — Complete All 12 Site Thumbnails (2026-11-15)
+- Ingested remaining 5 candidate photographs in exact requested order:
+  - McMurdo Dry Valleys (`mcmurdo-dry-valleys.jpg`)
+  - Congo Basin (`congo-basin.jpg`)
+  - Lonar Crater (`lonar-crater.jpg`)
+  - Amazon Rainforest (`amazon-rainforest.jpg`)
+  - Irrawaddy Delta rice fields (`irrawaddy-delta.jpg`)
+- All 12 candidate rows in the Catalogue now display authentic photographic thumbnails.
+- Verified: `tsc --noEmit` (0 errors), `node --test` (25/25 passed), `npm run build` (exit 0).
+- Pushed to `main` at `e9e1960`.
+
+## Milestone 17 — Final Project Audit, Scientific Transparency & Submission Readiness (2026-11-15)
+- **Labeling Standardizations:**
+  - Standardized all Catalogue headers and table columns to `Exploratory Rankings` and `Candidate Match`.
+  - Re-verified all score descriptions as `Provisional Candidate Score` and `Subject to Scientific Review`.
+- **Mission Objective Simulator Verification:**
+  - Confirmed active integration of `MissionSimulator.tsx` and `missionScenarios.ts`.
+  - Validated all 5 scenario presets: Baseline Fit, Rover Mobility, ISRU Cryo-Drilling, EVA Suit & Dust, Astrobiology.
+  - Unit test suite expanded with 3 dedicated simulator tests; total passing tests: **28/28**.
+- **Documentation Suite Created:**
+  - `docs/INDEPENDENT_PROJECT_REVIEW.md` (State of the implementation & architecture review).
+  - `docs/SCIENTIFIC_APPROVAL_BLOCKERS.md` (Human decisions log & judging disclosure guide).
+  - `docs/FINAL_SUBMISSION_QA.md` (Formal test execution & deployment verification report).
+- **Verification:**
+  - `npx --no-install tsc --noEmit`: **0 errors**.
+  - `node --test`: **28/28 passed**.
+  - `npm run build`: **exit 0** (32 modules transformed, CSS 98 kB, JS 467 kB).
+  - Live deployment in sync with GitHub Pages.
