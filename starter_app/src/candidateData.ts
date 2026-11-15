@@ -378,14 +378,7 @@ export const CANDIDATE_SITES: Record<string, CandidateSiteData> = {
       rock_mineral: { raw: 'basalt', displayValue: 'Ferrar dolerite & Beacon sandstone', unit: 'lithology category', sourceCitation: 'USAP Antarctic Geological Survey', normalized: 'basalt' },
       water_ice: { raw: 1.00, displayValue: '1.00 (Permanent ice-cemented permafrost)', unit: 'ice presence index [0-1]', sourceCitation: 'National Science Foundation USAP Science Records', normalized: 1.00 },
     },
-    images: {
-      photo: {
-        url: assetUrl('images/moon/shackleton_lola_color_hillshade.png'),
-        title: 'Polar Analog Terrain Profile',
-        caption: 'High-latitude polar desert terrain comparable to extreme cold lunar shadowed craters.',
-        source: 'NASA Earth / Polar Science Division',
-      },
-    },
+    images: {},
   },
   'twin-taung-maar-crater': {
     id: 'twin-taung-maar-crater',
@@ -407,7 +400,14 @@ export const CANDIDATE_SITES: Record<string, CandidateSiteData> = {
       rock_mineral: { raw: 'basalt', displayValue: 'Basaltic-andesite volcanic tuff', unit: 'lithology category', sourceCitation: 'Smithsonian GVP no. 275090 / Lithos 2016', normalized: 'basalt' },
       water_ice: { raw: 0.0, displayValue: '0.00 (Tropical zero ground ice)', unit: 'ice presence index [0-1]', sourceCitation: 'Regional climate mapping', normalized: 0.0 },
     },
-    images: {},
+    images: {
+      photo: {
+        url: assetUrl('assets/featured/twin-taung.jpg'),
+        title: 'Twin Taung Maar Crater Lake',
+        caption: 'Explosive basaltic maar crater lake surrounded by volcanic tephra rings.',
+        source: 'Regional Geological Survey / Ground Observation',
+      },
+    },
   },
   'letpadaung-monywa-copper-area': {
     id: 'letpadaung-monywa-copper-area',
@@ -429,7 +429,14 @@ export const CANDIDATE_SITES: Record<string, CandidateSiteData> = {
       rock_mineral: { raw: 'volcanic_mafic', displayValue: 'Hydrothermal copper porphyry & andesite', unit: 'lithology category', sourceCitation: 'Myanmar Copper Belt Studies', normalized: 'volcanic_mafic' },
       water_ice: { raw: 0.0, displayValue: '0.00', unit: 'ice presence index [0-1]', sourceCitation: 'Regional climate mapping', normalized: 0.0 },
     },
-    images: {},
+    images: {
+      photo: {
+        url: assetUrl('assets/featured/letpadaung.jpg'),
+        title: 'Letpadaung Hydrothermal Open Pit',
+        caption: 'Open-pit exposure of hydrothermally altered volcanic rocks and copper mineralization.',
+        source: 'Regional Geological Survey / Mining Survey',
+      },
+    },
   },
   'mount-popa-central-dry-zone': {
     id: 'mount-popa-central-dry-zone',
@@ -451,7 +458,14 @@ export const CANDIDATE_SITES: Record<string, CandidateSiteData> = {
       rock_mineral: { raw: 'basalt', displayValue: 'Basaltic-andesite lava & volcanic scoria', unit: 'lithology category', sourceCitation: 'Mount Popa Volcanology Surveys', normalized: 'basalt' },
       water_ice: { raw: 0.0, displayValue: '0.00', unit: 'ice presence index [0-1]', sourceCitation: 'Regional climate mapping', normalized: 0.0 },
     },
-    images: {},
+    images: {
+      photo: {
+        url: assetUrl('assets/featured/mount-popa.jpg'),
+        title: 'Mount Popa Volcanic Complex',
+        caption: 'Conical volcanic plug and lava flows rising above the Myanmar central dry zone.',
+        source: 'Regional Geological Survey / Ground Observation',
+      },
+    },
   },
   'kawah-ijen': {
     id: 'kawah-ijen',
@@ -473,7 +487,14 @@ export const CANDIDATE_SITES: Record<string, CandidateSiteData> = {
       rock_mineral: { raw: 'volcanic_mafic', displayValue: 'Sulfur-rich volcanic & hydrothermal deposits', unit: 'lithology category', sourceCitation: 'Indonesian Volcanology Survey', normalized: 'volcanic_mafic' },
       water_ice: { raw: 0.0, displayValue: '0.00', unit: 'ice presence index [0-1]', sourceCitation: 'Tropical climate baseline', normalized: 0.0 },
     },
-    images: {},
+    images: {
+      photo: {
+        url: assetUrl('assets/featured/kawah-ijen.jpg'),
+        title: 'Kawah Ijen Crater & Acid Lake',
+        caption: 'Active sulfuric crater lake with extreme acid hydrothermal activity and solfatara deposits.',
+        source: 'Ground Observation / Geological Survey',
+      },
+    },
   },
   'lonar-crater': {
     id: 'lonar-crater',
