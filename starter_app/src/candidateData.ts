@@ -378,7 +378,14 @@ export const CANDIDATE_SITES: Record<string, CandidateSiteData> = {
       rock_mineral: { raw: 'basalt', displayValue: 'Ferrar dolerite & Beacon sandstone', unit: 'lithology category', sourceCitation: 'USAP Antarctic Geological Survey', normalized: 'basalt' },
       water_ice: { raw: 1.00, displayValue: '1.00 (Permanent ice-cemented permafrost)', unit: 'ice presence index [0-1]', sourceCitation: 'National Science Foundation USAP Science Records', normalized: 1.00 },
     },
-    images: {},
+    images: {
+      photo: {
+        url: assetUrl('images/earth/mcmurdo-dry-valleys.jpg'),
+        title: 'McMurdo Dry Valleys Terrain',
+        caption: 'Ice-free polar desert landscape of Victoria Land, Antarctica.',
+        source: 'Attribution pending review',
+      },
+    },
   },
   'twin-taung-maar-crater': {
     id: 'twin-taung-maar-crater',
@@ -516,7 +523,14 @@ export const CANDIDATE_SITES: Record<string, CandidateSiteData> = {
       rock_mineral: { raw: 'impact_breccia', displayValue: 'Deccan basaltic impact breccia', unit: 'lithology category', sourceCitation: 'Lonar Impact Crater Studies', normalized: 'impact_breccia' },
       water_ice: { raw: 0.0, displayValue: '0.00', unit: 'ice presence index [0-1]', sourceCitation: 'Subtropical climate baseline', normalized: 0.0 },
     },
-    images: {},
+    images: {
+      photo: {
+        url: assetUrl('images/earth/lonar-crater.jpg'),
+        title: 'Lonar Crater Lake',
+        caption: 'Saline-alkaline crater lake formed in Deccan basalt by meteorite impact.',
+        source: 'Attribution pending review',
+      },
+    },
   },
   'amazon-rainforest': {
     id: 'amazon-rainforest',
@@ -538,7 +552,14 @@ export const CANDIDATE_SITES: Record<string, CandidateSiteData> = {
       rock_mineral: { raw: 'sedimentary_clastic', displayValue: 'Deeply weathered lateritic sediments', unit: 'lithology category', sourceCitation: 'CPRM Brazilian Geological Survey', normalized: 'sedimentary_clastic' },
       water_ice: { raw: 0.0, displayValue: '0.00 (Zero ground ice)', unit: 'ice presence index [0-1]', sourceCitation: 'Tropical climate baseline', normalized: 0.0 },
     },
-    images: {},
+    images: {
+      photo: {
+        url: assetUrl('images/earth/amazon-rainforest.jpg'),
+        title: 'Amazon Rainforest Canopy',
+        caption: 'Dense equatorial rainforest canopy of the Amazon Basin, Amazonas, Brazil.',
+        source: 'Attribution pending review',
+      },
+    },
   },
   'congo-basin': {
     id: 'congo-basin',
@@ -560,7 +581,14 @@ export const CANDIDATE_SITES: Record<string, CandidateSiteData> = {
       rock_mineral: { raw: 'sandstone', displayValue: 'Ferralsols & cratonic sandstone', unit: 'lithology category', sourceCitation: 'Central African Geological Mapping', normalized: 'sandstone' },
       water_ice: { raw: 0.0, displayValue: '0.00', unit: 'ice presence index [0-1]', sourceCitation: 'Tropical climate baseline', normalized: 0.0 },
     },
-    images: {},
+    images: {
+      photo: {
+        url: assetUrl('images/earth/congo-basin.jpg'),
+        title: 'Congo Basin Rainforest',
+        caption: 'Dense tropical forest canopy and river drainage of the Congo Basin, DR Congo.',
+        source: 'Attribution pending review',
+      },
+    },
   },
   'irrawaddy-delta-rice-fields': {
     id: 'irrawaddy-delta-rice-fields',
@@ -582,6 +610,13 @@ export const CANDIDATE_SITES: Record<string, CandidateSiteData> = {
       rock_mineral: { raw: 'sedimentary_clastic', displayValue: 'Alluvial silt, clay & delta sediment', unit: 'lithology category', sourceCitation: 'Irrawaddy Delta Geological Survey', normalized: 'sedimentary_clastic' },
       water_ice: { raw: 0.0, displayValue: '0.00', unit: 'ice presence index [0-1]', sourceCitation: 'Monsoonal climate baseline', normalized: 0.0 },
     },
-    images: {},
+    images: {
+      photo: {
+        url: assetUrl('images/earth/irrawaddy-delta.jpg'),
+        title: 'Irrawaddy Delta Aerial View',
+        caption: 'Aerial view of the braided river channels and tidal flats of the Irrawaddy Delta, Myanmar.',
+        source: 'Attribution pending review',
+      },
+    },
   },
 };
