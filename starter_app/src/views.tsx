@@ -6,6 +6,13 @@ import { ModelScore, ModelStatus, ModelMethod, Reading, useExploratory } from '.
 import { modelScore } from './exploratoryData';
 import { WorkbookReadings } from './WorkbookEvidence';
 import { CANDIDATE_SITES, TARGET_MODELS } from './candidateData';
+import {
+  MissionScenarioSelector,
+  SiteMissionProfileWidget,
+  getActiveWeights,
+  MISSION_SCENARIOS,
+  type MissionScenarioId,
+} from './MissionSimulator';
 
 /** Local target images — uploaded by the team and confirmed by visual inspection. */
 const TARGET_IMAGES: Record<string, { src: string; alt: string; objectPosition: string }> = {
@@ -240,6 +247,7 @@ function SitePanel({
   openDetails?: () => void;
 }) {
   const [tab, setTab] = useState('Fit');
+  const { model } = useExploratory();
   const candidateSite = CANDIDATE_SITES[site.id];
 
   return (
@@ -275,6 +283,14 @@ function SitePanel({
       )}
       {tab === 'Mission' && (
         <>
+          {model && (
+            <SiteMissionProfileWidget
+              model={model}
+              siteId={site.id}
+              targetId={target.id}
+              targetName={target.name}
+            />
+          )}
           <h3>Hypothesis to test</h3>
           <p>
             {candidateSite?.primaryLithology
@@ -405,9 +421,17 @@ function RankingsView({
   const {model}=useExploratory();
   const [query, setQuery] = useState('');
   const [category, setCategory] = useState('All');
+  const [scenarioId, setScenarioId] = useState<MissionScenarioId>('baseline');
+  const [customWeights, setCustomWeights] = useState<Record<string, number> | null>(null);
+
+  const targetBody = (target?.body ?? 'Mars') as 'Moon' | 'Mars';
+  const activeWeights = getActiveWeights(scenarioId, targetBody, model?.policy.weights, customWeights);
 
   const siteEntries = data.sites.map((site, index) => ({
-    site, candidateSite: CANDIDATE_SITES[site.id], registerNumber: index + 1, result:model ? modelScore(model,site.id,targetId) : null,
+    site,
+    candidateSite: CANDIDATE_SITES[site.id],
+    registerNumber: index + 1,
+    result: model ? modelScore(model, site.id, targetId, activeWeights) : null,
   }));
 
   const filtered = siteEntries.filter(({ site }) => {
@@ -428,10 +452,22 @@ function RankingsView({
       <SectionHeading
         eyebrow="Planetary Analog Register"
         title="Earth Site Catalogue & Model Rankings"
-        text={`Explore 12 candidate environments alongside ${target.name}. Sorted by indicative model score. Candidate inputs and target assumptions are subject to peer review.`}
+        text={`Explore 12 candidate environments alongside ${target.name}. Sorted by indicative model score under the ${customWeights ? 'custom mission profile' : MISSION_SCENARIOS[scenarioId].name.toLowerCase()}. Candidate inputs and target assumptions are subject to peer review.`}
       />
 
       {!model && <ModelStatus/>}
+
+      {model && (
+        <MissionScenarioSelector
+          scenarioId={scenarioId}
+          onSelectScenario={setScenarioId}
+          customWeights={customWeights}
+          onUpdateCustomWeights={setCustomWeights}
+          targetBody={targetBody}
+          modelPolicyWeights={model.policy.weights}
+        />
+      )}
+
       {/* Target & Filter Bar */}
       <div className="rankings-controls-bar">
         <TargetSelect data={data} value={targetId} change={setTargetId} />
@@ -474,7 +510,7 @@ function RankingsView({
           <span>#</span>
           <span>Analog Site</span>
           <span>Geological Context & Lithology</span>
-          <span>Indicative Match</span>
+          <span>Match ({customWeights ? 'Custom' : MISSION_SCENARIOS[scenarioId].shortName})</span>
           <span>Action</span>
         </div>
 
@@ -537,7 +573,7 @@ function RankingsView({
         )}
 
         <div className="results-foot">
-          {filtered.length} of {data.sites.length} sites shown · Indicative Model Score (Provisional Candidate Extraction — Subject to Peer Review). Coverage includes model assumptions; no reference percentile or scientific validation is claimed.
+          {filtered.length} of {data.sites.length} sites shown · Sorted by {customWeights ? 'Custom Mission Profile' : MISSION_SCENARIOS[scenarioId].name} · Indicative Model Score (Provisional Candidate Extraction — Subject to Peer Review). Coverage includes model assumptions; no reference percentile or scientific validation is claimed.
         </div>
       </div>
     </section>

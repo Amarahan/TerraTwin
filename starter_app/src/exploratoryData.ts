@@ -32,10 +32,12 @@ export function parseExploratoryModel(v:unknown,atlas:AtlasData):ExploratoryMode
  const mcmurdo=v.sites.find(s=>s.id==='mcmurdo-dry-valleys');if(mcmurdo?.features.vegetation.raw!==null)return fail();
  return v as unknown as ExploratoryModel;
 }
-export function modelScore(model:ExploratoryModel,siteId:string,targetId:string):ScoreResult&{evaluatedFeatures:number}{
+export function modelScore(model:ExploratoryModel,siteId:string,targetId:string,customWeights?:Record<string,number>):ScoreResult&{evaluatedFeatures:number}{
  const site=model.sites.find(s=>s.id===siteId),target=model.targets.find(s=>s.id===targetId);
  if(!site||!target?.body)throw new Error('Unknown model site or target');
  const values=(record:ModelSite)=>Object.fromEntries(Object.entries(record.features).map(([key,feature])=>[key,feature.normalized]));
- const result=calculateSiteScore(values(site),values(target),model.policy.weights[target.body],{relatedRockGroups:model.policy.related_rock_groups,minimumCoverage:model.policy.minimum_weighted_coverage});
+ if(customWeights)validateWeights(customWeights);
+ const weights=customWeights??model.policy.weights[target.body];
+ const result=calculateSiteScore(values(site),values(target),weights,{relatedRockGroups:model.policy.related_rock_groups,minimumCoverage:model.policy.minimum_weighted_coverage});
  return {...result,evaluatedFeatures:Object.values(result.similarities).filter(v=>v!==null).length};
 }
