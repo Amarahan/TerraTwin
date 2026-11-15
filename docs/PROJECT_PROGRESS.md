@@ -298,3 +298,25 @@ Exact next task: hand the tested local revision to deployment-only Antigravity a
     - `method-after-1440px.png` (desktop)
     - `method-after-390px.png` (mobile)
     - `compare-verification-1440px.png` (verified compare page retains target toolbar)
+
+## Milestone 16 — Complete Catalogue Site Thumbnail Images (2026-11-15)
+- **Scope & Constraints:**
+  - Updated thumbnail photograph associations in `starter_app/src/candidateData.ts` for Earth candidate sites.
+  - Strictly preserved all 12 candidate site records, ranking order, scoring indicators, sorting logic, filters, and DOM structure.
+- **Image Assignments Applied:**
+  - **Mount Popa / Central Dry Zone** (`mount-popa-central-dry-zone`): `assets/featured/mount-popa.jpg` (verified authentic ground photograph from `Screenshot 2026-11-13 183821.png`).
+  - **Twin Taung Maar Crater** (`twin-taung-maar-crater`): `assets/featured/twin-taung.jpg` (verified authentic crater lake photograph from `Screenshot 2026-11-13 184238.png`).
+  - **Letpadaung / Monywa Copper Area** (`letpadaung-monywa-copper-area`): `assets/featured/letpadaung.jpg` (verified authentic open-pit hydrothermal exposure photograph from `Screenshot 2026-11-13 184702.png`).
+  - **Kawah Ijen** (`kawah-ijen`): `assets/featured/kawah-ijen.jpg` (verified authentic active sulfuric crater lake photograph).
+  - **Atacama Desert** (`atacama-desert`): preserved authentic Landsat/Copernicus true-color satellite imagery (`images/earth/atacama_true_color.jpg`).
+  - **Death Valley** (`death-valley`): preserved authentic Landsat/Copernicus true-color satellite imagery (`images/earth/death_valley_true_color.jpg`).
+  - **Haughton Crater** (`haughton-crater`): preserved authentic NASA HMP satellite true-color imagery (`images/earth/haughton_true_color.jpg`).
+  - **Lonar Crater** (`lonar-crater`): preserved honest, neutral letter placeholder (`[B]` for Benchmark). No unrelated photograph or fabricated credit assigned.
+  - **McMurdo Dry Valleys** (`mcmurdo-dry-valleys`): removed temporary misleading lunar hillshade image (`shackleton_lola_color_hillshade.png`), resetting to clean neutral letter placeholder (`[B]`). McMurdo appears exactly once with no duplicate site rows.
+- **Pending Image Ingestion Status:**
+  - The remaining 4 location images (`congo-basin`, `amazon-rainforest`, `irrawaddy-delta-rice-fields`, and `mcmurdo-dry-valleys`) were not received by the server due to an Antigravity process restart during message submission. They remain on honest neutral group placeholders (`[C]` and `[B]`) awaiting file upload.
+- **Verification:**
+  - `npx --no-install tsc --noEmit`: **0 errors**.
+  - `node --test tests/*.test.ts`: **25/25 passed, 0 failed**.
+  - `npm run build`: **exit 0** — Vite 8.3.8, 30 modules, CSS 92.39 kB, JS 454.93 kB.
+  - Full desktop QA screenshot captured and archived at `docs/qa/catalogue-thumbnails-verified.png`.

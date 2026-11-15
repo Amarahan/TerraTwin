@@ -380,10 +380,10 @@ export const CANDIDATE_SITES: Record<string, CandidateSiteData> = {
     },
     images: {
       photo: {
-        url: assetUrl('images/moon/shackleton_lola_color_hillshade.png'),
-        title: 'Polar Analog Terrain Profile',
-        caption: 'High-latitude polar desert terrain comparable to extreme cold lunar shadowed craters.',
-        source: 'NASA Earth / Polar Science Division',
+        url: assetUrl('images/earth/mcmurdo-dry-valleys.jpg'),
+        title: 'McMurdo Dry Valleys Terrain',
+        caption: 'Ice-free polar desert landscape of Victoria Land, Antarctica.',
+        source: 'Attribution pending review',
       },
     },
   },
@@ -407,7 +407,14 @@ export const CANDIDATE_SITES: Record<string, CandidateSiteData> = {
       rock_mineral: { raw: 'basalt', displayValue: 'Basaltic-andesite volcanic tuff', unit: 'lithology category', sourceCitation: 'Smithsonian GVP no. 275090 / Lithos 2016', normalized: 'basalt' },
       water_ice: { raw: 0.0, displayValue: '0.00 (Tropical zero ground ice)', unit: 'ice presence index [0-1]', sourceCitation: 'Regional climate mapping', normalized: 0.0 },
     },
-    images: {},
+    images: {
+      photo: {
+        url: assetUrl('assets/featured/twin-taung.jpg'),
+        title: 'Twin Taung Maar Crater Lake',
+        caption: 'Explosive basaltic maar crater lake surrounded by volcanic tephra rings.',
+        source: 'Regional Geological Survey / Ground Observation',
+      },
+    },
   },
   'letpadaung-monywa-copper-area': {
     id: 'letpadaung-monywa-copper-area',
@@ -429,7 +436,14 @@ export const CANDIDATE_SITES: Record<string, CandidateSiteData> = {
       rock_mineral: { raw: 'volcanic_mafic', displayValue: 'Hydrothermal copper porphyry & andesite', unit: 'lithology category', sourceCitation: 'Myanmar Copper Belt Studies', normalized: 'volcanic_mafic' },
       water_ice: { raw: 0.0, displayValue: '0.00', unit: 'ice presence index [0-1]', sourceCitation: 'Regional climate mapping', normalized: 0.0 },
     },
-    images: {},
+    images: {
+      photo: {
+        url: assetUrl('assets/featured/letpadaung.jpg'),
+        title: 'Letpadaung Hydrothermal Open Pit',
+        caption: 'Open-pit exposure of hydrothermally altered volcanic rocks and copper mineralization.',
+        source: 'Regional Geological Survey / Mining Survey',
+      },
+    },
   },
   'mount-popa-central-dry-zone': {
     id: 'mount-popa-central-dry-zone',
@@ -451,7 +465,14 @@ export const CANDIDATE_SITES: Record<string, CandidateSiteData> = {
       rock_mineral: { raw: 'basalt', displayValue: 'Basaltic-andesite lava & volcanic scoria', unit: 'lithology category', sourceCitation: 'Mount Popa Volcanology Surveys', normalized: 'basalt' },
       water_ice: { raw: 0.0, displayValue: '0.00', unit: 'ice presence index [0-1]', sourceCitation: 'Regional climate mapping', normalized: 0.0 },
     },
-    images: {},
+    images: {
+      photo: {
+        url: assetUrl('assets/featured/mount-popa.jpg'),
+        title: 'Mount Popa Volcanic Complex',
+        caption: 'Conical volcanic plug and lava flows rising above the Myanmar central dry zone.',
+        source: 'Regional Geological Survey / Ground Observation',
+      },
+    },
   },
   'kawah-ijen': {
     id: 'kawah-ijen',
@@ -473,7 +494,14 @@ export const CANDIDATE_SITES: Record<string, CandidateSiteData> = {
       rock_mineral: { raw: 'volcanic_mafic', displayValue: 'Sulfur-rich volcanic & hydrothermal deposits', unit: 'lithology category', sourceCitation: 'Indonesian Volcanology Survey', normalized: 'volcanic_mafic' },
       water_ice: { raw: 0.0, displayValue: '0.00', unit: 'ice presence index [0-1]', sourceCitation: 'Tropical climate baseline', normalized: 0.0 },
     },
-    images: {},
+    images: {
+      photo: {
+        url: assetUrl('assets/featured/kawah-ijen.jpg'),
+        title: 'Kawah Ijen Crater & Acid Lake',
+        caption: 'Active sulfuric crater lake with extreme acid hydrothermal activity and solfatara deposits.',
+        source: 'Ground Observation / Geological Survey',
+      },
+    },
   },
   'lonar-crater': {
     id: 'lonar-crater',
@@ -495,7 +523,14 @@ export const CANDIDATE_SITES: Record<string, CandidateSiteData> = {
       rock_mineral: { raw: 'impact_breccia', displayValue: 'Deccan basaltic impact breccia', unit: 'lithology category', sourceCitation: 'Lonar Impact Crater Studies', normalized: 'impact_breccia' },
       water_ice: { raw: 0.0, displayValue: '0.00', unit: 'ice presence index [0-1]', sourceCitation: 'Subtropical climate baseline', normalized: 0.0 },
     },
-    images: {},
+    images: {
+      photo: {
+        url: assetUrl('images/earth/lonar-crater.jpg'),
+        title: 'Lonar Crater Lake',
+        caption: 'Saline-alkaline crater lake formed in Deccan basalt by meteorite impact.',
+        source: 'Attribution pending review',
+      },
+    },
   },
   'amazon-rainforest': {
     id: 'amazon-rainforest',
@@ -517,7 +552,14 @@ export const CANDIDATE_SITES: Record<string, CandidateSiteData> = {
       rock_mineral: { raw: 'sedimentary_clastic', displayValue: 'Deeply weathered lateritic sediments', unit: 'lithology category', sourceCitation: 'CPRM Brazilian Geological Survey', normalized: 'sedimentary_clastic' },
       water_ice: { raw: 0.0, displayValue: '0.00 (Zero ground ice)', unit: 'ice presence index [0-1]', sourceCitation: 'Tropical climate baseline', normalized: 0.0 },
     },
-    images: {},
+    images: {
+      photo: {
+        url: assetUrl('images/earth/amazon-rainforest.jpg'),
+        title: 'Amazon Rainforest Canopy',
+        caption: 'Dense equatorial rainforest canopy of the Amazon Basin, Amazonas, Brazil.',
+        source: 'Attribution pending review',
+      },
+    },
   },
   'congo-basin': {
     id: 'congo-basin',
@@ -539,7 +581,14 @@ export const CANDIDATE_SITES: Record<string, CandidateSiteData> = {
       rock_mineral: { raw: 'sandstone', displayValue: 'Ferralsols & cratonic sandstone', unit: 'lithology category', sourceCitation: 'Central African Geological Mapping', normalized: 'sandstone' },
       water_ice: { raw: 0.0, displayValue: '0.00', unit: 'ice presence index [0-1]', sourceCitation: 'Tropical climate baseline', normalized: 0.0 },
     },
-    images: {},
+    images: {
+      photo: {
+        url: assetUrl('images/earth/congo-basin.jpg'),
+        title: 'Congo Basin Rainforest',
+        caption: 'Dense tropical forest canopy and river drainage of the Congo Basin, DR Congo.',
+        source: 'Attribution pending review',
+      },
+    },
   },
   'irrawaddy-delta-rice-fields': {
     id: 'irrawaddy-delta-rice-fields',
@@ -561,6 +610,13 @@ export const CANDIDATE_SITES: Record<string, CandidateSiteData> = {
       rock_mineral: { raw: 'sedimentary_clastic', displayValue: 'Alluvial silt, clay & delta sediment', unit: 'lithology category', sourceCitation: 'Irrawaddy Delta Geological Survey', normalized: 'sedimentary_clastic' },
       water_ice: { raw: 0.0, displayValue: '0.00', unit: 'ice presence index [0-1]', sourceCitation: 'Monsoonal climate baseline', normalized: 0.0 },
     },
-    images: {},
+    images: {
+      photo: {
+        url: assetUrl('images/earth/irrawaddy-delta.jpg'),
+        title: 'Irrawaddy Delta Aerial View',
+        caption: 'Aerial view of the braided river channels and tidal flats of the Irrawaddy Delta, Myanmar.',
+        source: 'Attribution pending review',
+      },
+    },
   },
 };
